@@ -1,0 +1,47 @@
+{
+ "version": "0.4",
+ "title": "ReadMeHub — Reviews Archive",
+ "type": "archive",
+ "content": [
+  {
+   "id": "rmh00000475",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000474",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000472",
+       "elType": "widget",
+       "widgetType": "archive-title",
+       "settings": {
+        "header_size": "h1"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000473",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_cards type=\"rmh_review\" limit=\"12\"]"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

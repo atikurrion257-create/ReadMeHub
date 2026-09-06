@@ -1,0 +1,93 @@
+{
+ "version": "0.4",
+ "title": "ReadMeHub Design System Kit",
+ "type": "kit",
+ "content": [],
+ "site_settings": {
+  "template": "hello-elementor",
+  "system_colors": [
+   {
+    "_id": "primary",
+    "title": "Brand / Decision Blue",
+    "color": "#1D4FD8"
+   },
+   {
+    "_id": "secondary",
+    "title": "Ink (headings)",
+    "color": "#14213D"
+   },
+   {
+    "_id": "text",
+    "title": "Body text",
+    "color": "#3D4C66"
+   },
+   {
+    "_id": "accent",
+    "title": "Decision CTA (use sparingly)",
+    "color": "#E8590C"
+   }
+  ],
+  "custom_colors": [
+   {
+    "_id": "rmh_canvas",
+    "title": "Canvas",
+    "color": "#F5F7FB"
+   },
+   {
+    "_id": "rmh_surface",
+    "title": "Surface",
+    "color": "#FBFCFE"
+   },
+   {
+    "_id": "rmh_line",
+    "title": "Line",
+    "color": "#E3E8F0"
+   },
+   {
+    "_id": "rmh_muted",
+    "title": "Muted text",
+    "color": "#5E6B81"
+   },
+   {
+    "_id": "rmh_verified",
+    "title": "Verified green",
+    "color": "#0E7A4A"
+   },
+   {
+    "_id": "rmh_warn",
+    "title": "Unverified amber",
+    "color": "#B45309"
+   },
+   {
+    "_id": "rmh_flag",
+    "title": "Notice red",
+    "color": "#B42318"
+   }
+  ],
+  "system_typography": [
+   {
+    "_id": "primary",
+    "title": "Headings",
+    "typography_font_family": "System stack (see child theme)",
+    "typography_font_weight": "800"
+   },
+   {
+    "_id": "secondary",
+    "title": "Sub-headings",
+    "typography_font_weight": "700"
+   },
+   {
+    "_id": "text",
+    "title": "Body",
+    "typography_font_family": "System stack (see child theme)",
+    "typography_font_weight": "400"
+   },
+   {
+    "_id": "accent",
+    "title": "Buttons/labels",
+    "typography_font_weight": "700"
+   }
+  ],
+  "description": "Import via Elementor > Tools > Import/Export Kit. Global colors/fonts only; body typography and components ship in the child theme stylesheet (assets/css/readmehub.css) to avoid duplication."
+ }
+}

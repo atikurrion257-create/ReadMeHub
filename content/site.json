@@ -1,0 +1,283 @@
+{
+  "brand": {
+    "name": "ReadMeHub",
+    "tagline": "The decision platform",
+    "description": "ReadMeHub researches products and software, verifies pricing, and compares options honestly so you can make better buying decisions.",
+    "founded_note": "Editorial launch: September 2026",
+    "contact_email": "editorial@readmehub.com"
+  },
+  "nav": {
+    "primary": [
+      { "label": "Reviews", "href": "reviews/", "desc": "Verdict-first product reviews with verified pricing" },
+      { "label": "Comparisons", "href": "compare/", "desc": "Head-to-head verdicts: choose X if, choose Y if" },
+      { "label": "Best Picks", "href": "best/password-managers/", "desc": "Research-backed shortlists by category and use case" },
+      { "label": "Deals", "href": "deals/", "desc": "Only offers we can verify — dated and sourced" },
+      { "label": "Guides", "href": "guides/", "desc": "Frameworks and explainers that precede the purchase" },
+      { "label": "Categories", "href": "categories/", "desc": "Browse every segment we cover" }
+    ],
+    "intents": [
+      { "label": "I'm choosing new software", "href": "best/password-managers/", "desc": "Start from researched shortlists" },
+      { "label": "I'm comparing two options", "href": "compare/", "desc": "Verdict-first head-to-heads" },
+      { "label": "I need an alternative", "href": "alternatives/", "desc": "Organized by why people switch" },
+      { "label": "I want to spend less", "href": "deals/", "desc": "Verified offers only" },
+      { "label": "I want to learn first", "href": "guides/", "desc": "Frameworks before features" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Research smarter. Compare better. Choose with confidence.",
+    "h1": "Make your next buying decision with confidence.",
+    "sub": "ReadMeHub is a decision platform: we verify pricing at the source, compare options honestly — including who each product is wrong for — and tell you exactly what we know, how we know it, and when we last checked.",
+    "search_placeholder": "Search reviews, comparisons, brands, deals…",
+    "search_examples": ["1Password review", "Bitwarden vs 1Password", "best free password manager", "password manager deals"],
+    "primary_cta": { "label": "Start a decision", "href": "#decision-finder" },
+    "secondary_cta": { "label": "Browse best picks", "href": "best/password-managers/" },
+    "trust_strip": ["Prices verified at official sources", "Every claim dated and sourced", "No fabricated ratings — ever", "Affiliate links disclosed on every page"]
+  },
+  "decision_finder": {
+    "title": "What are you trying to choose?",
+    "sub": "Two questions. We'll route you to the research that answers them — no sign-up, no gimmicks.",
+    "step1_label": "What are you trying to choose?",
+    "step1": [
+      { "label": "Password managers", "href": "categories/password-managers/", "status": "live" },
+      { "label": "Web hosting", "status": "research" },
+      { "label": "VPNs", "status": "research" },
+      { "label": "AI tools", "status": "research" }
+    ],
+    "step2_label": "What matters most to you?",
+    "step2": [
+      { "label": "Best overall value", "href": "best/password-managers/", "desc": "Our researched shortlist, value first" },
+      { "label": "The best free option", "href": "guides/free-vs-paid-password-managers/", "desc": "Free tiers that are actually usable" },
+      { "label": "Security & privacy", "href": "reviews/bitwarden/", "desc": "Open-source and auditability deep-dive" },
+      { "label": "Ease of use", "href": "reviews/1password/", "desc": "The most polished experience we researched" },
+      { "label": "Protecting my family", "href": "use-cases/password-manager-for-families/", "desc": "Family plans compared per person" },
+      { "label": "Saving money (deals)", "href": "deals/", "desc": "Verified offers, honest statuses" }
+    ]
+  },
+  "featured_decisions": {
+    "title": "Featured decisions",
+    "sub": "Editorially selected research — each one answers a decision people actually search for.",
+    "items": [
+      {
+        "title": "Best password managers",
+        "category": "Security · Pillar",
+        "context": "Five options researched, prices verified at the source on 6 Sep 2026. Value pick, polish pick, free pick — and who should skip each.",
+        "href": "best/password-managers/"
+      },
+      {
+        "title": "1Password vs Bitwarden",
+        "category": "Security · Comparison",
+        "context": "The category's defining trade-off: paying ~$47.88/yr for polish vs getting core security free. Verdict first.",
+        "href": "compare/1password-vs-bitwarden/"
+      },
+      {
+        "title": "Password manager for families",
+        "category": "Security · Use case",
+        "context": "Six-person households: we compared per-person cost, sharing controls, and recovery — not just the family-plan sticker price.",
+        "href": "use-cases/password-manager-for-families/"
+      },
+      {
+        "title": "Free vs paid password managers",
+        "category": "Security · Guide",
+        "context": "Which free tiers are genuinely usable in 2026 — and the exact moments when paying becomes worth it.",
+        "href": "guides/free-vs-paid-password-managers/"
+      }
+    ]
+  },
+  "use_case_picks": {
+    "title": "Best picks by situation",
+    "sub": "Recommendations that depend on your constraints — not a single 'winner' for everyone.",
+    "picks": [
+      { "label": "Best free option", "value": "Bitwarden Free", "why": "Unlimited passwords and devices, open source", "href": "reviews/bitwarden/" },
+      { "label": "Best for families", "value": "Bitwarden Families", "why": "6 premium accounts from $3.99/mo ($0.67/person)", "href": "use-cases/password-manager-for-families/" },
+      { "label": "Best for polish & ease", "value": "1Password", "why": "Best-in-class apps and organization — $3.99/mo", "href": "reviews/1password/" },
+      { "label": "Best budget premium", "value": "NordPass Premium", "why": "Cheapest polished paid tier (term-based pricing)", "href": "reviews/nordpass/" },
+      { "label": "Best for privacy", "value": "Proton Pass", "why": "Swiss jurisdiction, open source, usable free tier", "href": "reviews/proton-pass/" },
+      { "label": "Best first-year deal", "value": "1Password promo", "why": "$2.99/mo Individual, first year (verified 6 Sep 2026)", "href": "deals/" }
+    ],
+    "footnote": "Picks follow our published criteria (see How we evaluate). Prices verified at official sources on 2026-09-06; promotions change — check the linked page for current status."
+  },
+  "comparisons_section": {
+    "title": "Popular comparisons",
+    "sub": "Every head-to-head opens with the verdict — because you came for a decision, not a spec dump.",
+    "items": [
+      {
+        "a": "1Password",
+        "b": "Bitwarden",
+        "verdict": "1Password for polish and family UX; Bitwarden for value, transparency, and the best free tier.",
+        "best_for_a": "Households and teams who want the most refined apps and will pay for them",
+        "best_for_b": "Anyone budget-conscious — including 'free' — who wants full features and open-source trust",
+        "key_difference": "At regular pricing you pay 1Password $47.88/yr (Individual); Bitwarden Premium costs $19.80/yr and its free tier already covers unlimited passwords and devices.",
+        "href": "compare/1password-vs-bitwarden/"
+      }
+    ]
+  },
+  "reviews_section": {
+    "title": "Latest reviews",
+    "sub": "Research-based reviews: verified pricing, documented features, and honest limitations. We have not done hands-on lab testing, and we say so on every page.",
+    "items": [
+      { "product": "1Password", "category": "Password managers", "verdict": "The most polished password manager we researched — best for people who value experience and will pay for it.", "href": "reviews/1password/", "updated": "2026-09-06" },
+      { "product": "Bitwarden", "category": "Password managers", "verdict": "The value and transparency benchmark: unlimited free tier, open source, premium at $19.80/yr.", "href": "reviews/bitwarden/", "updated": "2026-09-06" },
+      { "product": "NordPass", "category": "Password managers", "verdict": "The cheapest polished paid tier — if you're comfortable with multi-year terms and closed source.", "href": "reviews/nordpass/", "updated": "2026-09-06" },
+      { "product": "Proton Pass", "category": "Password managers", "verdict": "A genuinely usable free tier with privacy-first pedigree — the paid tiers are newer and less battle-tested.", "href": "reviews/proton-pass/", "updated": "2026-09-06" }
+    ]
+  },
+  "updated_section": {
+    "title": "Recently updated & verified",
+    "sub": "Freshness is a feature. Here's what changed recently, with the real dates.",
+    "items": [
+      { "what": "Verified 1Password's first-year promotion ($2.99 Individual / $4.49 Families)", "type": "Deal check", "date": "2026-09-06", "href": "deals/" },
+      { "what": "Re-verified all Bitwarden plan prices after the January 2026 Premium increase ($10 → $19.80/yr)", "type": "Price check", "date": "2026-09-06", "href": "reviews/bitwarden/" },
+      { "what": "Confirmed 1Password regular pricing at $3.99/mo Individual, $5.99/mo Families", "type": "Price check", "date": "2026-09-06", "href": "reviews/1password/" },
+      { "what": "Confirmed Proton Pass free-tier terms (unlimited logins/devices, 10 aliases)", "type": "Feature check", "date": "2026-09-06", "href": "reviews/proton-pass/" },
+      { "what": "Published the Best Password Managers pillar and the 1Password vs Bitwarden comparison", "type": "Editorial", "date": "2026-09-06", "href": "best/password-managers/" }
+    ]
+  },
+  "categories_section": {
+    "title": "Explore categories",
+    "sub": "Each category is a decision center: shortlist, reviews, comparisons, alternatives, and verified deals.",
+    "items": [
+      { "name": "Password Managers", "status": "live", "count_note": "5 tools researched · 1 comparison · 4 reviews", "href": "categories/password-managers/", "desc": "Keep every account behind one strong master password — we compare the trust choices." },
+      { "name": "Web Hosting", "status": "research" },
+      { "name": "VPN", "status": "research" },
+      { "name": "AI Tools", "status": "research" },
+      { "name": "Productivity", "status": "research" },
+      { "name": "Website Builders", "status": "research" }
+    ]
+  },
+  "intent_section": {
+    "title": "Explore by what you're trying to do",
+    "sub": "Category pages organize products. This organizes decisions — the way people actually shop.",
+    "intents": [
+      { "label": "I need a tool for…", "items": [{ "t": "My family", "href": "use-cases/password-manager-for-families/" }, { "t": "Myself, for free", "href": "guides/free-vs-paid-password-managers/" }] },
+      { "label": "I want to compare…", "items": [{ "t": "1Password vs Bitwarden", "href": "compare/1password-vs-bitwarden/" }, { "t": "All password managers", "href": "best/password-managers/" }] },
+      { "label": "I need an alternative…", "items": [{ "t": "To Bitwarden", "href": "alternatives/" }, { "t": "To my browser's autofill", "href": "guides/password-manager-vs-browser-autofill/" }] },
+      { "label": "I want to pay less…", "items": [{ "t": "Verified deals", "href": "deals/" }, { "t": "Free vs paid trade-offs", "href": "guides/free-vs-paid-password-managers/" }] }
+    ]
+  },
+  "deals_section": {
+    "title": "Deals & coupons — verified or nothing",
+    "sub": "We don't invent codes and we don't fake countdowns. Each offer carries a status and a check date. If we can't verify it, we say so.",
+    "items": [
+      { "brand": "1Password", "offer": "Individual $2.99/mo and Families $4.49/mo for the first year (regular $3.99 / $5.99)", "status": "verified", "checked": "2026-09-06", "type": "First-year promotion", "qualifier": "New customers, annual billing", "href": "deals/" },
+      { "brand": "Bitwarden", "offer": "No active promotion verified. The free tier (unlimited passwords/devices) remains the best $0 entry in the category.", "status": "none", "checked": "2026-09-06", "href": "deals/" },
+      { "brand": "Proton Pass", "offer": "30-day money-back guarantee on paid plans — effectively a risk-free trial", "status": "official", "checked": "2026-09-06", "href": "deals/" },
+      { "brand": "NordPass", "offer": "Promotional pricing varies by term and region; we verify at the official checkout before listing a specific figure", "status": "unverified", "checked": "2026-09-06", "href": "deals/" }
+    ]
+  },
+  "pricing_section": {
+    "title": "Price & value, without the fog",
+    "sub": "Sticker prices hide the real decision: billing terms, per-person math, and what free actually gets you.",
+    "points": [
+      { "title": "Billing terms change everything", "body": "The same product can cost 2–3× more month-to-month than on annual or two-year billing. We show the term next to every price." },
+      { "title": "Per-person beats per-plan", "body": "A $5.99/mo family plan for 6 people ($0.92/person at 1Password regular pricing) can beat a $3.99 individual plan per head. We do the math on use-case pages." },
+      { "title": "Free tiers are not equal", "body": "Bitwarden's free tier is unlimited in passwords and devices; NordPass's free tier limits you to one device. 'Free' needs reading." },
+      { "title": "First-year promos revert", "body": "1Password's $2.99/mo is a first-year rate for new customers; year two is $3.99/mo. Deals pages that hide the regular price aren't deals pages." }
+    ],
+    "cta": { "label": "See the verified price tables", "href": "best/password-managers/#pricing" }
+  },
+  "evidence_section": {
+    "title": "How we research",
+    "sub": "No fabricated testing. No invented numbers. Here is the actual pipeline behind every page.",
+    "steps": [
+      { "n": "01", "title": "Define the decision", "body": "We start from what people are actually trying to decide — the questions, not the products." },
+      { "n": "02", "title": "Verify at the source", "body": "Pricing and plan facts are checked on official vendor pages, with the verification date stamped on the page." },
+      { "n": "03", "title": "Corroborate everything else", "body": "Features, security claims, and audit history require the vendor's own documentation or multiple independent sources." },
+      { "n": "04", "title": "Write the decision, not the brochure", "body": "Every page must answer: who is this for, who should avoid it, what it costs, what's limited, and what's the alternative." },
+      { "n": "05", "title": "Date, disclose, re-verify", "body": "Prices are re-checked on a ≤45-day cycle; deals degrade from 'Verified' if not re-checked within 30 days. Corrections are public." }
+    ]
+  },
+  "methodology_section": {
+    "title": "How we evaluate",
+    "sub": "Criteria are transparent. Numeric scores are withheld until a genuine scoring methodology exists — which is why you won't see fake stars here.",
+    "criteria": [
+      { "name": "Security architecture", "desc": "Encryption approach, zero-knowledge design, known audits (as documented by vendors and auditors)" },
+      { "name": "Price & value", "desc": "Verified pricing across billing terms, per-person math for plans, free-tier honesty" },
+      { "name": "Ease of use", "desc": "Onboarding friction, autofill quality, cross-platform consistency — based on documented user experience evidence" },
+      { "name": "Trust & transparency", "desc": "Open source status, breach history, jurisdiction, corporate transparency" },
+      { "name": "Feature completeness", "desc": "Passkeys, 2FA authenticator, secure sharing, emergency access, breach alerts" },
+      { "name": "Recovery & sharing", "desc": "Emergency access, family controls, inheritance — where real life happens" }
+    ],
+    "disclosure": "Our reviews are research-based. We have not conducted hands-on laboratory testing; where we characterize user experience, we rely on documented evidence and label it as such. Learn more on the How We Evaluate page."
+  },
+  "trust_section": {
+    "title": "Why you can argue with us",
+    "sub": "Trust is a system, not a slogan.",
+    "items": [
+      { "title": "Editorial policy", "desc": "How pages are researched, written, and corrected — in public.", "href": "editorial-policy/" },
+      { "title": "Affiliate disclosure", "desc": "When a link can earn us money, you'll know before you click it.", "href": "affiliate-disclosure/" },
+      { "title": "How we evaluate", "desc": "The criteria, the evidence rules, and what we refuse to do.", "href": "how-we-evaluate/" },
+      { "title": "Corrections", "desc": "Found an error? We publish the fix and the date it was made.", "href": "editorial-policy/#corrections" }
+    ]
+  },
+  "guides_section": {
+    "title": "The learning hub",
+    "sub": "Understand the decision before you make it.",
+    "items": [
+      { "title": "Free vs paid password managers", "desc": "What each free tier really includes in 2026 — and the four moments when paying pays off.", "href": "guides/free-vs-paid-password-managers/" },
+      { "title": "Password manager vs browser autofill", "desc": "Why the convenience of built-in autofill is the exact reason security teams say don't rely on it.", "href": "guides/password-manager-vs-browser-autofill/" },
+      { "title": "Best password managers (pillar)", "desc": "The full decision framework with verified prices and situation-based picks.", "href": "best/password-managers/" }
+    ]
+  },
+  "faq_section": {
+    "title": "Questions people actually ask",
+    "sub": "Only questions with real search demand and real stakes — answered in full on the linked pages.",
+    "faqs": [
+      { "q": "What is the best password manager in 2026?", "a": "There is no single best — there is best-for-you. Bitwarden is our value and free-tier pick (unlimited free, Premium $19.80/yr); 1Password is our polish pick (Individual $3.99/mo regular). The full situation-by-situation breakdown is in Best Password Managers." },
+      { "q": "Are password managers safe to use?", "a": "Reputable password managers use zero-knowledge encryption, meaning the provider cannot read your vault. The bigger risks are a weak master password and phishing — which features like Watchtower and passkey support address. We cover the trade-offs in each review." },
+      { "q": "Is a password manager better than browser autofill?", "a": "For anything you care about, yes: dedicated managers encrypt vaults with your master password, work across all browsers and apps, detect breached credentials, and support passkeys. Browser autofill is convenient but tied to one browser and does not warn you about reused or breached passwords. Full analysis in our guide." },
+      { "q": "How much should I pay for a password manager?", "a": "Nothing, if Bitwarden's free tier fits you: it is unlimited in passwords and devices. If you want breach alerts, an integrated 2FA authenticator, and encrypted attachments, Bitwarden Premium is $19.80/yr and NordPass's paid tiers run cheaper on multi-year terms. 1Password costs more ($3.99/mo regular) and is paid-only." },
+      { "q": "Do you earn commissions from these recommendations?", "a": "Some outbound links are affiliate links and can earn us a commission at no cost to you; others are plain official links. Every money page carries a disclosure above the first such link, and affiliate relationships never determine our verdicts — our criteria and methodology are public." }
+    ]
+  },
+  "newsletter": {
+    "title": "Get smarter buying decisions in your inbox",
+    "sub": "One considered email when it matters: a new comparison, a verified price change, or a deal that clears our verification bar. No filler, no fake urgency.",
+    "bullets": ["New comparisons and verdicts", "Price changes that actually matter", "Verified deals only — with the check date"],
+    "placeholder": "you@example.com",
+    "button": "Subscribe",
+    "fineprint": "No spam. Unsubscribe anytime. We do not sell your address.",
+    "demo_note": "Preview build: the form renders but needs an email provider connected on the WordPress host (see INSTALL.md)."
+  },
+  "final_cta": {
+    "title": "Start your next decision.",
+    "sub": "Pick what you're choosing. We'll show you the research.",
+    "primary": { "label": "Make a decision", "href": "#decision-finder" },
+    "secondary": { "label": "Read the methodology", "href": "how-we-evaluate/" }
+  },
+  "footer": {
+    "blurb": "ReadMeHub is a decision platform: verified pricing, honest comparisons, and research you can check. Independent, reader-first, and transparent about how we make money.",
+    "cols": [
+      { "title": "Explore", "links": [
+        { "label": "Reviews", "href": "reviews/" },
+        { "label": "Comparisons", "href": "compare/" },
+        { "label": "Alternatives", "href": "alternatives/" },
+        { "label": "Best picks", "href": "best/password-managers/" },
+        { "label": "Deals", "href": "deals/" },
+        { "label": "Guides", "href": "guides/" }
+      ]},
+      { "title": "Categories", "links": [
+        { "label": "Password Managers", "href": "categories/password-managers/" },
+        { "label": "Web Hosting (in research)", "href": "categories/" },
+        { "label": "VPN (in research)", "href": "categories/" },
+        { "label": "AI Tools (in research)", "href": "categories/" }
+      ]},
+      { "title": "Company", "links": [
+        { "label": "About", "href": "about/" },
+        { "label": "How We Evaluate", "href": "how-we-evaluate/" },
+        { "label": "Editorial Policy", "href": "editorial-policy/" },
+        { "label": "Affiliate Disclosure", "href": "affiliate-disclosure/" },
+        { "label": "Contact", "href": "contact/" }
+      ]},
+      { "title": "Legal", "links": [
+        { "label": "Privacy Policy", "href": "privacy/" },
+        { "label": "Terms of Use", "href": "terms/" }
+      ]}
+    ],
+    "social_note": "We only list social profiles we actually maintain. As of launch: none — coming when real.",
+    "copyright": "© 2026 ReadMeHub. All rights reserved. Product names and logos are trademarks of their respective owners; ReadMeHub is not affiliated with the vendors we cover unless explicitly stated."
+  },
+  "meta": {
+    "title": "ReadMeHub — Research Smarter. Compare Better. Choose with Confidence.",
+    "description": "A decision platform for products and software: verified pricing, honest comparisons with who-should-avoid guidance, and research you can check. Updated and dated on every page."
+  }
+}

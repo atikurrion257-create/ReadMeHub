@@ -1,0 +1,145 @@
+{
+ "version": "0.4",
+ "title": "ReadMeHub — Single Review",
+ "type": "single",
+ "content": [
+  {
+   "id": "rmh00000464",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10",
+    "css_classes": "rm-single-review"
+   },
+   "elements": [
+    {
+     "id": "rmh00000463",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000456",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_breadcrumbs]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000457",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-article__meta\">[rmh_verification_stamp]<span class=\"rm-meta\">Updated [rmh_meta key=\"rmh_last_updated\"]</span></div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000458",
+       "elType": "widget",
+       "widgetType": "post-title",
+       "settings": {
+        "header_size": "h1"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000459",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_disclosure]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000045a",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_verdict_box]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000045b",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_fit_lists]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000045c",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_takeaways]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000045d",
+       "elType": "widget",
+       "widgetType": "post-content",
+       "settings": {},
+       "elements": []
+      },
+      {
+       "id": "rmh0000045e",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_price_table]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000045f",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_pros_cons]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000460",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_faq]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000461",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-author\"><div class=\"rm-author__avatar\">RH</div><div><b>ReadMeHub Editorial Team</b><span>Research-based, verified, and dated. Corrections are published.</span></div></div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000462",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_related type=\"auto\" limit=\"3\"]"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

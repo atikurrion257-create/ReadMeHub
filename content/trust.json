@@ -1,0 +1,128 @@
+{
+  "pages": [
+    {
+      "slug": "about",
+      "title": "About ReadMeHub",
+      "meta_description": "ReadMeHub is a decision platform: we verify pricing at official sources, compare options honestly, and show our sources and dates. Learn who we are and how we work.",
+      "blocks": [
+        { "h2": "What ReadMeHub is", "p": "ReadMeHub is a decision platform for products and software. We exist for the moment you're stuck between options: we verify the prices at official sources, lay out the trade-offs honestly — including who each product is wrong for — and show our sources and dates so you can check our work. We compete on usefulness, not on volume: we'd rather publish one page that genuinely resolves a decision than twenty that restate marketing." },
+        { "h2": "What we are not", "p": "We are not a review mill. We do not publish numeric ratings until a genuine scoring methodology with real evaluation exists. We do not claim hands-on laboratory testing we haven't done — our reviews are research-based and labeled as such. We do not invent deals, countdowns, or coupon codes. And we do not let affiliate relationships write our verdicts: our criteria are public, and some of our top picks (like Bitwarden) have no affiliate program at all." },
+        { "h2": "How we make money", "p": "Some outbound links on ReadMeHub are affiliate links. If you click one and subscribe, the vendor may pay us a commission at no additional cost to you. Every page with such links carries a disclosure above the first one. Where we found no affiliate program (Bitwarden, as of launch), links are plain. Our full affiliate policy is on the Affiliate Disclosure page." },
+        { "h2": "Editorial standards", "p": "Every factual claim on a money page traces to an official vendor page or multiple corroborating sources, recorded with a verification date. Prices are re-verified on a ≤45-day cycle; deal statuses degrade automatically if not re-checked within 30 days. Corrections are published with dates. The full system: How We Evaluate, Editorial Policy." },
+        { "h2": "Contact", "p": "Corrections, feedback, partnership questions: editorial@readmehub.com, or use the contact page. We read everything and answer what deserves answers." }
+      ]
+    },
+    {
+      "slug": "how-we-evaluate",
+      "title": "How We Evaluate",
+      "meta_description": "ReadMeHub's evaluation methodology: research-based criteria, price verification at official sources, evidence rules, and what we refuse to do — no fabricated testing or ratings.",
+      "blocks": [
+        { "h2": "The honest preamble", "p": "Most 'methodology' pages describe a laboratory. Here is ours: we have not conducted hands-on laboratory testing. ReadMeHub reviews are research-based — built from verified vendor documentation, official pricing pages, published security audits, and consistent independent evidence, each fact dated. Where we characterize user experience, we say so as evidence-based assessment, not personal testing. We think a methodology you can actually audit beats a fictional one." },
+        { "h2": "Evaluation criteria", "p": "Six criteria, in priority order:", "list": [
+          "1. Security architecture — encryption approach, zero-knowledge design, audit history (as documented by vendors and auditors).",
+          "2. Price & value — verified pricing across billing terms, per-person math for plans, free-tier honesty. Prices must be verified at official sources to appear in tables.",
+          "3. Trust & transparency — open source status, jurisdiction, breach history, corporate transparency.",
+          "4. Ease of use — onboarding friction and cross-platform consistency, assessed from documented evidence and labeled as such.",
+          "5. Feature completeness — the features that carry real decisions: passkeys, 2FA integration, sharing, recovery, breach monitoring.",
+          "6. Recovery & sharing — emergency access, family controls, inheritance: where real life actually tests a product."
+        ]},
+        { "h2": "Evidence rules", "list": [
+          "Prices: verified at the official checkout/pricing page, with a 'Last verified' date on the page. If a figure can't be verified (dynamic pricing), we publish a labeled range or omit the number and link the source.",
+          "Claims: vendor documentation or ≥2 independent corroborating sources; vendor-only claims are framed as vendor-reported.",
+          "Ratings: none, until a genuine scoring methodology with real evaluation exists. Qualitative verdicts only.",
+          "Testing: never implied. If we test hands-on in the future, pages will say exactly what was tested, when, and by whom.",
+          "Deals: VERIFIED, OFFICIAL, UNVERIFIED, or NONE — with check dates; unverified offers never display amounts."
+        ]},
+        { "h2": "Update policy", "p": "Money pages carry a verification date and are re-checked on a ≤45-day cycle (30 days for deals). Material changes are noted on the page. If a page has gone stale past its cycle, our QA flags it internally — and you can flag it too." },
+        { "h2": "What we refuse to do", "p": "Fabricate ratings, reviews, or testing. Invent coupon codes. Manufacture urgency. Let commissions order a ranking. Publish prices we can't verify. Create doorway pages. These rules cost us short-term revenue; they are the product." }
+      ]
+    },
+    {
+      "slug": "editorial-policy",
+      "title": "Editorial Policy",
+      "meta_description": "How ReadMeHub researches, writes, corrects, and updates its decision content — independence rules, sourcing standards, and our public corrections policy.",
+      "blocks": [
+        { "h2": "Independence", "p": "ReadMeHub's editorial conclusions are set by our published criteria, not by commercial relationships. Vendors cannot pay for placement, review changes, or removal of criticism. Where we participate in affiliate programs, that participation never determines verdicts — our criteria and their order are public on How We Evaluate." },
+        { "h2": "Sourcing standards", "list": [
+          "Primary sources first: official pricing pages, vendor documentation, published audits.",
+          "Corroboration: secondary claims require at least two independent sources.",
+          "Dating: every money page carries last-verified and last-updated dates.",
+          "Attribution: vendor-reported facts are framed as such.",
+          "An evidence ledger records source, date, and status for load-bearing facts."
+        ]},
+        { "h2": "Writing standards", "list": [
+          "Verdict first: every commercial page answers the user's decision in the first screen.",
+          "Balance is structural: every review includes 'not ideal for' and limitations; every comparison includes choose-if lists for both sides.",
+          "No inflated word counts: every paragraph must earn its place.",
+          "Plain language over jargon; tables where they aid decisions, not decoration."
+        ]},
+        { "h2": "Corrections", "id": "corrections", "p": "Errors are fixed visibly: we publish the correction with its date on the affected page, and material corrections are noted in the page's update history. Report errors to editorial@readmehub.com. We correct fast and say what changed — credibility compounds only if repairs are visible." },
+        { "h2": "Updates & freshness", "p": "Pricing is re-verified on a ≤45-day cycle; deals on a 30-day cycle with automatic status degradation if missed. Pages display their verification dates so freshness is checkable, not claimed." },
+        { "h2": "AI use", "p": "We use tooling for research assistance and QA. Every published claim is verified against sources by editors, and editorial responsibility for every page is ours. Fabricated or unverified AI-generated claims are removed on discovery." }
+      ]
+    },
+    {
+      "slug": "affiliate-disclosure",
+      "title": "Affiliate Disclosure",
+      "meta_description": "ReadMeHub's affiliate disclosure: when links may earn us commissions, how we mark them, and why affiliate relationships never determine our verdicts.",
+      "blocks": [
+        { "h2": "The short version", "p": "Some links on ReadMeHub are affiliate links: if you click and subscribe, the vendor may pay us a commission at no extra cost to you. Pages with such links disclose this above the first affiliate link. Plain links are plain — no payment attached." },
+        { "h2": "Program status at launch (2026-09-06)", "list": [
+          "1Password — public program (reported by network listings). May be joined; if so, its plan links may earn commissions, disclosed on-page.",
+          "NordPass — public program via Impact (reported). Same treatment.",
+          "Dashlane, Keeper, LastPass — public programs reported; pages not yet published.",
+          "Bitwarden — no public program found. Links are plain. (Our value pick literally cannot pay us.)",
+          "Proton — nothing verified applicable to us. Links are plain."
+        ]},
+        { "h2": "What commissions never do", "list": [
+          "Change a verdict, a ranking, or a 'not ideal for'.",
+          "Create a recommendation where our criteria don't.",
+          "Hide the regular price behind a promotional price.",
+          "Turn into pressure: no fake urgency, no invented scarcity."
+        ]},
+        { "h2": "Why affiliate links at all", "p": "Research, verification, and re-verification are expensive; commissions are how reader-supported research stays free to readers without a paywall. The deal we offer is printed above: checkable criteria, dated prices, visible disclosures, and the right to argue with us via corrections@." }
+      ]
+    },
+    {
+      "slug": "contact",
+      "title": "Contact ReadMeHub",
+      "meta_description": "Reach the ReadMeHub editorial team: corrections, feedback, vendor questions, and partnership inquiries.",
+      "blocks": [
+        { "h2": "Editorial & corrections", "p": "editorial@readmehub.com — corrections get priority; see our corrections policy on the Editorial Policy page." },
+        { "h2": "Vendors & PR", "p": "product@readmehub.com — we accept briefings and documentation like any research publication. We do not accept payment for coverage, placement, or verdict changes; pitches that acknowledge this get faster answers." },
+        { "h2": "Partnerships & advertising", "p": "partners@readmehub.com — sponsorships, if any ever run, will be labeled as advertising and kept visually and structurally separate from editorial content." },
+        { "h2": "Privacy requests", "p": "privacy@readmehub.com — see the Privacy Policy for what we collect (very little) and your rights." }
+      ]
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacy Policy",
+      "meta_description": "ReadMeHub's privacy policy: what we collect, what we don't, how affiliate links and analytics work, and your rights.",
+      "blocks": [
+        { "h2": "Summary", "p": "We collect as little as a research site can: no accounts, no selling of personal data, no advertising trackers. This preview build collects nothing; the production site's exact tooling (analytics, newsletter) will be listed here with providers named before launch." },
+        { "h2": "What we collect", "list": [
+          "Newsletter: your email address, only if you subscribe; used only for the newsletter; unsubscribe anytime.",
+          "Analytics: aggregated, privacy-respecting usage stats (provider to be named at production launch; no cross-site ad tracking).",
+          "Server logs: standard technical logs for security and uptime."
+        ]},
+        { "h2": "Affiliate links", "p": "Some outbound links are affiliate links; vendors may set their own cookies after you click. Clicking is your choice and is not required — plain official links are always available on brand pages." },
+        { "h2": "Cookies", "p": "The production site will use only cookies required for the site to function plus, with consent where required, anonymous analytics. No ad-network cookies." },
+        { "h2": "Your rights & contact", "p": "Access, correction, deletion: privacy@readmehub.com. We respond to verified requests within 30 days. If regional law (GDPR/CCPA or successors) applies to you, those rights apply to your data with us." },
+        { "h2": "Changes", "p": "Material changes to this policy will be dated and summarized at the top of this page." }
+      ]
+    },
+    {
+      "slug": "terms",
+      "title": "Terms of Use",
+      "meta_description": "Terms for using ReadMeHub: content licensing, no-warranty and limitation-of-liability language, trademarks, and acceptable use.",
+      "blocks": [
+        { "h2": "Using ReadMeHub", "p": "ReadMeHub provides research and editorial opinion about products and pricing. It is provided as-is for informational purposes; you are responsible for your purchases and for verifying prices at the point of sale (we mark our verification dates precisely so you can judge how fresh our data is)." },
+        { "h2": "Editorial opinion", "p": "Verdicts, picks, and comparisons are editorial opinion grounded in our published criteria. They are not professional, financial, or security advice for your specific situation." },
+        { "h2": "Trademarks", "p": "Product names and logos are trademarks of their respective owners. ReadMeHub is not affiliated with, endorsed by, or sponsored by the vendors we cover unless a page explicitly says otherwise." },
+        { "h2": "Content licensing", "p": "Site text © ReadMeHub. Short quotation with a link is welcome; wholesale republication, scraping, or AI-training ingestion without permission is not." },
+        { "h2": "Limitation of liability", "p": "To the maximum extent permitted by law, ReadMeHub is not liable for indirect or consequential damages arising from use of the site, including decisions made based on its content. Nothing here limits liability that cannot be limited by law." },
+        { "h2": "Changes & contact", "p": "These terms may be updated; material changes will be dated. Questions: editorial@readmehub.com." }
+      ]
+    }
+  ]
+}
