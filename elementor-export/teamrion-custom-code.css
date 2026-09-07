@@ -1,0 +1,683 @@
+/* ==========================================================================
+   TeamRion — Industrial Skeuomorphism & Growth Engine Design System
+   Elementor Pro Compatible Tokens & Shared Neumorphic CSS Classes
+   ========================================================================== */
+
+:root {
+  /* Chassis & Neutral Surfaces (Elementor Global Colors) */
+  --chassis-bg: #e0e5ec;
+  --panel-bg: #f0f2f5;
+  --recessed-bg: #d1d9e6;
+  --surface-white: #ffffff;
+  
+  /* Text Tokens */
+  --text-primary: #2d3436;
+  --text-muted: #4a5568;
+  --text-dim: #718096;
+  
+  /* Accent & Interactive Safety Orange */
+  --accent-orange: #ff4757;
+  --accent-orange-hover: #e83848;
+  --accent-orange-light: #ff6b81;
+  --accent-glow: rgba(255, 71, 87, 0.6);
+  --accent-fg: #ffffff;
+  
+  /* Status Colors */
+  --status-green: #22c55e;
+  --status-green-glow: rgba(34, 197, 94, 0.7);
+  --status-cyan: #06b6d4;
+  --status-amber: #f59e0b;
+  
+  /* Shadows & Borders */
+  --shadow-dark: #babecc;
+  --shadow-light: #ffffff;
+  --border-dark: #a3b1c6;
+  --border-light: #ffffff;
+  
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+  
+  /* Physics & Mechanical Transitions */
+  --ease-mechanical: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 150ms var(--ease-mechanical);
+  --transition-card: 300ms var(--ease-smooth);
+}
+
+/* Base Body Styles */
+body {
+  background-color: var(--chassis-bg);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.7) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(186, 190, 204, 0.4) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', 'Roboto Mono', monospace;
+}
+
+/* Embossed Hero Heading Drop-Shadow */
+.hero-embossed-text {
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.9), -1px -1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   Neumorphic Elevation Hierarchy
+   ========================================================================== */
+
+/* Level +1: Standard Bolted Panel / Card */
+.shadow-card {
+  box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff;
+  background-color: var(--panel-bg);
+}
+
+/* Level +2: Elevated / Floating Control */
+.shadow-floating {
+  box-shadow: 12px 12px 24px #babecc, -12px -12px 24px #ffffff, inset 1px 1px 0 rgba(255, 255, 255, 0.8);
+  background-color: var(--panel-bg);
+}
+
+/* Level -1: Depressed / Pressed State */
+.shadow-pressed {
+  box-shadow: inset 6px 6px 12px #babecc, inset -6px -6px 12px #ffffff;
+  background-color: var(--chassis-bg);
+}
+
+/* Level -1: Recessed Screen / Input / Well */
+.shadow-recessed {
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff;
+  background-color: var(--recessed-bg);
+}
+
+/* Sharp Technical Bevel */
+.shadow-sharp {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12), -1px -1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* ==========================================================================
+   LED Glows & Status Animations
+   ========================================================================== */
+
+.led-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.led-glow-orange {
+  background-color: var(--accent-orange);
+  box-shadow: 0 0 10px 2px var(--accent-glow);
+  animation: ledPulseOrange 2.2s infinite ease-in-out;
+}
+
+.led-glow-green {
+  background-color: var(--status-green);
+  box-shadow: 0 0 10px 2px var(--status-green-glow);
+  animation: ledPulseGreen 2s infinite ease-in-out;
+}
+
+.led-glow-cyan {
+  background-color: var(--status-cyan);
+  box-shadow: 0 0 8px 2px rgba(6, 182, 212, 0.7);
+  animation: ledPulseCyan 2.4s infinite ease-in-out;
+}
+
+.led-glow-amber {
+  background-color: var(--status-amber);
+  box-shadow: 0 0 8px 2px rgba(245, 158, 11, 0.7);
+  animation: ledPulseAmber 1.8s infinite ease-in-out;
+}
+
+@keyframes ledPulseOrange {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px 2px rgba(255, 71, 87, 0.7); }
+  50% { opacity: 0.55; transform: scale(0.92); box-shadow: 0 0 3px 1px rgba(255, 71, 87, 0.3); }
+}
+
+@keyframes ledPulseGreen {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 10px 2px rgba(34, 197, 94, 0.8); }
+  50% { opacity: 0.6; transform: scale(0.92); box-shadow: 0 0 4px 1px rgba(34, 197, 94, 0.3); }
+}
+
+@keyframes ledPulseCyan {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px 2px rgba(6, 182, 212, 0.7); }
+  50% { opacity: 0.5; transform: scale(0.9); box-shadow: 0 0 3px 1px rgba(6, 182, 212, 0.2); }
+}
+
+@keyframes ledPulseAmber {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px 2px rgba(245, 158, 11, 0.7); }
+  50% { opacity: 0.55; transform: scale(0.92); box-shadow: 0 0 3px 1px rgba(245, 158, 11, 0.3); }
+}
+
+/* ==========================================================================
+   Physical Hardware Components & Skeuomorphic Details
+   ========================================================================== */
+
+/* Bolted Module Card */
+.bolted-card {
+  position: relative;
+  background-color: var(--panel-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff;
+  transition: all 300ms var(--ease-smooth);
+}
+
+.bolted-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 12px 12px 24px #babecc, -12px -12px 24px #ffffff, inset 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Corner Screws (10px diameter, radial brushed metal + engraved cross slot) */
+.screw-head {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #d1d9e6 50%, #a3b1c6 90%, #8b99ac 100%);
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.8), inset -1px -1px 1px rgba(0, 0, 0, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.screw-head::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 1px;
+  background-color: #636e72;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.screw-head::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 6px;
+  background-color: #636e72;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0.5px 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.screw-tl { top: 12px; left: 12px; }
+.screw-tr { top: 12px; right: 12px; }
+.screw-bl { bottom: 12px; left: 12px; }
+.screw-br { bottom: 12px; right: 12px; }
+
+/* Vent Slots (3 pill slots top-right) */
+.vent-slots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: absolute;
+  top: 14px;
+  right: 28px;
+}
+
+.vent-slot {
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--recessed-bg);
+  box-shadow: inset 1px 1px 2px #a3b1c6, inset -1px -1px 2px #ffffff;
+}
+
+/* Punched Hole Detail on Pricing Cards */
+.punched-hole {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--recessed-bg);
+  box-shadow: inset 2px 2px 4px #9aa7ba, inset -2px -2px 4px #ffffff, 0 1px 1px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(163, 177, 198, 0.4);
+  margin: 0 auto 12px auto;
+  position: relative;
+}
+
+.punched-hole::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #b0bccf 0%, #8795ab 100%);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Masking Tape / Sticker Banner Detail */
+.masking-tape {
+  position: relative;
+  display: inline-block;
+  background: #fbf5e8;
+  color: #332d20;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  transform: rotate(-1.5deg);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.12);
+  border-left: 2px dashed rgba(194, 175, 142, 0.6);
+  border-right: 2px dashed rgba(194, 175, 142, 0.6);
+  user-select: none;
+}
+
+.masking-tape-alt {
+  background: #ffeaa7;
+  color: #2d3436;
+  transform: rotate(1deg);
+}
+
+/* Push Pin Detail on Testimonial Cards */
+.push-pin {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ff7675 0%, #d63031 70%, #901616 100%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), inset 1px 1px 2px rgba(255, 255, 255, 0.6);
+  z-index: 20;
+}
+
+.push-pin::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.25);
+  filter: blur(1px);
+}
+
+/* Physical Connector Pipe Between Step Nodes */
+.connector-pipe-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connector-pipe {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(180deg, #c0cad8 0%, #8f9eaf 50%, #dbe2ed 100%);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.connector-pipe-light {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 30px;
+  background: linear-gradient(90deg, transparent 0%, #ff4757 50%, transparent 100%);
+  filter: blur(1px);
+  animation: pipeFlow 2.5s infinite linear;
+}
+
+@keyframes pipeFlow {
+  0% { left: -30px; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+.pipe-flange {
+  width: 12px;
+  height: 16px;
+  background: linear-gradient(180deg, #d8e0ea 0%, #9aaabf 100%);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   Mechanical Buttons ("Physical Keys")
+   ========================================================================== */
+
+.btn-physical-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(180deg, #ff5766 0%, #ff4757 60%, #e03242 100%);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 14px 28px;
+  min-height: 48px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 10px rgba(255, 71, 87, 0.35), 4px 4px 10px #babecc, -4px -4px 10px #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+.btn-physical-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 71, 87, 0.45), 6px 6px 14px #babecc, -6px -6px 14px #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.btn-physical-primary:active {
+  transform: translateY(2px);
+  box-shadow: inset 3px 3px 6px rgba(160, 20, 32, 0.6), inset -2px -2px 5px rgba(255, 120, 130, 0.3), 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-physical-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--panel-bg);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 14px 26px;
+  min-height: 48px;
+  border-radius: var(--radius-md);
+  box-shadow: 6px 6px 12px #babecc, -6px -6px 12px #ffffff;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  user-select: none;
+}
+
+.btn-physical-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff;
+  color: var(--accent-orange);
+}
+
+.btn-physical-secondary:active {
+  transform: translateY(2px);
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff;
+}
+
+.btn-physical-recessed {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--recessed-bg);
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  box-shadow: inset 2px 2px 4px #babecc, inset -2px -2px 4px #ffffff;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-physical-recessed:hover, .btn-physical-recessed.active {
+  color: var(--accent-orange);
+  background-color: #dbe2ee;
+  box-shadow: inset 3px 3px 6px #b5bece, inset -3px -3px 6px #ffffff;
+}
+
+/* ==========================================================================
+   Inputs ("Data Slots")
+   ========================================================================== */
+
+.input-recessed {
+  width: 100%;
+  min-height: 52px;
+  background-color: var(--recessed-bg);
+  border: none;
+  outline: none;
+  border-radius: var(--radius-md);
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff;
+  padding: 12px 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--text-primary);
+  transition: box-shadow 200ms ease, background-color 200ms ease;
+}
+
+.input-recessed:focus {
+  background-color: #dbe2ee;
+  box-shadow: inset 4px 4px 8px #b4becd, inset -4px -4px 8px #ffffff, 0 0 0 2px var(--accent-orange);
+}
+
+.input-recessed::placeholder {
+  color: #8896aa;
+}
+
+/* ==========================================================================
+   Textures & Background Patterns
+   ========================================================================== */
+
+/* Blueprint Grid (Light Industrial Theme) */
+.bg-blueprint-light {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(163, 177, 198, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(163, 177, 198, 0.25) 1px, transparent 1px);
+}
+
+/* CRT Screen & Scanlines for Growth Console */
+.crt-screen-bezel {
+  position: relative;
+  background-color: #0d1519;
+  border-radius: var(--radius-lg);
+  border: 3px solid #27373f;
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.9), 0 4px 12px rgba(186, 190, 204, 0.5);
+  overflow: hidden;
+}
+
+.crt-scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.22) 0px,
+    rgba(0, 0, 0, 0.22) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 10;
+}
+
+.crt-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 65%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 11;
+}
+
+.crt-screen-content {
+  position: relative;
+  z-index: 5;
+  color: #22c55e;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Radar Sweep Scope */
+.radar-scope {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #0d1519;
+  border: 3px solid #babecc;
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.8), 6px 6px 12px #babecc, -6px -6px 12px #ffffff;
+  overflow: hidden;
+}
+
+.radar-sweep-beam {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, rgba(34, 197, 94, 0.6) 0deg, rgba(34, 197, 94, 0.08) 60deg, transparent 65deg);
+  animation: radarRotate 4s infinite linear;
+}
+
+.radar-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle, transparent 20%, #1e2c33 21%, #1e2c33 22%, transparent 23%),
+    radial-gradient(circle, transparent 50%, #1e2c33 51%, #1e2c33 52%, transparent 53%),
+    radial-gradient(circle, transparent 80%, #1e2c33 81%, #1e2c33 82%, transparent 83%);
+  pointer-events: none;
+}
+
+.radar-crosshair {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, transparent 49.5%, rgba(34, 197, 94, 0.25) 50%, transparent 50.5%),
+    linear-gradient(to bottom, transparent 49.5%, rgba(34, 197, 94, 0.25) 50%, transparent 50.5%);
+  pointer-events: none;
+}
+
+.radar-blip {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-orange);
+  box-shadow: 0 0 6px 1px var(--accent-orange);
+  animation: blipPulse 2s infinite ease-out;
+}
+
+@keyframes radarRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes blipPulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(0.6); }
+}
+
+/* ==========================================================================
+   Grayscale to Color Filter Treatment
+   ========================================================================== */
+
+.img-tech-filter {
+  filter: grayscale(100%) contrast(105%) brightness(95%);
+  transition: filter 500ms var(--ease-smooth), transform 500ms var(--ease-smooth);
+}
+
+.bolted-card:hover .img-tech-filter,
+.img-tech-filter:hover {
+  filter: grayscale(0%) contrast(100%) brightness(100%);
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Metric Readout Recessed Module (§4)
+   ========================================================================== */
+
+.metric-readout-module {
+  position: relative;
+  background-color: var(--recessed-bg);
+  border-radius: var(--radius-md);
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff;
+  padding: 16px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+.metric-readout-module::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03) 0px,
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+}
+
+/* Placeholder Badge Rule (§4) */
+.placeholder-data-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #718096;
+  background-color: rgba(113, 128, 150, 0.12);
+  border: 1px dashed rgba(113, 128, 150, 0.4);
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Responsive & Accessibility Helpers
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .hero-embossed-text {
+    font-size: 2.75rem !important;
+    line-height: 1.15 !important;
+  }
+  .connector-pipe-wrapper {
+    display: none !important;
+  }
+}
+
+/* Focus States for Keyboard Accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent-orange) !important;
+  outline-offset: 3px !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--chassis-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #a3b1c6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}

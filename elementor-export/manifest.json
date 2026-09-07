@@ -1,0 +1,53 @@
+{
+  "name": "TeamRion Growth Engine Kit",
+  "version": "1.0.0",
+  "description": "Full-Funnel Digital Growth Agency - Industrial Skeuomorphic Design System for Elementor Pro",
+  "elementor_version": "3.20.0",
+  "templates": [
+    {
+      "title": "TeamRion - Homepage (Full Page)",
+      "type": "page",
+      "file": "teamrion-homepage.json"
+    },
+    {
+      "title": "TeamRion - Master Header (Theme Builder)",
+      "type": "header",
+      "file": "teamrion-header-template.json"
+    },
+    {
+      "title": "TeamRion - Master Footer (Theme Builder)",
+      "type": "footer",
+      "file": "teamrion-footer-template.json"
+    },
+    {
+      "title": "TeamRion - Banded Pricing Page",
+      "type": "page",
+      "file": "teamrion-pricing-page.json"
+    },
+    {
+      "title": "TeamRion - About Page",
+      "type": "page",
+      "file": "teamrion-about-page.json"
+    },
+    {
+      "title": "TeamRion - Schema FAQ Page",
+      "type": "page",
+      "file": "teamrion-faq-page.json"
+    },
+    {
+      "title": "TeamRion - Single Service Template (GEO & AI)",
+      "type": "page",
+      "file": "teamrion-single-service-template.json"
+    },
+    {
+      "title": "TeamRion - Growth Diagnostic Quiz",
+      "type": "page",
+      "file": "teamrion-growth-diagnostic-page.json"
+    },
+    {
+      "title": "TeamRion - Single Case Study Template",
+      "type": "page",
+      "file": "teamrion-single-case-study-template.json"
+    }
+  ]
+}
