@@ -1,53 +1,62 @@
 {
-  "name": "TeamRion Growth Engine Kit",
-  "version": "1.0.0",
+  "name": "teamrion-growth-engine-kit",
+  "title": "TeamRion Growth Engine Kit",
   "description": "Full-Funnel Digital Growth Agency - Industrial Skeuomorphic Design System for Elementor Pro",
-  "elementor_version": "3.20.0",
-  "templates": [
-    {
+  "author": "TeamRion",
+  "version": "2.0",
+  "elementor_version": "4.2.4",
+  "created": "2026-09-08T07:37:25.387Z",
+  "thumbnail": "",
+  "site": "",
+  "site-settings": [
+    "global-colors",
+    "global-typography"
+  ],
+  "templates": {
+    "0001": {
       "title": "TeamRion - Homepage (Full Page)",
-      "type": "page",
-      "file": "teamrion-homepage.json"
+      "doc_type": "page",
+      "thumbnail": ""
     },
-    {
+    "0002": {
       "title": "TeamRion - Master Header (Theme Builder)",
-      "type": "header",
-      "file": "teamrion-header-template.json"
+      "doc_type": "header",
+      "thumbnail": ""
     },
-    {
+    "0003": {
       "title": "TeamRion - Master Footer (Theme Builder)",
-      "type": "footer",
-      "file": "teamrion-footer-template.json"
+      "doc_type": "footer",
+      "thumbnail": ""
     },
-    {
+    "0004": {
       "title": "TeamRion - Banded Pricing Page",
-      "type": "page",
-      "file": "teamrion-pricing-page.json"
+      "doc_type": "page",
+      "thumbnail": ""
     },
-    {
+    "0005": {
       "title": "TeamRion - About Page",
-      "type": "page",
-      "file": "teamrion-about-page.json"
+      "doc_type": "page",
+      "thumbnail": ""
     },
-    {
+    "0006": {
       "title": "TeamRion - Schema FAQ Page",
-      "type": "page",
-      "file": "teamrion-faq-page.json"
+      "doc_type": "page",
+      "thumbnail": ""
     },
-    {
+    "0007": {
       "title": "TeamRion - Single Service Template (GEO & AI)",
-      "type": "page",
-      "file": "teamrion-single-service-template.json"
+      "doc_type": "single",
+      "thumbnail": ""
     },
-    {
+    "0008": {
       "title": "TeamRion - Growth Diagnostic Quiz",
-      "type": "page",
-      "file": "teamrion-growth-diagnostic-page.json"
+      "doc_type": "page",
+      "thumbnail": ""
     },
-    {
+    "0009": {
       "title": "TeamRion - Single Case Study Template",
-      "type": "page",
-      "file": "teamrion-single-case-study-template.json"
+      "doc_type": "single",
+      "thumbnail": ""
     }
-  ]
+  }
 }
