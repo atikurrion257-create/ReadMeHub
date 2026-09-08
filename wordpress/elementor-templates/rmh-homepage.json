@@ -1,0 +1,1054 @@
+{
+ "version": "0.4",
+ "title": "ReadMeHub — Homepage",
+ "type": "page",
+ "content": [
+  {
+   "id": "rmh000003f2",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "20"
+   },
+   "elements": [
+    {
+     "id": "rmh000003ef",
+     "elType": "column",
+     "settings": {
+      "_column_size": 60,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh000003e8",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Research smarter. Compare better. Choose with confidence.",
+        "header_size": "h6",
+        "_css_classes": "rm-overline"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003e9",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Make your next buying decision with confidence.",
+        "header_size": "h1"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003ea",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>ReadMeHub is a decision platform: we verify pricing at the source, compare options honestly — including who each product is wrong for — and tell you exactly what we know, how we know it, and when we last checked.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003eb",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<form class=\"rm-hero__search\" role=\"search\" action=\"/\"><input type=\"search\" name=\"s\" placeholder=\"Search reviews, comparisons, brands, deals…\" aria-label=\"Search ReadMeHub\"><button class=\"rm-btn rm-btn--cta\" type=\"submit\">Search</button></form>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003ec",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-hero__examples\"><span>Popular:</span> <a href=\"/?s=1Password+review\">1Password review</a><a href=\"/?s=Bitwarden+vs+1Password\">Bitwarden vs 1Password</a><a href=\"/?s=best+free+password+manager\">best free password manager</a><a href=\"/?s=password+manager+deals\">password manager deals</a></div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003ed",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Start a decision",
+        "link": {
+         "url": "#decision-finder"
+        },
+        "_css_classes": "rm-btn rm-btn--cta"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003ee",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Browse best picks",
+        "link": {
+         "url": "/best/password-managers/"
+        },
+        "_css_classes": "rm-btn rm-btn--ghost"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "rmh000003f1",
+     "elType": "column",
+     "settings": {
+      "_column_size": 40,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh000003f0",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<aside class=\"rm-hero__panel\"><p class=\"rm-hero__panel__title\">Today’s picks — verified 2026-09-06</p><div class=\"rm-verdict-mini\"><div class=\"rm-verdict-mini__row\"><span class=\"rm-verdict-mini__tag\">Best</span><div><b>Bitwarden Free</b><span>Unlimited passwords and devices, open source</span></div></div><div class=\"rm-verdict-mini__row\"><span class=\"rm-verdict-mini__tag\">Best</span><div><b>Bitwarden Families</b><span>6 premium accounts from $3.99/mo ($0.67/person)</span></div></div><div class=\"rm-verdict-mini__row\"><span class=\"rm-verdict-mini__tag\">Best</span><div><b>1Password</b><span>Best-in-class apps and organization — $3.99/mo</span></div></div><div class=\"rm-verdict-mini__row\"><span class=\"rm-verdict-mini__tag\">Best</span><div><b>NordPass Premium</b><span>Cheapest polished paid tier (term-based pricing)</span></div></div></div><p class=\"rm-meta\" style=\"margin:14px 0 0\">Prices verified at official vendor pages. <a href=\"/best/password-managers/\">See the full research →</a></p></aside>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh000003f5",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh000003f4",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh000003f3",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-truststrip\"><span>✔ Prices verified at official sources</span><span>✔ Every claim dated and sourced</span><span>✔ No fabricated ratings — ever</span><span>✔ Affiliate links disclosed on every page</span></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh000003f8",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10",
+    "background_background": "classic",
+    "background_color": "#14213D",
+    "css_classes": "rm-finder-section"
+   },
+   "elements": [
+    {
+     "id": "rmh000003f7",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh000003f6",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-finder\" data-finder><span class=\"rm-overline\">Decision finder</span><h2>What are you trying to choose?</h2><p class=\"rm-finder__sub\">Two questions. We'll route you to the research that answers them — no sign-up, no gimmicks.</p><div class=\"rm-finder__step\"><div class=\"rm-finder__label\" data-finder-step2-label>What are you trying to choose?</div><div class=\"rm-chiprow\"><a class=\"rm-chip\" href=\"/categories/password-managers/\">Password managers</a><span class=\"rm-chip rm-chip--research\" aria-disabled=\"true\">Web hosting <span class=\"rm-chip__hint\">in research</span></span><span class=\"rm-chip rm-chip--research\" aria-disabled=\"true\">VPNs <span class=\"rm-chip__hint\">in research</span></span><span class=\"rm-chip rm-chip--research\" aria-disabled=\"true\">AI tools <span class=\"rm-chip__hint\">in research</span></span></div></div><div class=\"rm-finder__step\" data-finder-step2 hidden><div class=\"rm-finder__label\">What matters most to you?</div><div class=\"rm-chiprow\"><a class=\"rm-chip\" href=\"/best/password-managers/\">Best overall value <span class=\"rm-chip__hint\">→</span></a><a class=\"rm-chip\" href=\"/guides/free-vs-paid-password-managers/\">The best free option <span class=\"rm-chip__hint\">→</span></a><a class=\"rm-chip\" href=\"/reviews/bitwarden/\">Security & privacy <span class=\"rm-chip__hint\">→</span></a><a class=\"rm-chip\" href=\"/reviews/1password/\">Ease of use <span class=\"rm-chip__hint\">→</span></a><a class=\"rm-chip\" href=\"/use-cases/password-manager-for-families/\">Protecting my family <span class=\"rm-chip__hint\">→</span></a><a class=\"rm-chip\" href=\"/deals/\">Saving money (deals) <span class=\"rm-chip__hint\">→</span></a></div></div><p class=\"rm-finder__note\">Nothing here is fake personalization — every route leads to real research with verified prices.</p></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh000003fd",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh000003fc",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh000003f9",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Featured decisions",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003fa",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Editorially selected research — each one answers a decision people actually search for.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003fb",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_featured_cards]"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000403",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000402",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh000003fe",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Best picks by situation",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh000003ff",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Recommendations that depend on your constraints — not a single 'winner' for everyone.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000400",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_picks_grid]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000401",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p class='rm-picks-footnote'>Picks follow our published criteria (see How we evaluate). Prices verified at official sources on 2026-09-06; promotions change — check the linked page for current status.</p>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000408",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000407",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000404",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Popular comparisons",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000405",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Every head-to-head opens with the verdict — because you came for a decision, not a spec dump.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000406",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_compcards]"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh0000040e",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh0000040d",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000409",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Latest reviews",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000040a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Research-based reviews: verified pricing, documented features, and honest limitations. We have not done hands-on lab testing, and we say so on every page.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000040b",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_cards type=\"rmh_review\" limit=\"4\"]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000040c",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "All reviews",
+        "link": {
+         "url": "/reviews/"
+        },
+        "_css_classes": "rm-btn rm-btn--ghost"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000413",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000412",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh0000040f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Recently updated & verified",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000410",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Freshness is a feature. Here's what changed recently, with the real dates.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000411",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-updates\"><div class=\"rm-update\"><span class=\"rm-update__date\">2026-09-06</span><span class=\"rm-update__what\">Verified 1Password's first-year promotion ($2.99 Individual / $4.49 Families)</span><span class=\"rm-update__type\"><span class=\"rm-badge rm-badge--official\">Deal check</span></span></div><div class=\"rm-update\"><span class=\"rm-update__date\">2026-09-06</span><span class=\"rm-update__what\">Re-verified all Bitwarden plan prices after the January 2026 Premium increase ($10 → $19.80/yr)</span><span class=\"rm-update__type\"><span class=\"rm-badge rm-badge--official\">Price check</span></span></div><div class=\"rm-update\"><span class=\"rm-update__date\">2026-09-06</span><span class=\"rm-update__what\">Confirmed 1Password regular pricing at $3.99/mo Individual, $5.99/mo Families</span><span class=\"rm-update__type\"><span class=\"rm-badge rm-badge--official\">Price check</span></span></div><div class=\"rm-update\"><span class=\"rm-update__date\">2026-09-06</span><span class=\"rm-update__what\">Confirmed Proton Pass free-tier terms (unlimited logins/devices, 10 aliases)</span><span class=\"rm-update__type\"><span class=\"rm-badge rm-badge--official\">Feature check</span></span></div><div class=\"rm-update\"><span class=\"rm-update__date\">2026-09-06</span><span class=\"rm-update__what\">Published the Best Password Managers pillar and the 1Password vs Bitwarden comparison</span><span class=\"rm-update__type\"><span class=\"rm-badge rm-badge--official\">Editorial</span></span></div></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000418",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000417",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000414",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Explore categories",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000415",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Each category is a decision center: shortlist, reviews, comparisons, alternatives, and verified deals.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000416",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-grid rm-grid--3\"><a class=\"rm-catcard\" href=\"/categories/password-managers/\"><span class=\"rm-catcard__name\">Password Managers</span><span class=\"rm-catcard__desc\">Keep every account behind one strong master password — we compare the trust choices.</span></a><a class=\"rm-catcard rm-catcard--research\" href=\"/categories/\"><span class=\"rm-catcard__name\">Web Hosting</span><span class=\"rm-catcard__desc\">In research — launches after price verification.</span></a><a class=\"rm-catcard rm-catcard--research\" href=\"/categories/\"><span class=\"rm-catcard__name\">VPN</span><span class=\"rm-catcard__desc\">In research — launches after price verification.</span></a><a class=\"rm-catcard rm-catcard--research\" href=\"/categories/\"><span class=\"rm-catcard__name\">AI Tools</span><span class=\"rm-catcard__desc\">In research — launches after price verification.</span></a><a class=\"rm-catcard rm-catcard--research\" href=\"/categories/\"><span class=\"rm-catcard__name\">Productivity</span><span class=\"rm-catcard__desc\">In research — launches after price verification.</span></a><a class=\"rm-catcard rm-catcard--research\" href=\"/categories/\"><span class=\"rm-catcard__name\">Website Builders</span><span class=\"rm-catcard__desc\">In research — launches after price verification.</span></a></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh0000041d",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh0000041c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000419",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Explore by what you're trying to do",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000041a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Category pages organize products. This organizes decisions — the way people actually shop.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000041b",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-intentgrid\"><div class=\"rm-intentbox\"><h3>I need a tool for…</h3><ul><li><a href=\"/use-cases/password-manager-for-families/\">My family →</a></li><li><a href=\"/guides/free-vs-paid-password-managers/\">Myself, for free →</a></li></ul></div><div class=\"rm-intentbox\"><h3>I want to compare…</h3><ul><li><a href=\"/compare/1password-vs-bitwarden/\">1Password vs Bitwarden →</a></li><li><a href=\"/best/password-managers/\">All password managers →</a></li></ul></div><div class=\"rm-intentbox\"><h3>I need an alternative…</h3><ul><li><a href=\"/alternatives/\">To Bitwarden →</a></li><li><a href=\"/guides/password-manager-vs-browser-autofill/\">To my browser's autofill →</a></li></ul></div><div class=\"rm-intentbox\"><h3>I want to pay less…</h3><ul><li><a href=\"/deals/\">Verified deals →</a></li><li><a href=\"/guides/free-vs-paid-password-managers/\">Free vs paid trade-offs →</a></li></ul></div></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000423",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000422",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh0000041e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Deals & coupons — verified or nothing",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000041f",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>We don't invent codes and we don't fake countdowns. Each offer carries a status and a check date. If we can't verify it, we say so.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000420",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_deal_cards limit=\"4\"]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000421",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "How deal verification works",
+        "link": {
+         "url": "/deals/"
+        },
+        "_css_classes": "rm-btn rm-btn--ghost"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000429",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000428",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000424",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Price & value, without the fog",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000425",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Sticker prices hide the real decision: billing terms, per-person math, and what free actually gets you.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000426",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-valuegrid\"><div class=\"rm-value\"><h3>Billing terms change everything</h3><p>The same product can cost 2–3× more month-to-month than on annual or two-year billing. We show the term next to every price.</p></div><div class=\"rm-value\"><h3>Per-person beats per-plan</h3><p>A $5.99/mo family plan for 6 people ($0.92/person at 1Password regular pricing) can beat a $3.99 individual plan per head. We do the math on use-case pages.</p></div><div class=\"rm-value\"><h3>Free tiers are not equal</h3><p>Bitwarden's free tier is unlimited in passwords and devices; NordPass's free tier limits you to one device. 'Free' needs reading.</p></div><div class=\"rm-value\"><h3>First-year promos revert</h3><p>1Password's $2.99/mo is a first-year rate for new customers; year two is $3.99/mo. Deals pages that hide the regular price aren't deals pages.</p></div></div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000427",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "See the verified price tables",
+        "link": {
+         "url": "/best/password-managers/#pricing"
+        },
+        "_css_classes": "rm-btn rm-btn--brand"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000433",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000432",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh0000042a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "How we research",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000042b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No fabricated testing. No invented numbers. Here is the actual pipeline behind every page.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000042c",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-steps\"><div class=\"rm-step\"><div class=\"rm-step__n\">01</div><h3>Define the decision</h3><p>We start from what people are actually trying to decide — the questions, not the products.</p></div><div class=\"rm-step\"><div class=\"rm-step__n\">02</div><h3>Verify at the source</h3><p>Pricing and plan facts are checked on official vendor pages, with the verification date stamped on the page.</p></div><div class=\"rm-step\"><div class=\"rm-step__n\">03</div><h3>Corroborate everything else</h3><p>Features, security claims, and audit history require the vendor's own documentation or multiple independent sources.</p></div><div class=\"rm-step\"><div class=\"rm-step__n\">04</div><h3>Write the decision, not the brochure</h3><p>Every page must answer: who is this for, who should avoid it, what it costs, what's limited, and what's the alternative.</p></div><div class=\"rm-step\"><div class=\"rm-step__n\">05</div><h3>Date, disclose, re-verify</h3><p>Prices are re-checked on a ≤45-day cycle; deals degrade from 'Verified' if not re-checked within 30 days. Corrections are public.</p></div></div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000042d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "How we evaluate",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000042e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Criteria are transparent. Numeric scores are withheld until a genuine scoring methodology exists — which is why you won't see fake stars here.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000042f",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-criteria\"><div class=\"rm-criterion\"><h3>Security architecture</h3><p>Encryption approach, zero-knowledge design, known audits (as documented by vendors and auditors)</p></div><div class=\"rm-criterion\"><h3>Price & value</h3><p>Verified pricing across billing terms, per-person math for plans, free-tier honesty</p></div><div class=\"rm-criterion\"><h3>Ease of use</h3><p>Onboarding friction, autofill quality, cross-platform consistency — based on documented user experience evidence</p></div><div class=\"rm-criterion\"><h3>Trust & transparency</h3><p>Open source status, breach history, jurisdiction, corporate transparency</p></div><div class=\"rm-criterion\"><h3>Feature completeness</h3><p>Passkeys, 2FA authenticator, secure sharing, emergency access, breach alerts</p></div><div class=\"rm-criterion\"><h3>Recovery & sharing</h3><p>Emergency access, family controls, inheritance — where real life happens</p></div></div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000430",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p class='rm-disclosure'>Our reviews are research-based. We have not conducted hands-on laboratory testing; where we characterize user experience, we rely on documented evidence and label it as such. Learn more on the How We Evaluate page.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000431",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Read the full methodology",
+        "link": {
+         "url": "/how-we-evaluate/"
+        },
+        "_css_classes": "rm-btn rm-btn--ghost"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000438",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000437",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000434",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Why you can argue with us",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000435",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Trust is a system, not a slogan.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000436",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-trustgrid\"><a class=\"rm-trustcard\" href=\"/editorial-policy/\"><h3>Editorial policy</h3><p>How pages are researched, written, and corrected — in public.</p></a><a class=\"rm-trustcard\" href=\"/affiliate-disclosure/\"><h3>Affiliate disclosure</h3><p>When a link can earn us money, you'll know before you click it.</p></a><a class=\"rm-trustcard\" href=\"/how-we-evaluate/\"><h3>How we evaluate</h3><p>The criteria, the evidence rules, and what we refuse to do.</p></a><a class=\"rm-trustcard\" href=\"/editorial-policy/#corrections\"><h3>Corrections</h3><p>Found an error? We publish the fix and the date it was made.</p></a></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh0000043d",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh0000043c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000439",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "The learning hub",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000043a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Understand the decision before you make it.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000043b",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-grid rm-grid--3\"><a class=\"rm-card\" href=\"/guides/free-vs-paid-password-managers/\"><div class=\"rm-card__cat\">Guide</div><div class=\"rm-card__title\">Free vs paid password managers</div><div class=\"rm-card__body\">What each free tier really includes in 2026 — and the four moments when paying pays off.</div></a><a class=\"rm-card\" href=\"/guides/password-manager-vs-browser-autofill/\"><div class=\"rm-card__cat\">Guide</div><div class=\"rm-card__title\">Password manager vs browser autofill</div><div class=\"rm-card__body\">Why the convenience of built-in autofill is the exact reason security teams say don't rely on it.</div></a><a class=\"rm-card\" href=\"/best/password-managers/\"><div class=\"rm-card__cat\">Guide</div><div class=\"rm-card__title\">Best password managers (pillar)</div><div class=\"rm-card__body\">The full decision framework with verified prices and situation-based picks.</div></a></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000442",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000441",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh0000043e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Questions people actually ask",
+        "header_size": "h2",
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000043f",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Only questions with real search demand and real stakes — answered in full on the linked pages.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000440",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-faq\" data-faq><details><summary>What is the best password manager in 2026?</summary><div class=\"rm-faq__a\">There is no single best — there is best-for-you. Bitwarden is our value and free-tier pick (unlimited free, Premium $19.80/yr); 1Password is our polish pick (Individual $3.99/mo regular). The full situation-by-situation breakdown is in Best Password Managers.</div></details><details><summary>Are password managers safe to use?</summary><div class=\"rm-faq__a\">Reputable password managers use zero-knowledge encryption, meaning the provider cannot read your vault. The bigger risks are a weak master password and phishing — which features like Watchtower and passkey support address. We cover the trade-offs in each review.</div></details><details><summary>Is a password manager better than browser autofill?</summary><div class=\"rm-faq__a\">For anything you care about, yes: dedicated managers encrypt vaults with your master password, work across all browsers and apps, detect breached credentials, and support passkeys. Browser autofill is convenient but tied to one browser and does not warn you about reused or breached passwords. Full analysis in our guide.</div></details><details><summary>How much should I pay for a password manager?</summary><div class=\"rm-faq__a\">Nothing, if Bitwarden's free tier fits you: it is unlimited in passwords and devices. If you want breach alerts, an integrated 2FA authenticator, and encrypted attachments, Bitwarden Premium is $19.80/yr and NordPass's paid tiers run cheaper on multi-year terms. 1Password costs more ($3.99/mo regular) and is paid-only.</div></details><details><summary>Do you earn commissions from these recommendations?</summary><div class=\"rm-faq__a\">Some outbound links are affiliate links and can earn us a commission at no cost to you; others are plain official links. Every money page carries a disclosure above the first such link, and affiliate relationships never determine our verdicts — our criteria and methodology are public.</div></details></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh00000445",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10"
+   },
+   "elements": [
+    {
+     "id": "rmh00000444",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000443",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-newsletter\"><div><h2>Get smarter buying decisions in your inbox</h2><p>One considered email when it matters: a new comparison, a verified price change, or a deal that clears our verification bar. No filler, no fake urgency.</p><ul><li>New comparisons and verdicts</li><li>Price changes that actually matter</li><li>Verified deals only — with the check date</li></ul></div><div class=\"rm-newsletter__right\"><form class=\"rm-newsletter__form\" action=\"/\" method=\"post\"><input type=\"email\" name=\"rmh_newsletter_email\" placeholder=\"you@example.com\" required aria-label=\"Email address\"><button class=\"rm-btn rm-btn--cta\" type=\"submit\">Subscribe</button></form><p class=\"rm-fineprint\">No spam. Unsubscribe anytime. We do not sell your address.</p></div></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "rmh0000044b",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10",
+    "css_classes": "rm-finalcta"
+   },
+   "elements": [
+    {
+     "id": "rmh0000044a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "rmh00000446",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Start your next decision.",
+        "header_size": "h2",
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000447",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Pick what you're choosing. We'll show you the research.</p>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000448",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Make a decision",
+        "link": {
+         "url": "#decision-finder"
+        },
+        "_css_classes": "rm-btn rm-btn--cta"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000449",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Read the methodology",
+        "link": {
+         "url": "/how-we-evaluate/"
+        },
+        "_css_classes": "rm-btn rm-btn--ghost"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

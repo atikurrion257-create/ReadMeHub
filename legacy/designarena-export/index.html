@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamRion — Full-Funnel Digital Growth Partner | SEO, GEO, Paid Media & CRO</title>
+  <meta name="description" content="Replace disconnected freelancers with one accountable digital growth partner. Unified SEO, GEO AI-Search, Paid Media, Automation, CRO, and High-Performance Web Development.">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            chassis: '#e0e5ec',
+            panel: '#f0f2f5',
+            recessed: '#d1d9e6',
+            accentOrange: '#ff4757',
+            accentGlow: 'rgba(255, 71, 87, 0.6)'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Industrial Skeuomorphic Theme Tokens & Custom CSS -->
+  <link rel="stylesheet" href="src/styles/theme.css">
+</head>
+<body class="bg-[#e0e5ec] text-[#2d3436] min-h-screen flex flex-col font-sans selection:bg-[#ff4757] selection:text-white">
+
+  <!-- ======================================================================
+       HEADER: MASTER INDUSTRIAL HEADER (Theme Builder Header)
+       ====================================================================== -->
+  <header class="sticky top-0 z-50 bg-[#e0e5ec]/90 backdrop-blur-md border-b border-[#a3b1c6]/30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo / Identity -->
+        <a href="#/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-lg shadow-card flex items-center justify-center bg-[#f0f2f5] border border-white/60 group-hover:-translate-y-0.5 transition">
+            <span class="w-4 h-4 rounded-sm bg-[#ff4757] shadow-sm transform rotate-45 group-hover:rotate-90 transition duration-300"></span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-xl tracking-tight text-[#2d3436] font-mono">TEAM<span class="text-[#ff4757]">RION</span></span>
+              <span class="led-indicator led-glow-green"></span>
+            </div>
+            <span class="text-[10px] font-mono font-bold text-[#718096] tracking-widest uppercase">GROWTH ENGINE // v4.2</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="hidden xl:flex items-center gap-6 font-mono text-xs font-semibold uppercase text-[#4a5568]">
+          
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <a href="#/services" class="hover:text-[#ff4757] transition flex items-center gap-1 py-2" data-route-link="services">
+              <span>Services</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute top-full left-0 hidden group-hover:block pt-2 w-72 z-50">
+              <div class="bolted-card p-4 rounded-xl bg-[#f0f2f5] border border-[#d1d9e6] shadow-floating space-y-2">
+                <a href="#/services/seo" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>01. SEO Architecture</strong>
+                  <span class="block text-[9px] text-[#718096]">Technical & Revenue Search</span>
+                </a>
+                <a href="#/services/geo-ai-search" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#06b6d4]">
+                  <strong>02. GEO / AI Search</strong>
+                  <span class="block text-[9px] text-[#0891b2]">ChatGPT & Perplexity Share</span>
+                </a>
+                <a href="#/services/paid-media-google" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>03. Google Ads Intent</strong>
+                  <span class="block text-[9px] text-[#718096]">Search & Offline Sync</span>
+                </a>
+                <a href="#/services/paid-media-meta" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>04. Meta Ads & CAPI</strong>
+                  <span class="block text-[9px] text-[#718096]">Creative Velocity Testing</span>
+                </a>
+                <a href="#/services/paid-media-linkedin" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>05. LinkedIn ABM Ads</strong>
+                  <span class="block text-[9px] text-[#718096]">Buying Committee Reach</span>
+                </a>
+                <a href="#/services/marketing-automation" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>06. Marketing Automation</strong>
+                  <span class="block text-[9px] text-[#718096]">HubSpot Lifecycle Flows</span>
+                </a>
+                <a href="#/services/cro" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>07. Conversion Rate (CRO)</strong>
+                  <span class="block text-[9px] text-[#718096]">Heuristic A/B Testing</span>
+                </a>
+                <a href="#/services/analytics-attribution" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>08. Analytics & Attribution</strong>
+                  <span class="block text-[9px] text-[#718096]">Server-Side GTM & GA4</span>
+                </a>
+                <a href="#/services/web-design-dev" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>09. Web Design & Dev</strong>
+                  <span class="block text-[9px] text-[#718096]">WordPress + Elementor Pro</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Industries Dropdown -->
+          <div class="relative group">
+            <a href="#/industries/b2b-saas" class="hover:text-[#ff4757] transition flex items-center gap-1 py-2" data-route-link="industries/b2b-saas">
+              <span>Industries</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute top-full left-0 hidden group-hover:block pt-2 w-64 z-50">
+              <div class="bolted-card p-4 rounded-xl bg-[#f0f2f5] border border-[#d1d9e6] shadow-floating space-y-2">
+                <a href="#/industries/b2b-saas" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>B2B SaaS (Primary)</strong>
+                  <span class="block text-[9px] text-[#718096]">ARR & CAC Compression</span>
+                </a>
+                <a href="#/industries/professional-services" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Professional Services</strong>
+                  <span class="block text-[9px] text-[#718096]">Legal & Advisory Leads</span>
+                </a>
+                <a href="#/industries/ecommerce" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>E-commerce & DTC</strong>
+                  <span class="block text-[9px] text-[#718096]">Blended ROAS Scaling</span>
+                </a>
+                <a href="#/industries/healthcare-fitness" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Healthcare & Fitness</strong>
+                  <span class="block text-[9px] text-[#718096]">HIPAA Compliant Funnels</span>
+                </a>
+                <a href="#/industries/fintech" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>FinTech</strong>
+                  <span class="block text-[9px] text-[#718096]">Trust & Compliance</span>
+                </a>
+                <a href="#/industries/real-estate" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Real Estate & PropTech</strong>
+                  <span class="block text-[9px] text-[#718096]">Investor Lead Engines</span>
+                </a>
+                <a href="#/industries/hospitality" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Hospitality & Luxury</strong>
+                  <span class="block text-[9px] text-[#718096]">Direct Booking Growth</span>
+                </a>
+                <a href="#/industries/manufacturing" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Manufacturing & B2B</strong>
+                  <span class="block text-[9px] text-[#718096]">Industrial RFQ Pipelines</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#/case-studies" class="hover:text-[#ff4757] transition py-2" data-route-link="case-studies">Case Studies</a>
+          <a href="#/pricing" class="hover:text-[#ff4757] transition py-2" data-route-link="pricing">Pricing</a>
+          <a href="#/about" class="hover:text-[#ff4757] transition py-2" data-route-link="about">About</a>
+          <a href="#/faq" class="hover:text-[#ff4757] transition py-2" data-route-link="faq">FAQ</a>
+          <a href="#/compare/vs-traditional-agencies" class="hover:text-[#ff4757] transition py-2" data-route-link="compare/vs-traditional-agencies">Comparison</a>
+          <a href="#/blog" class="hover:text-[#ff4757] transition py-2" data-route-link="blog">Intelligence</a>
+        </nav>
+
+        <!-- Right Quick Action Terminal Keys -->
+        <div class="hidden sm:flex items-center gap-3">
+          
+          <!-- Elementor Design Tokens Drawer Trigger -->
+          <button onclick="window.openElementorKitModal()" title="Export / Import into Elementor" class="btn-physical-recessed text-xs flex items-center gap-1.5 py-2 px-3">
+            <svg class="w-3.5 h-3.5 text-[#ff4757]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span class="font-bold">EXPORT ELEMENTOR KIT</span>
+          </button>
+
+          <!-- Primary Growth CTA -->
+          <a href="#/growth-diagnostic" class="btn-physical-primary !py-2.5 !px-5 text-xs">
+            <span>START DIAGNOSTIC</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button onclick="window.toggleMobileMenu()" aria-label="Toggle Navigation Drawer" class="xl:hidden p-2 rounded-lg shadow-card text-[#2d3436]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Neumorphic Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden xl:hidden bg-[#e0e5ec] border-b border-[#a3b1c6] px-4 pt-3 pb-6 space-y-3 font-mono text-xs">
+      <div class="grid grid-cols-2 gap-2 pb-3 border-b border-[#d1d9e6]">
+        <a href="#/services" class="p-2 rounded bg-white shadow-card text-[#2d3436] font-bold">Services Hub</a>
+        <a href="#/pricing" class="p-2 rounded bg-white shadow-card text-[#ff4757] font-bold">Banded Pricing</a>
+        <a href="#/case-studies" class="p-2 rounded bg-white shadow-card text-[#2d3436]">Case Studies</a>
+        <a href="#/industries/b2b-saas" class="p-2 rounded bg-white shadow-card text-[#2d3436]">B2B SaaS</a>
+        <a href="#/growth-diagnostic" class="p-2 rounded bg-white shadow-card text-[#ff4757] font-bold">Diagnostic Quiz</a>
+        <a href="#/ai-search-audit" class="p-2 rounded bg-white shadow-card text-[#06b6d4]">AI Search Audit</a>
+        <a href="#/compare/vs-traditional-agencies" class="p-2 rounded bg-white shadow-card text-[#2d3436]">Vs Agencies</a>
+        <a href="#/contact" class="p-2 rounded bg-white shadow-card text-[#2d3436]">Book a Briefing</a>
+      </div>
+
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="#/growth-diagnostic" class="btn-physical-primary w-full text-center text-xs"><span>START GROWTH DIAGNOSTIC</span></a>
+        <button onclick="window.openElementorKitModal()" class="btn-physical-secondary w-full text-center text-xs"><span>EXPORT ELEMENTOR TEMPLATES</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN VIEWPORT: DYNAMIC CLIENT-SIDE ROUTER CONTAINER
+       ====================================================================== -->
+  <main id="app-viewport" class="flex-grow">
+    <!-- Initial Loading State / Content Rendered by app.js -->
+    <div class="min-h-[50vh] flex items-center justify-center">
+      <div class="p-8 rounded-2xl shadow-recessed text-center font-mono">
+        <span class="led-indicator led-glow-orange mb-3"></span>
+        <div class="text-xs font-bold text-[#2d3436]">INITIALIZING GROWTH ENGINE...</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER: MASTER INDUSTRIAL FOOTER (Light Neumorphic Layout)
+       ====================================================================== -->
+  <footer class="bg-[#f0f2f5] text-[#4a5568] border-t border-[#d1d9e6] mt-auto relative overflow-hidden bg-blueprint-light">
+    
+    <!-- Top Operational Heartbeat Strip -->
+    <div class="border-b border-[#d1d9e6] py-4 bg-[#e0e5ec]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
+        <div class="flex items-center gap-3">
+          <span class="led-indicator led-glow-green"></span>
+          <span class="text-[#2d3436] font-bold">ENGINE CLUSTER: 100% OPERATIONAL</span>
+          <span class="text-[#718096] hidden sm:inline">| NODE ID: TR-US-WEST-01</span>
+        </div>
+        <div class="flex items-center gap-4 text-[11px] text-[#718096]">
+          <span>SLA RESPONSE: &lt; 2 HOURS</span>
+          <span>ATTRIBUTION STACK: ACTIVE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Multi-Column Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+        
+        <!-- Column 1: Brand & Positioning (2 cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-xl tracking-tight text-[#2d3436] font-mono">TEAM<span class="text-[#ff4757]">RION</span></span>
+            <span class="led-indicator led-glow-green"></span>
+          </div>
+          <p class="text-xs text-[#4a5568] leading-relaxed max-w-sm">
+            The full-funnel digital growth partner. We eliminate the communication gap between disconnected freelancers by unifying SEO, GEO AI search, Paid Media, Automation, and CRO into one accountable pipeline framework.
+          </p>
+          <div class="pt-2 flex items-center gap-3 text-xs font-mono">
+            <a href="#/growth-diagnostic" class="text-[#ff4757] font-bold hover:underline">Start Diagnostic &rarr;</a>
+            <span class="text-[#a3b1c6]">·</span>
+            <a href="#/pricing" class="text-[#2d3436] font-bold hover:underline">View Rates &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Column 2: 9 Services -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Services</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/services/seo" class="hover:text-[#ff4757]">SEO Architecture</a></li>
+            <li><a href="#/services/geo-ai-search" class="hover:text-[#06b6d4] text-[#0891b2] font-semibold">GEO / AI Search</a></li>
+            <li><a href="#/services/paid-media-google" class="hover:text-[#ff4757]">Google Ads</a></li>
+            <li><a href="#/services/paid-media-meta" class="hover:text-[#ff4757]">Meta Ads & CAPI</a></li>
+            <li><a href="#/services/paid-media-linkedin" class="hover:text-[#ff4757]">LinkedIn ABM</a></li>
+            <li><a href="#/services/marketing-automation" class="hover:text-[#ff4757]">Automation</a></li>
+            <li><a href="#/services/cro" class="hover:text-[#ff4757]">CRO Optimization</a></li>
+            <li><a href="#/services/analytics-attribution" class="hover:text-[#ff4757]">Analytics/Attribution</a></li>
+            <li><a href="#/services/web-design-dev" class="hover:text-[#ff4757]">Web Design & Dev</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: 8 Industries -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Industries</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/industries/b2b-saas" class="hover:text-[#ff4757]">B2B SaaS (Deep)</a></li>
+            <li><a href="#/industries/professional-services" class="hover:text-[#ff4757]">Prof. Services</a></li>
+            <li><a href="#/industries/ecommerce" class="hover:text-[#ff4757]">E-Commerce</a></li>
+            <li><a href="#/industries/healthcare-fitness" class="hover:text-[#ff4757]">Healthcare/Fitness</a></li>
+            <li><a href="#/industries/fintech" class="hover:text-[#ff4757]">FinTech</a></li>
+            <li><a href="#/industries/real-estate" class="hover:text-[#ff4757]">Real Estate</a></li>
+            <li><a href="#/industries/hospitality" class="hover:text-[#ff4757]">Hospitality</a></li>
+            <li><a href="#/industries/manufacturing" class="hover:text-[#ff4757]">Manufacturing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Lead-Gen & Proof -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Proof & Tools</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/growth-diagnostic" class="hover:text-[#ff4757] text-[#ff4757] font-semibold">Growth Diagnostic</a></li>
+            <li><a href="#/ai-search-audit" class="hover:text-[#06b6d4] text-[#0891b2]">AI Citation Checker</a></li>
+            <li><a href="#/case-studies" class="hover:text-[#ff4757]">Case Studies Index</a></li>
+            <li><a href="#/case-studies/saas-growth-pipeline" class="hover:text-[#ff4757]">SaaS Case Study</a></li>
+            <li><a href="#/pricing" class="hover:text-[#ff4757]">Banded Pricing Ladder</a></li>
+            <li><a href="#/faq" class="hover:text-[#ff4757]">Schema-Marked FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Comparison & Legal -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Comparison & Legal</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/compare/vs-traditional-agencies" class="hover:text-[#ff4757]">Vs Traditional Agencies</a></li>
+            <li><a href="#/blog" class="hover:text-[#ff4757]">Intelligence Articles</a></li>
+            <li><a href="#/privacy" class="hover:text-[#ff4757]">Privacy Policy</a></li>
+            <li><a href="#/terms" class="hover:text-[#ff4757]">Terms of Service</a></li>
+            <li><button onclick="window.openElementorKitModal()" class="text-[#ff4757] font-semibold hover:underline text-left">Export Elementor Kit (.zip)</button></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-12 mt-12 border-t border-[#d1d9e6] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#718096]">
+        <div>
+          © 2026 TeamRion Growth Systems. Built on WordPress + Elementor Pro architecture.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="placeholder-data-badge">§4 PROOF PROTOCOL ACTIVE</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL: ELEMENTOR PRO EXPORT / IMPORT PACKAGER (Light Neumorphic)
+       ====================================================================== -->
+  <div id="elementor-kit-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bolted-card max-w-3xl w-full bg-[#f0f2f5] text-[#2d3436] p-6 md:p-8 rounded-3xl border border-white shadow-floating relative max-h-[90vh] overflow-y-auto">
+      <div class="screw-head screw-tl"></div>
+      <div class="screw-head screw-tr"></div>
+      <div class="screw-head screw-bl"></div>
+      <div class="screw-head screw-br"></div>
+
+      <div class="flex items-center justify-between pb-4 border-b border-[#d1d9e6] mb-6">
+        <div class="flex items-center gap-2">
+          <span class="led-indicator led-glow-green"></span>
+          <h3 class="font-bold text-lg text-[#2d3436] font-mono uppercase">WordPress + Elementor Export / Import Kit</h3>
+        </div>
+        <button onclick="window.closeElementorKitModal()" class="text-[#718096] hover:text-[#2d3436] font-mono text-lg font-bold">✕</button>
+      </div>
+
+      <!-- Quick Download Full Zip Bar -->
+      <div class="p-4 rounded-xl bg-white shadow-card border-2 border-[#ff4757] flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+        <div>
+          <div class="font-bold font-mono text-xs text-[#ff4757] uppercase flex items-center gap-2">
+            <span>● 1-CLICK COMPLETE ELEMENTOR KIT (.ZIP)</span>
+          </div>
+          <p class="text-[11px] text-[#4a5568] mt-0.5">Contains all 9 page templates, Theme Builder header/footer, site settings & custom CSS.</p>
+        </div>
+        <a href="/teamrion-elementor-template-kit.zip" download="teamrion-elementor-template-kit.zip" class="btn-physical-primary !py-2.5 !px-5 text-xs whitespace-nowrap">
+          <span>DOWNLOAD KIT (.ZIP)</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+
+      <div class="space-y-6 text-xs font-mono">
+        
+        <!-- How to Import Guide -->
+        <div class="p-4 rounded-xl bg-[#e0e5ec] shadow-recessed space-y-2">
+          <div class="font-bold text-[#2d3436] uppercase text-[11px]">📖 HOW TO IMPORT INTO WORDPRESS:</div>
+          <ol class="list-decimal pl-4 space-y-1 text-[#4a5568] text-[11px]">
+            <li>Download the <strong>.zip kit</strong> or individual <strong>.json</strong> templates below.</li>
+            <li>In your WordPress Admin, go to <strong>Templates → Saved Templates</strong>.</li>
+            <li>Click <strong>Import Templates</strong> (top button) and select your downloaded <code>.json</code> file.</li>
+            <li>Create a new Page, click <strong>Edit with Elementor</strong>, click the <strong>Folder Icon</strong> (My Templates), and click <strong>Insert</strong>!</li>
+          </ol>
+        </div>
+
+        <!-- Individual Template Downloads -->
+        <div>
+          <div class="font-bold text-[#2d3436] uppercase mb-2">INDIVIDUAL ELEMENTOR TEMPLATES (.JSON)</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+            <a href="/elementor-export/teamrion-homepage.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>🏠 Homepage Template</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-header-template.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>🔝 Theme Builder Header</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-footer-template.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>🔻 Theme Builder Footer</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-pricing-page.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>💳 Banded Pricing Page</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-growth-diagnostic-page.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>⚡ Growth Diagnostic Quiz</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-single-service-template.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>⚙️ Single Service Template</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Custom CSS Classes Snippet -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-bold text-[#22c55e] uppercase">SITE-WIDE CUSTOM CSS (ADD TO APPEARANCE &rarr; CUSTOMIZE &rarr; ADDITIONAL CSS)</span>
+            <button onclick="window.copyElementorCSS()" class="text-[#ff4757] hover:underline font-bold">Copy All CSS</button>
+          </div>
+          <pre id="elementor-css-snippet" class="p-4 bg-[#d1d9e6] rounded-xl shadow-recessed text-[#2d3436] font-mono text-[11px] overflow-x-auto max-h-36 border border-white/60">
+.shadow-card { box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff; }
+.shadow-floating { box-shadow: 12px 12px 24px #babecc, -12px -12px 24px #ffffff, inset 1px 1px 0 rgba(255,255,255,0.8); }
+.shadow-pressed { box-shadow: inset 6px 6px 12px #babecc, inset -6px -6px 12px #ffffff; }
+.shadow-recessed { box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff; }
+.led-glow-orange { box-shadow: 0 0 10px 2px rgba(255,71,87,0.6); }
+.led-glow-green { box-shadow: 0 0 10px 2px rgba(34,197,94,0.8); }
+.btn-physical { font-family: 'JetBrains Mono', monospace; font-weight: 700; text-transform: uppercase; }
+          </pre>
+        </div>
+
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-[#d1d9e6] flex items-center justify-between">
+        <a href="/teamrion-elementor-template-kit.zip" download class="btn-physical-primary !py-2 !px-4 text-xs">
+          <span>DOWNLOAD .ZIP KIT</span>
+        </a>
+        <button onclick="window.closeElementorKitModal()" class="btn-physical-secondary !py-2 !px-4 text-xs">
+          <span>CLOSE</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       SCRIPTS: MODULAR ARCHITECTURE & PAGE REGISTRATION
+       ====================================================================== -->
+  <script src="src/scripts/elementor-kit.js"></script>
+  <script src="src/scripts/pages/core.js"></script>
+  <script src="src/scripts/pages/services.js"></script>
+  <script src="src/scripts/pages/leadgen.js"></script>
+  <script src="src/scripts/pages/industries.js"></script>
+  <script src="src/scripts/pages/proof.js"></script>
+  <script src="src/scripts/pages/content.js"></script>
+  <script src="src/scripts/pages/compare.js"></script>
+  <script src="src/scripts/pages/legal.js"></script>
+  <script src="src/scripts/routes.js"></script>
+  <script src="src/scripts/app.js"></script>
+</body>
+</html>

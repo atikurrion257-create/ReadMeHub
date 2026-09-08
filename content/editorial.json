@@ -1,0 +1,608 @@
+{
+ "pillar": {
+  "slug": "best-password-managers",
+  "content_type": "rmh_guide",
+  "is_pillar": true,
+  "title": "Best Password Managers in 2026: Verified Prices and Situation-Based Picks",
+  "meta_description": "The 2026 password manager decision framework: five options researched, prices verified at official sources on 6 Sep 2026, with picks for free, families, privacy, polish, and budget — plus who should skip each.",
+  "category": "Password Managers",
+  "updated": "2026-09-06",
+  "verified": "2026-09-06",
+  "testing_status": "research_only",
+  "answer": "For most people in 2026, the decision comes down to two: Bitwarden if you want the best free tier or maximum value (unlimited free; Premium $19.80/yr verified), or 1Password if a polished, effortless experience is worth $3.99/mo (verified; $2.99 first-year promo). NordPass wins on long-term price for single users comfortable with multi-year terms; Proton Pass wins on privacy pedigree with a strong free tier; KeePassXC wins for offline-only maximalists. There is no single best — this page routes your situation to the right one.",
+  "at_a_glance": {
+   "columns": [
+    "Manager",
+    "Best for",
+    "Free tier",
+    "Verified starting price",
+    "Open source",
+    "Last verified"
+   ],
+   "rows": [
+    {
+     "name": "Bitwarden",
+     "href": "reviews/bitwarden/",
+     "best_for": "Value & free",
+     "free": "Unlimited passwords/devices",
+     "price": "$0 · Premium $19.80/yr",
+     "oss": "Yes",
+     "verified": "2026-09-06"
+    },
+    {
+     "name": "1Password",
+     "href": "reviews/1password/",
+     "best_for": "Polish & families",
+     "free": "None (14-day trial)",
+     "price": "$3.99/mo ($2.99 first yr)",
+     "oss": "No",
+     "verified": "2026-09-06"
+    },
+    {
+     "name": "NordPass",
+     "href": "reviews/nordpass/",
+     "best_for": "Budget premium (long terms)",
+     "free": "1 device",
+     "price": "≈$1.3–2/mo (term-based)",
+     "oss": "No",
+     "verified": "2026-09-06"
+    },
+    {
+     "name": "Proton Pass",
+     "href": "reviews/proton-pass/",
+     "best_for": "Privacy & aliases",
+     "free": "Unlimited logins/devices",
+     "price": "See official (dynamic)",
+     "oss": "Yes",
+     "verified": "2026-09-06"
+    },
+    {
+     "name": "KeePassXC",
+     "href": "#keepassxc-note",
+     "best_for": "Offline-only control",
+     "free": "Fully free (no cloud)",
+     "price": "$0",
+     "oss": "Yes",
+     "verified": "2026-09-06"
+    }
+   ],
+   "footnote": "Prices verified at official vendor pages or corroborated across multiple 2026 sources on 2026-09-06. NordPass is shown as a verified range because its promotional pricing moves — the linked review explains."
+  },
+  "decision_framework": [
+   {
+    "situation": "\"I want free, and I want it to actually work\"",
+    "pick": "Bitwarden Free",
+    "why": "Unlimited passwords and devices, open source, free 2FA — verified. It is not a crippled trial.",
+    "href": "reviews/bitwarden/"
+   },
+   {
+    "situation": "\"I'll pay a little for the best experience\"",
+    "pick": "1Password ($3.99/mo; $2.99 first year)",
+    "why": "The polish benchmark: apps, organization, Watchtower, and the smoothest family sharing.",
+    "href": "reviews/1password/"
+   },
+   {
+    "situation": "\"Cheapest paid option for just me\"",
+    "pick": "NordPass Premium on a 2-year term",
+    "why": "Lowest verified monthly range in our set — if you accept multi-year billing and closed source.",
+    "href": "reviews/nordpass/"
+   },
+   {
+    "situation": "\"Privacy and jurisdiction matter most\"",
+    "pick": "Proton Pass (or Bitwarden self-hosted)",
+    "why": "Swiss jurisdiction, open source, aliases included; Bitwarden self-hosting is the maximal-control alternative.",
+    "href": "reviews/proton-pass/"
+   },
+   {
+    "situation": "\"My family needs one plan\"",
+    "pick": "Bitwarden Families ($3.99/mo, 6 users)",
+    "why": "≈$0.67/person/mo for 6 premium accounts — the best verified per-person value; 1Password Families if UX leads.",
+    "href": "use-cases/password-manager-for-families/"
+   },
+   {
+    "situation": "\"I don't trust the cloud at all\"",
+    "pick": "KeePassXC",
+    "why": "Free, open-source, local-only encrypted vault. You trade sync convenience for total control.",
+    "href": "#keepassxc-note"
+   },
+   {
+    "situation": "\"I just want a deal\"",
+    "pick": "1Password first-year promo",
+    "why": "$2.99/mo Individual / $4.49 Families, verified 2026-09-06 — but budget for the year-two price.",
+    "href": "deals/"
+   }
+  ],
+  "pricing": {
+   "intro": "Verified price tables — the heart of this page. Billing terms matter: they change the real price more than most feature differences.",
+   "tables": [
+    {
+     "title": "Individual plans (annual billing, USD)",
+     "columns": [
+      "Plan",
+      "Price",
+      "Term",
+      "What the paid tier adds",
+      "Verified"
+     ],
+     "rows": [
+      {
+       "plan": "Bitwarden Premium",
+       "price": "$1.65/mo → $19.80/yr",
+       "term": "Annual",
+       "adds": "TOTP authenticator, 5 GB attachments, emergency access, vault health",
+       "verified": "2026-09-06"
+      },
+      {
+       "plan": "1Password Individual",
+       "price": "$3.99/mo → ≈$47.88/yr ($2.99 first yr)",
+       "term": "Annual",
+       "adds": "Everything (no free tier exists)",
+       "verified": "2026-09-06"
+      },
+      {
+       "plan": "NordPass Premium",
+       "price": "≈$1.3–2/mo (range across terms)",
+       "term": "1–2 yr",
+       "adds": "Sync, breach scanner, health, emergency access",
+       "verified": "range — 2026-09-06"
+      },
+      {
+       "plan": "Proton Pass Plus",
+       "price": "See official checkout",
+       "term": "Monthly/annual",
+       "adds": "Unlimited aliases, 2FA authenticator, dark-web monitoring, attachments",
+       "verified": "structure 2026-09-06"
+      }
+     ]
+    },
+    {
+     "title": "Family plans (6-member households, USD)",
+     "columns": [
+      "Plan",
+      "Price",
+      "Members",
+      "Per person/mo",
+      "Verified"
+     ],
+     "rows": [
+      {
+       "plan": "Bitwarden Families",
+       "price": "$3.99/mo ($47.88/yr)",
+       "members": "6",
+       "per_person": "≈$0.67",
+       "verified": "2026-09-06"
+      },
+      {
+       "plan": "1Password Families",
+       "price": "$5.99/mo ($4.49 first yr)",
+       "members": "5 invited",
+       "per_person": "≈$1.00",
+       "verified": "2026-09-06"
+      },
+      {
+       "plan": "NordPass Family",
+       "price": "≈$2.3–3/mo (range)",
+       "members": "6",
+       "per_person": "≈$0.39–0.50",
+       "verified": "range — 2026-09-06"
+      },
+      {
+       "plan": "Proton Pass Family",
+       "price": "See official checkout",
+       "members": "6",
+       "per_person": "—",
+       "verified": "structure 2026-09-06"
+      }
+     ]
+    }
+   ],
+   "value_reading": "How to read these tables honestly: Bitwarden's $0→$19.80 ladder means security costs you nothing or almost nothing. 1Password's premium buys experience, not safety. NordPass's headline price requires the longest commitment. Proton's dynamic pricing requires a checkout visit — we'd rather link than guess."
+  },
+  "also_ran_note": {
+   "id": "keepassxc-note",
+   "title": "The offline option: KeePassXC",
+   "body": "KeePassXC is free, open-source, and stores your vault locally — no cloud, no subscription, no vendor. It is the right answer for a specific user (technical, single-device or self-managed sync via files you control) and the wrong answer for households who want effortless sync and sharing. We cover it as the control group that defines the category's trade-off: convenience vs custody."
+  },
+  "rejected_contenders": [
+   {
+    "name": "LastPass",
+    "reason": "Its breach history (documented incidents in 2014, 2015, and major 2022 disclosures) keeps it off our recommendation list for new users despite competitive pricing (~$3/mo reported). Switchers: our alternatives coverage addresses migration."
+   },
+   {
+    "name": "Dashlane",
+    "reason": "Capable (VPN bundle, ~$4.99/mo per 2026 coverage) but the free tier was discontinued and the price is the highest in the set without a differentiated capability that survives scrutiny for typical users."
+   },
+   {
+    "name": "Keeper",
+    "reason": "Strong compliance/enterprise story; consumer value unconvincing vs Bitwarden at similar feature depth (pricing varies, limited free tier)."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "What is the best password manager in 2026?",
+    "a": "Bitwarden for most people (free unlimited, $19.80/yr Premium verified) or 1Password for those who pay for polish ($3.99/mo verified). The situation-based framework above resolves the rest."
+   },
+   {
+    "q": "Are password managers safe?",
+    "a": "Reputable ones are: zero-knowledge encryption means the vendor cannot read your vault. The realistic risks are a weak master password and phishing — mitigations (strong generator, breach alerts, passkeys) are built into every manager we recommend."
+   },
+   {
+    "q": "Do I need a paid password manager?",
+    "a": "Not necessarily — Bitwarden's free tier is unlimited in passwords and devices (verified). Pay when you want an integrated 2FA authenticator, emergency access, attachments, or premium UX."
+   },
+   {
+    "q": "How did you choose these five?",
+    "a": "Documented criteria: verifiable security architecture, verified pricing at official sources, cross-platform coverage, credible audit history, and a real free tier or clear value at price. The methodology is public on our How We Evaluate page."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Bitwarden pricing (official)",
+    "url": "https://bitwarden.com/pricing/"
+   },
+   {
+    "label": "1Password personal pricing (official)",
+    "url": "https://1password.com/personal-family-security"
+   },
+   {
+    "label": "Proton Pass pricing (official)",
+    "url": "https://proton.me/pass/pricing"
+   },
+   {
+    "label": "2026 cross-vendor pricing corroboration",
+    "url": "https://toolradar.com/blog/best-password-managers-2026"
+   }
+  ],
+  "title_tag": "Best Password Managers 2026: Verified Prices & Picks"
+ },
+ "guides": [
+  {
+   "slug": "free-vs-paid-password-managers",
+   "content_type": "rmh_guide",
+   "title": "Free vs Paid Password Managers (2026): What Free Really Gets You",
+   "meta_description": "Which free password managers are genuinely usable in 2026 — verified tier-by-tier — and the four moments when paying actually pays off.",
+   "category": "Password Managers",
+   "updated": "2026-09-06",
+   "verified": "2026-09-06",
+   "answer": "Free is genuinely enough for many people in 2026 — but only the right free. Bitwarden Free (unlimited passwords/devices, verified) and Proton Pass Free (unlimited logins/devices plus 10 aliases, verified) are complete products; NordPass Free (one device) and most 'free trials' are marketing. Pay only when you hit four specific moments: you want an integrated 2FA authenticator, you need emergency access, you want breach coaching beyond alerts, or you want the polish tier of the category (1Password, paid-only).",
+   "sections": [
+    {
+     "h2": "The free tiers, verified (2026-09-06)",
+     "body": "Not all free tiers are the same product category. Verified on official pages:",
+     "table": {
+      "columns": [
+       "Manager",
+       "Free limits",
+       "The catch",
+       "Verdict"
+      ],
+      "rows": [
+       {
+        "plan": "Bitwarden Free",
+        "limits": "Unlimited passwords, unlimited devices",
+        "catch": "No integrated TOTP authenticator, no emergency access, no vault health reports",
+        "verdict": "The real thing — our default free recommendation"
+       },
+       {
+        "plan": "Proton Pass Free",
+        "limits": "Unlimited logins/notes/cards, unlimited devices, 10 email aliases, passkeys",
+        "catch": "No item sharing beyond basics, no dark-web monitoring, aliases capped at 10",
+        "verdict": "The real thing, plus aliases — younger product"
+       },
+       {
+        "plan": "NordPass Free",
+        "limits": "Unlimited passwords, one device at a time",
+        "catch": "One device is disqualifying for most multi-device humans",
+        "verdict": "A demo, not a tier"
+       },
+       {
+        "plan": "1Password",
+        "limits": "No free tier",
+        "catch": "14-day trial instead",
+        "verdict": "Paid-only by design"
+       }
+      ]
+     }
+    },
+    {
+     "h2": "The four moments when paying pays off",
+     "list": [
+      {
+       "moment": "You want your 2FA codes inside your vault",
+       "detail": "Bitwarden Premium ($19.80/yr verified) and Proton Pass Plus integrate TOTP generation — one less app, autofilled codes. Security practitioners debate vaulting 2FA (single point of failure); for most people the usability gain wins."
+      },
+      {
+       "moment": "Someone needs access if you can't act",
+       "detail": "Emergency access (Bitwarden Premium, Proton Pass Plus) or 1Password Families recovery. If your family would be locked out of your accounts, this is the feature you're actually buying."
+      },
+      {
+       "moment": "You keep reusing passwords despite alerts",
+       "detail": "Free tiers alert; paid tiers coach — vault health reports, weak/reused dashboards, breach monitoring (Bitwarden Premium, Proton Pass Plus, NordPass paid). The upgrade is behavioral, not cryptographic."
+      },
+      {
+       "moment": "Daily friction is costing you",
+       "detail": "If autofill friction makes you fall back to browser storage or reused passwords, the $3.99/mo polish of 1Password is the correct purchase. The best manager is the one you actually use."
+      }
+     ]
+    },
+    {
+     "h2": "What we'd do",
+     "body": "Start free with Bitwarden (or Proton Pass if aliases/jurisdiction appeal). Re-evaluate in 90 days: if you're hitting the four moments, Bitwarden Premium at $19.80/yr is the cheapest complete upgrade we verified; 1Password is the comfort upgrade. Skip 'lifetime' impulses without reading terms — and note that paying never changes the encryption; it buys convenience, recovery, and coaching.",
+     "cta": {
+      "label": "See the verified price tables",
+      "href": "best/password-managers/#pricing"
+     }
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Is a free password manager safe?",
+     "a": "Bitwarden's and Proton's free tiers use the same zero-knowledge encryption as their paid tiers — payment buys features, not stronger cryptography. Verified on official documentation, 2026-09-06."
+    },
+    {
+     "q": "Why is NordPass's free tier limited?",
+     "a": "It allows one active device at a time — by design, to drive upgrades. Unlimited-password-but-one-device is effectively a trial for anyone with a phone and a computer."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bitwarden pricing (official)",
+     "url": "https://bitwarden.com/pricing/"
+    },
+    {
+     "label": "Proton Pass pricing (official)",
+     "url": "https://proton.me/pass/pricing"
+    }
+   ]
+  },
+  {
+   "slug": "password-manager-vs-browser-autofill",
+   "content_type": "rmh_guide",
+   "title": "Password Manager vs Browser Autofill (2026): The Honest Comparison",
+   "meta_description": "Browser autofill vs a dedicated password manager in 2026: where autofill genuinely suffices, where it fails you, and the migration path — no fear-mongering.",
+   "category": "Password Managers",
+   "updated": "2026-09-06",
+   "verified": "2026-09-06",
+   "answer": "Browser autofill is fine for low-stakes browsing and better than reusing passwords. A dedicated manager wins on everything that matters at scale: cross-browser and app coverage, breach and reuse detection, secure sharing, passkey portability, and survival of browser reinstalls. The honest framing: autofill is a convenient floor, not a strategy — and the migration from one to the other is about an hour.",
+   "sections": [
+    {
+     "h2": "Where browser autofill genuinely suffices",
+     "body": "If you browse in one browser on one device, use unique passwords, and don't care about breach monitoring, Google/Apple/Safari password features have improved enough (passkey support, breach alerts in some ecosystems) that the gap is narrower than security Twitter claims. Apple's ecosystem (iCloud Keychain) in particular is a competent closed-garden solution."
+    },
+    {
+     "h2": "Where the floor gives way",
+     "table": {
+      "columns": [
+       "Need",
+       "Browser autofill",
+       "Dedicated manager"
+      ],
+      "rows": [
+       {
+        "need": "All browsers + native apps",
+        "b": "One browser only; apps inconsistent",
+        "a": "Every browser, plus iOS/Android apps"
+       },
+       {
+        "need": "Breach & reuse detection",
+        "b": "Partial, ecosystem-dependent",
+        "a": "Core feature (Watchtower, Vault Health, breach scanners)"
+       },
+       {
+        "need": "Secure sharing (family/team)",
+        "b": "None",
+        "a": "Vault/item sharing, emergency access"
+       },
+       {
+        "need": "Passkeys across ecosystems",
+        "b": "Improving, but locked to vendor",
+        "a": "Portable across platforms (verified: Bitwarden, Proton Pass, 1Password)"
+       },
+       {
+        "need": "Survives switching browsers/devices",
+        "b": "Export/import pain",
+        "a": "Vault is the product"
+       },
+       {
+        "need": "Encrypted storage of more than passwords",
+        "b": "Limited",
+        "a": "Cards, identities, notes, attachments, 2FA codes"
+       }
+      ]
+     }
+    },
+    {
+     "h2": "The one-hour migration",
+     "list": [
+      "Pick your manager (Bitwarden free is the default answer — see the free-vs-paid guide).",
+      "Export passwords from your browser (documented per-browser: Chrome/Safari/Edge settings → passwords → export CSV).",
+      "Import via the manager's documented importer; delete the CSV immediately.",
+      "Install the browser extension + mobile app, disable browser save-password prompts, change your master password habit for two weeks.",
+      "Turn on 2FA for the vault itself. Done — and the vault's breach/reuse report will probably surprise you."
+     ]
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Is browser password storage encrypted?",
+     "a": "Yes — modern browsers encrypt saved passwords, typically keyed to your OS account. The difference vs dedicated managers is portability, cross-app coverage, and monitoring, not raw encryption."
+    },
+    {
+     "q": "Can I use both?",
+     "a": "Many people run both during migration. Long-term, running both invites divergence: pick one source of truth for anything you care about."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Vendor documentation for import/export (Bitwarden, 1Password, Proton)",
+     "url": "https://bitwarden.com/help/import-from-chrome/"
+    }
+   ]
+  }
+ ],
+ "alternatives": [
+  {
+   "slug": "bitwarden-alternatives",
+   "content_type": "rmh_alternative",
+   "title": "Bitwarden Alternatives (2026): Organized by Why People Switch",
+   "meta_description": "Looking beyond Bitwarden? The honest 2026 list: what Bitwarden does well, the documented reasons users switch, and the best alternative for each reason — with verified prices.",
+   "subject": "Bitwarden",
+   "subject_href": "reviews/bitwarden/",
+   "updated": "2026-09-06",
+   "verified": "2026-09-06",
+   "answer": "Bitwarden is our value and transparency benchmark — so alternatives matter only for specific reasons: polish (choose 1Password), lowest long-term price for one user (choose NordPass on a 2-year term), privacy jurisdiction plus aliases (choose Proton Pass), or total offline control (choose KeePassXC). If none of those reasons is yours, stay: the free tier remains unbeaten.",
+   "what_it_does_well": [
+    "The only unlimited free tier among mainstream managers (verified)",
+    "Cheapest complete premium: $19.80/yr (verified)",
+    "Open source, auditable, self-hostable",
+    "Cross-platform apps and browser extensions without gaps"
+   ],
+   "where_it_may_not_fit": [
+    {
+     "reason": "App polish",
+     "detail": "The apps are functional but utilitarian; users coming from Apple-ecosystem polish or 1Password trials notice immediately.",
+     "evidence": "Consistently noted across independent 2026 reviews; UX is Bitwarden's most-cited trade-off."
+    },
+    {
+     "reason": "Guided simplicity",
+     "detail": "Organizations/collections sharing concepts add a learning curve that simpler products avoid by offering less.",
+     "evidence": "Documented in Bitwarden's own help structure (organizations vs folders vs collections)."
+    },
+    {
+     "reason": "Premium price momentum",
+     "detail": "Premium rose from $10 to $19.80/yr in January 2026 (reported by multiple sources). Still cheap; the direction is worth noting for renewal planning."
+    }
+   ],
+   "alternatives_by_reason": [
+    {
+     "reason": "\"I want a more polished experience\"",
+     "pick": "1Password",
+     "price": "$3.99/mo (verified; $2.99 first year)",
+     "href": "reviews/1password/",
+     "detail": "The category's experience benchmark: better autofill, organization, Watchtower guidance, and family recovery. You pay ≈2× Bitwarden Premium for it."
+    },
+    {
+     "reason": "\"I want the cheapest paid tier, single user\"",
+     "pick": "NordPass Premium (2-year term)",
+     "price": "≈$1.3–2/mo range (verified range)",
+     "href": "reviews/nordpass/",
+     "detail": "Undercuts Bitwarden Premium on long terms with a slicker app — trade-offs: closed source, one-device free tier, and multi-year commitment."
+    },
+    {
+     "reason": "\"I want stronger privacy jurisdiction + aliases\"",
+     "pick": "Proton Pass",
+     "price": "Free tier strong; Plus at official checkout",
+     "href": "reviews/proton-pass/",
+     "detail": "Swiss jurisdiction, open source, 10 free aliases (verified). Younger product; share its open-source ethos with Bitwarden but not its maturity."
+    },
+    {
+     "reason": "\"I want zero cloud dependency\"",
+     "pick": "KeePassXC",
+     "price": "$0 forever",
+     "href": "best/password-managers/#keepassxc-note",
+     "detail": "Local encrypted vault, no accounts. You manage sync (files you control) and accept no official mobile parity experience."
+    },
+    {
+     "reason": "\"I need enterprise compliance features\"",
+     "pick": "1Password Business or Bitwarden Enterprise",
+     "price": "Verify with vendors",
+     "href": "compare/1password-vs-bitwarden/",
+     "detail": "Both are credible; Bitwarden publishes per-user pricing ($6/user/mo Enterprise, verified) and self-hosting; 1Password leads on admin UX. Verify current quotes — we did not verify 1Password business pricing."
+    }
+   ],
+   "how_to_choose": "Match your actual complaint to a product that fixes it — not to a longer feature list. If your complaint is price, Bitwarden already wins; if it's polish, pay for 1Password; if it's trust, KeePassXC or self-hosted Bitwarden; if it's jurisdiction, Proton. Switching costs are real (an hour of migration plus changing passwords you shared), so switch for reasons, not rankings.",
+   "faqs": [
+    {
+     "q": "Is there anything better than Bitwarden?",
+     "a": "Different, not better: 1Password is better-designed, NordPass is cheaper on long terms, Proton Pass is stronger on jurisdiction. On the combination of free tier + price + transparency, nothing we researched beats it."
+    },
+    {
+     "q": "Is it easy to switch away from Bitwarden?",
+     "a": "Yes — Bitwarden exports standard formats, and 1Password/NordPass/Proton document direct Bitwarden importers. Budget an hour."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bitwarden pricing (official)",
+     "url": "https://bitwarden.com/pricing/"
+    },
+    {
+     "label": "1Password pricing (official)",
+     "url": "https://1password.com/personal-family-security"
+    }
+   ]
+  }
+ ],
+ "usecases": [
+  {
+   "slug": "password-manager-for-families",
+   "content_type": "rmh_usecase",
+   "title": "The Best Password Manager for Families (2026): Per-Person Math Included",
+   "meta_description": "Family password managers compared on what matters: verified per-person cost at 6 members, sharing and recovery UX, and kid-safe onboarding — 1Password vs Bitwarden vs NordPass vs Proton.",
+   "audience": "Households of 2–6 people sharing logins: streaming, banking, utilities, kids' accounts, and the family emergency stash.",
+   "problem": "Family password chaos: shared logins in group chats, a spreadsheet nobody updates, and no recovery path when the household organizer loses access.",
+   "requirements": [
+    "Family plan that covers everyone under one bill",
+    "Shared vaults for joint accounts + private vaults for personal ones",
+    "Account recovery for family members (the feature you'll thank yourself for)",
+    "Per-person cost that survives honest math",
+    "Easy onboarding for the least technical member"
+   ],
+   "recommendations": [
+    {
+     "rank": 1,
+     "pick": "Bitwarden Families — best value",
+     "price_context": "$3.99/mo for 6 premium accounts ($47.88/yr ≈ $0.67/person/mo, verified)",
+     "why": "Six full premium accounts (TOTP authenticator, attachments, emergency access each), unlimited sharing via collections, and a free trial. The concepts take an evening to learn; the math wins for households of 4+.",
+     "href": "reviews/bitwarden/"
+    },
+    {
+     "rank": 2,
+     "pick": "1Password Families — best experience",
+     "price_context": "$5.99/mo for 5 invited members ($4.49 first year, verified; ≈$1.00/person at capacity)",
+     "why": "The smoothest family UX we researched: unlimited shared vaults, simple member management, and best-in-class recovery assistance. Pay ≈50% more per person for materially less friction.",
+     "href": "reviews/1password/"
+    },
+    {
+     "rank": 3,
+     "pick": "NordPass Family — budget alternative",
+     "price_context": "≈$2.3–3/mo for 6 users on long terms (verified range)",
+     "why": "Cheapest per person if the household commits to a 2-year term; simpler feature set and closed source.",
+     "href": "reviews/nordpass/"
+    },
+    {
+     "rank": 4,
+     "pick": "Proton Pass Family — privacy-first households",
+     "price_context": "Priced at official checkout (dynamic)",
+     "why": "Six Pass Plus accounts with Swiss jurisdiction and unlimited aliases each; younger admin tooling.",
+     "href": "reviews/proton-pass/"
+    }
+   ],
+   "comparison_note": "The decision compresses to: Bitwarden if value leads (4–6 members), 1Password if experience leads or you're 3–4 members (the per-person gap narrows), NordPass if the household accepts a long term for the lowest sticker, Proton if jurisdiction matters. Full head-to-head: 1Password vs Bitwarden.",
+   "budget_guidance": "Every credible family plan costs less per person than two streaming subscriptions — the real cost is migration effort, not money. Start with free trials (Bitwarden Families and 1Password both offer them) and run the household on the trial for two weeks before annual billing.",
+   "faqs": [
+    {
+     "q": "What's the cheapest family password manager?",
+     "a": "Bitwarden Families: $3.99/mo covering 6 premium accounts (≈$0.67/person/mo, verified 2026-09-06). NordPass Family undercuts it per-person only on multi-year terms."
+    },
+    {
+     "q": "Can family members see each other's passwords?",
+     "a": "No — family plans provide private vaults per member plus shared vaults/collections you control. Sharing is explicit, not ambient."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bitwarden pricing (official)",
+     "url": "https://bitwarden.com/pricing/"
+    },
+    {
+     "label": "1Password personal pricing (official)",
+     "url": "https://1password.com/personal-family-security"
+    }
+   ],
+   "title_tag": "Best Password Manager for Families (2026)",
+   "updated": "2026-09-06",
+   "verified": "2026-09-06"
+  }
+ ]
+}

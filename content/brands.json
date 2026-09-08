@@ -1,0 +1,82 @@
+{
+  "brands": [
+    {
+      "slug": "1password",
+      "name": "1Password",
+      "parent": "1Password (formerly AgileBits)",
+      "jurisdiction": "Canada",
+      "official_url": "https://1password.com",
+      "category": "Password Managers",
+      "summary": "The premium consumer password manager, expanded into an enterprise identity platform (Unified Access) in 2026. Known for app polish, the two-secret security model (master password + Secret Key), Watchtower breach monitoring, and family-friendly sharing.",
+      "pricing_summary": "Individual $3.99/mo (≈$47.88/yr, $2.99 first-year promo); Families $5.99/mo for up to 5 members ($4.49 first-year promo); 14-day trial; no free tier. Verified 2026-09-06 on official pages. Business is quote-led.",
+      "strengths": ["Best-in-class app polish", "Secret Key two-secret architecture", "Watchtower security dashboard", "Smooth family sharing and recovery", "Developer tooling (SSH agent, CLI)"],
+      "weaknesses": ["No free tier", "≈2× Bitwarden Premium at regular pricing", "Closed source; no self-hosting", "First-year promos revert"],
+      "relations": [
+        { "label": "1Password review", "href": "reviews/1password/" },
+        { "label": "1Password vs Bitwarden", "href": "compare/1password-vs-bitwarden/" },
+        { "label": "Verified first-year promo", "href": "deals/" }
+      ],
+      "affiliate_status": "public_program_reported",
+      "affiliate_note": "Runs a public affiliate program (third-party listings: ~$2/signup + 25% of first payment). Disclosed wherever used.",
+      "sources": ["https://1password.com/personal-family-security", "https://1password.com/pricing/personal"]
+    },
+    {
+      "slug": "bitwarden",
+      "name": "Bitwarden",
+      "parent": "Bitwarden Inc.",
+      "jurisdiction": "United States (EU region available for business)",
+      "official_url": "https://bitwarden.com",
+      "category": "Password Managers",
+      "summary": "The open-source value benchmark: unlimited free tier, $19.80/yr Premium, self-hosting, and transparent per-user business pricing. The recommendation competitors are measured against.",
+      "pricing_summary": "Free (unlimited passwords/devices); Premium $1.65/mo ($19.80/yr); Families $3.99/mo for 6 premium accounts; Teams $4/user/mo; Enterprise $6/user/mo. All verified 2026-09-06 on the official pricing page. Premium rose from $10/yr in January 2026 (reported).",
+      "strengths": ["Unlimited free tier (verified)", "Open source + self-hosting", "Cheapest complete premium tier", "Transparent business pricing", "Integrated TOTP authenticator on Premium"],
+      "weaknesses": ["Utilitarian UX vs 1Password", "Premium price doubled in 2026 (still low)", "Sharing concepts add a learning curve"],
+      "relations": [
+        { "label": "Bitwarden review", "href": "reviews/bitwarden/" },
+        { "label": "1Password vs Bitwarden", "href": "compare/1password-vs-bitwarden/" },
+        { "label": "Bitwarden alternatives", "href": "alternatives/" }
+      ],
+      "affiliate_status": "none_found",
+      "affiliate_note": "No public consumer affiliate program found as of 2026-09-06 — our value pick cannot pay for its recommendation.",
+      "sources": ["https://bitwarden.com/pricing/"]
+    },
+    {
+      "slug": "nordpass",
+      "name": "NordPass",
+      "parent": "Nord Security (also NordVPN, NordLocker)",
+      "jurisdiction": "Lithuania (EU)",
+      "official_url": "https://nordpass.com",
+      "category": "Password Managers",
+      "summary": "The budget-polish play from Nord Security: fast, friendly apps, XChaCha20 encryption, and aggressive term-based promotions. Best value requires multi-year commitments.",
+      "pricing_summary": "Free tier limited to one device; Premium ≈$1.3–2/mo across terms (2026 range — promotional pricing moves; verify at checkout); Family ≈$2.3–3/mo for 6 users; Business ≈$3.59/user/mo (reported). Term sensitivity is the pricing story.",
+      "strengths": ["Cheapest polished paid tier on long terms", "Gentle onboarding", "Breach scanner + password health included", "Nord ecosystem bundles"],
+      "weaknesses": ["Free tier = one device", "Closed source", "Multi-year commitment for best prices", "Promotional pricing requires checkout verification"],
+      "relations": [
+        { "label": "NordPass review", "href": "reviews/nordpass/" },
+        { "label": "Deal status", "href": "deals/" }
+      ],
+      "affiliate_status": "public_program_reported",
+      "affiliate_note": "Affiliate program on Impact (third-party listings: ~30%/sale). Disclosed wherever used.",
+      "sources": ["https://nordpass.com", "https://cybernews.com/best-password-managers/nordpass-vs-proton-pass/"]
+    },
+    {
+      "slug": "proton",
+      "name": "Proton",
+      "parent": "Proton AG",
+      "jurisdiction": "Switzerland",
+      "official_url": "https://proton.me",
+      "category": "Password Managers · Privacy suite",
+      "summary": "The privacy-first suite: Proton Mail, VPN, Drive, Calendar — and Pass, the open-source password manager with the most capable free tier after Bitwarden's. Swiss jurisdiction is the strategic differentiator.",
+      "pricing_summary": "Proton Pass Free: unlimited logins/devices, 10 aliases (verified). Pass Plus / Pass Family / Proton Unlimited: priced dynamically at official checkout (we omit unverified figures by policy). 30-day money-back guarantee on paid plans (verified).",
+      "strengths": ["Swiss privacy jurisdiction", "Open-source clients", "Strong free tier with aliases", "Suite bundling (Mail+VPN+Drive)", "100M+ users (vendor-reported)"],
+      "weaknesses": ["Youngest password product in our set", "Dynamic pricing complicates budgeting", "Family admin tooling less mature"],
+      "relations": [
+        { "label": "Proton Pass review", "href": "reviews/proton-pass/" },
+        { "label": "Free vs paid guide", "href": "guides/free-vs-paid-password-managers/" }
+      ],
+      "affiliate_status": "unverified",
+      "affiliate_note": "Referral/affiliate arrangements vary by region; nothing verified applicable to us as of 2026-09-06 — links treated as plain links.",
+      "sources": ["https://proton.me/pass/pricing"]
+    }
+  ]
+}

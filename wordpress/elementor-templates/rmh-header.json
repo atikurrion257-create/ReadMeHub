@@ -1,0 +1,80 @@
+{
+ "version": "0.4",
+ "title": "ReadMeHub — Header",
+ "type": "section",
+ "content": [
+  {
+   "id": "rmh00000452",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "30",
+    "css_classes": "rm-header",
+    "sticky": "yes"
+   },
+   "elements": [
+    {
+     "id": "rmh0000044d",
+     "elType": "column",
+     "settings": {
+      "_column_size": 20,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh0000044c",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<a class=\"rm-logo\" href=\"/\"><span class=\"rm-logo__mark\">R<i>.</i></span><span class=\"rm-logo__word\">ReadMe<i>Hub</i></span></a>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "rmh0000044f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 55,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh0000044e",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_nav_menu]"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "rmh00000451",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000450",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<form class=\"rm-header__search\" role=\"search\" action=\"/\"><input type=\"search\" name=\"s\" placeholder=\"Search…\"><button type=\"submit\" aria-label=\"Search\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg></button></form><button class=\"rm-search-btn\" data-search-btn aria-label=\"Open search\">⌕</button><button class=\"rm-menu-btn\" data-menu-btn aria-label=\"Open menu\">☰</button><div class=\"rm-searchbar\" data-searchbar><form role=\"search\" action=\"/\"><input type=\"search\" name=\"s\" data-search-input placeholder=\"Search reviews, comparisons, brands, deals…\"><button class=\"rm-btn rm-btn--sm rm-btn--brand\">Search</button></form></div><div class=\"rm-searchbar\" data-searchbar-results style=\"padding:0\"><div class=\"rm-searchresults\" data-search-results></div></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}
