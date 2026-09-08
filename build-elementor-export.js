@@ -1,41 +1,76 @@
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { execSync } = require('child_process');
 
-const exportDir = path.join(__dirname, 'elementor-export');
-if (!fs.existsSync(exportDir)) {
-  fs.mkdirSync(exportDir, { recursive: true });
+const rootDir = __dirname;
+const exportDir = path.join(rootDir, 'elementor-export');
+const templatesDir = path.join(exportDir, 'templates');
+
+// Fresh export dir so stale/legacy kit files never end up in the package.
+if (fs.existsSync(exportDir)) {
+  fs.rmSync(exportDir, { recursive: true, force: true });
+}
+fs.mkdirSync(exportDir, { recursive: true });
+fs.mkdirSync(templatesDir, { recursive: true });
+
+const customCSS = fs.readFileSync(path.join(rootDir, 'src/styles/theme.css'), 'utf8');
+
+// Load page renderers.
+const routesCode = fs.readFileSync(path.join(rootDir, 'src/scripts/routes.js'), 'utf8');
+const coreCode = fs.readFileSync(path.join(rootDir, 'src/scripts/pages/core.js'), 'utf8');
+const servicesCode = fs.readFileSync(path.join(rootDir, 'src/scripts/pages/services.js'), 'utf8');
+const leadgenCode = fs.readFileSync(path.join(rootDir, 'src/scripts/pages/leadgen.js'), 'utf8');
+const proofCode = fs.readFileSync(path.join(rootDir, 'src/scripts/pages/proof.js'), 'utf8');
+
+// ---------------------------------------------------------------------------
+// Elementor helper utilities
+// ---------------------------------------------------------------------------
+
+function generateHexId() {
+  return Math.random().toString(16).slice(2, 10);
 }
 
-// Load custom CSS
-const customCSS = fs.readFileSync(path.join(__dirname, 'src/styles/theme.css'), 'utf8');
+function pageSettingsForType(type) {
+  switch (type) {
+    case 'header':
+      return { content_wrapper_html_tag: 'header' };
+    case 'footer':
+      return { content_wrapper_html_tag: 'footer' };
+    case 'single':
+      return { content_wrapper_html_tag: 'main' };
+    case 'error-404':
+      return { content_wrapper_html_tag: 'main' };
+    case 'popup':
+      return { content_wrapper_html_tag: 'div', prevent_scroll: 'yes' };
+    default:
+      return {};
+  }
+}
 
-// Load page renderers
-const routesCode = fs.readFileSync(path.join(__dirname, 'src/scripts/routes.js'), 'utf8');
-const coreCode = fs.readFileSync(path.join(__dirname, 'src/scripts/pages/core.js'), 'utf8');
-const servicesCode = fs.readFileSync(path.join(__dirname, 'src/scripts/pages/services.js'), 'utf8');
-const leadgenCode = fs.readFileSync(path.join(__dirname, 'src/scripts/pages/leadgen.js'), 'utf8');
-const proofCode = fs.readFileSync(path.join(__dirname, 'src/scripts/pages/proof.js'), 'utf8');
-
-// Helper to create an Elementor template JSON structure
-function createElementorTemplate(title, type, htmlContent, pageCSS = '') {
+function createElementorTemplate(title, type, htmlContent, siteCSS, pageSettings = {}) {
   const combinedHTML = `
 <div class="teamrion-elementor-wrapper">
   <style>
-${customCSS}
-${pageCSS}
+${siteCSS}
   </style>
   ${htmlContent}
 </div>
 `;
 
+  // Kit import reads `settings` (mirror of get_export_data()), while the
+  // standalone Template-Library import reads `page_settings` (mirror of
+  // get_export_data() -> Local_Source). Emit both so the same JSON works in
+  // either importer.
+  const documentSettings = pageSettings;
+
   return {
     version: '0.4',
-    title: title,
-    type: type, // 'page', 'header', 'footer', 'section', 'single-page', 'single-post'
+    title,
+    type,
     content: [
       {
-        id: 'tr_' + Math.random().toString(36).substring(2, 9),
+        id: generateHexId(),
         elType: 'container',
         isInner: false,
         settings: {
@@ -47,7 +82,7 @@ ${pageCSS}
         },
         elements: [
           {
-            id: 'tr_widget_' + Math.random().toString(36).substring(2, 9),
+            id: generateHexId(),
             elType: 'widget',
             isInner: false,
             widgetType: 'html',
@@ -58,11 +93,48 @@ ${pageCSS}
           }
         ]
       }
-    ]
+    ],
+    settings: documentSettings,
+    page_settings: pageSettings
   };
 }
 
-// 1. Homepage Template
+// ---------------------------------------------------------------------------
+// Compile production CSS (Tailwind utilities + brand theme), no CDN runtime.
+// ---------------------------------------------------------------------------
+
+function compileSiteCSS(htmlFiles) {
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'teamrion-css-'));
+  const contentDir = path.join(tmpDir, 'content');
+  fs.mkdirSync(contentDir, { recursive: true });
+
+  htmlFiles.forEach((html, index) => {
+    fs.writeFileSync(path.join(contentDir, `page-${index}.html`), html, 'utf8');
+  });
+
+  const inputCss = path.join(tmpDir, 'input.css');
+  const outputCss = path.join(tmpDir, 'output.css');
+  fs.writeFileSync(inputCss, '@tailwind base;\n@tailwind components;\n@tailwind utilities;\n', 'utf8');
+
+  const configPath = path.join(rootDir, 'tailwind.config.js');
+  const contentFiles = htmlFiles.map((_, index) => `"${path.join(contentDir, `page-${index}.html`)}"`).join(' ');
+  execSync(
+    `npx -y tailwindcss@3.4.3 -c "${configPath}" -i "${inputCss}" -o "${outputCss}" --content ${contentFiles}`,
+    { stdio: 'pipe' }
+  );
+
+  const tailwind = fs.readFileSync(outputCss, 'utf8');
+  const fontsImport = "@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');\n";
+
+  // Preflight + utilities first, then the TeamRion brand component layer so
+  // branded buttons/cards/screws always take precedence over resets.
+  return fontsImport + '\n' + tailwind + '\n' + customCSS;
+}
+
+// ---------------------------------------------------------------------------
+// Render the static site pages.
+// ---------------------------------------------------------------------------
+
 const vm = require('vm');
 const sandbox = { window: {}, document: { title: '', querySelectorAll: () => [] } };
 sandbox.window = sandbox;
@@ -81,7 +153,6 @@ const serviceGeoHTML = sandbox.SERVICE_PAGES['services/geo-ai-search'].render();
 const diagnosticHTML = sandbox.LEADGEN_PAGES['growth-diagnostic'].render();
 const caseStudyHTML = sandbox.PROOF_PAGES['case-studies/saas-growth-pipeline'].render();
 
-// Header HTML
 const headerHTML = `
 <header class="bg-[#e0e5ec]/90 backdrop-blur-md border-b border-[#a3b1c6]/30 shadow-sm py-4">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
@@ -108,7 +179,6 @@ const headerHTML = `
 </header>
 `;
 
-// Footer HTML
 const footerHTML = `
 <footer class="bg-[#f0f2f5] text-[#4a5568] border-t border-[#d1d9e6] py-16">
   <div class="max-w-7xl mx-auto px-4">
@@ -144,7 +214,11 @@ const footerHTML = `
 </footer>
 `;
 
-// Write JSON template files
+// ---------------------------------------------------------------------------
+// Template registry. Native Theme Builder "single" doc type is used where the
+// template is meant to power singular CPT pages (services / case studies).
+// ---------------------------------------------------------------------------
+
 const templates = [
   { name: 'teamrion-homepage.json', title: 'TeamRion - Homepage (Full Page)', type: 'page', html: homeHTML },
   { name: 'teamrion-header-template.json', title: 'TeamRion - Master Header (Theme Builder)', type: 'header', html: headerHTML },
@@ -152,18 +226,18 @@ const templates = [
   { name: 'teamrion-pricing-page.json', title: 'TeamRion - Banded Pricing Page', type: 'page', html: pricingHTML },
   { name: 'teamrion-about-page.json', title: 'TeamRion - About Page', type: 'page', html: aboutHTML },
   { name: 'teamrion-faq-page.json', title: 'TeamRion - Schema FAQ Page', type: 'page', html: faqHTML },
-  { name: 'teamrion-single-service-template.json', title: 'TeamRion - Single Service Template (GEO & AI)', type: 'page', html: serviceGeoHTML },
+  // These are Theme Builder singles, so they must use the Pro "single" document
+  // type, not "page", otherwise they never apply to services/case-study CPTs.
+  { name: 'teamrion-single-service-template.json', title: 'TeamRion - Single Service Template (GEO & AI)', type: 'single', html: serviceGeoHTML },
   { name: 'teamrion-growth-diagnostic-page.json', title: 'TeamRion - Growth Diagnostic Quiz', type: 'page', html: diagnosticHTML },
-  { name: 'teamrion-single-case-study-template.json', title: 'TeamRion - Single Case Study Template', type: 'page', html: caseStudyHTML }
+  { name: 'teamrion-single-case-study-template.json', title: 'TeamRion - Single Case Study Template', type: 'single', html: caseStudyHTML }
 ];
 
-templates.forEach(t => {
-  const jsonContent = createElementorTemplate(t.title, t.type, t.html);
-  fs.writeFileSync(path.join(exportDir, t.name), JSON.stringify(jsonContent, null, 2), 'utf8');
-  console.log(`Generated: ${t.name}`);
-});
+console.log('Compiling Tailwind + TeamRion CSS (self-contained, no CDN runtime)...');
+const siteCSS = compileSiteCSS(templates.map(t => t.html));
+fs.writeFileSync(path.join(exportDir, 'teamrion-custom-code.css'), siteCSS, 'utf8');
+fs.writeFileSync(path.join(rootDir, 'teamrion-custom-code.css'), siteCSS, 'utf8');
 
-// Write Site Settings JSON
 const siteSettings = {
   settings: {
     system_colors: [
@@ -199,25 +273,72 @@ const siteSettings = {
     ]
   }
 };
+
+// Official Elementor Kit filesystem contract:
+//   manifest.json
+//   site-settings.json
+//   templates/<id>.json
+fs.writeFileSync(path.join(exportDir, 'site-settings.json'), JSON.stringify(siteSettings, null, 2), 'utf8');
 fs.writeFileSync(path.join(exportDir, 'teamrion-site-settings.json'), JSON.stringify(siteSettings, null, 2), 'utf8');
 
-// Write CSS file
-fs.writeFileSync(path.join(exportDir, 'teamrion-custom-code.css'), customCSS, 'utf8');
+// ---------------------------------------------------------------------------
+// Write standalone template JSONs + Kit template files.
+// ---------------------------------------------------------------------------
 
-// Create manifest for Elementor Kit Import
-const manifest = {
-  name: 'TeamRion Growth Engine Kit',
-  version: '1.0.0',
-  description: 'Full-Funnel Digital Growth Agency - Industrial Skeuomorphic Design System for Elementor Pro',
-  elementor_version: '3.20.0',
-  templates: templates.map(t => ({
+const manifestTemplates = {};
+const kitZipPaths = [];
+
+templates.forEach((t, index) => {
+  const id = String(index + 1).padStart(4, '0');
+  const pageSettings = pageSettingsForType(t.type);
+  const jsonContent = createElementorTemplate(t.title, t.type, t.html, siteCSS, pageSettings);
+
+  // Standalone Template-Library JSON (Templates -> Saved Templates -> Import).
+  fs.writeFileSync(path.join(exportDir, t.name), JSON.stringify(jsonContent, null, 2), 'utf8');
+
+  // Kit template file (Elementor -> Tools -> Import/Export Kit).
+  const kitFilename = `${id}.json`;
+  fs.writeFileSync(path.join(templatesDir, kitFilename), JSON.stringify(jsonContent, null, 2), 'utf8');
+
+  const kitId = `${id}`;
+  manifestTemplates[kitId] = {
     title: t.title,
-    type: t.type,
-    file: t.name
-  }))
+    doc_type: t.type,
+    thumbnail: ''
+  };
+
+  kitZipPaths.push(`templates/${kitFilename}`);
+  console.log(`Generated: ${t.name} (kit templates/${kitFilename}, doc_type=${t.type})`);
+});
+
+const manifest = {
+  name: 'teamrion-growth-engine-kit',
+  title: 'TeamRion Growth Engine Kit',
+  description: 'Full-Funnel Digital Growth Agency - Industrial Skeuomorphic Design System for Elementor Pro',
+  author: 'TeamRion',
+  version: '2.0',
+  elementor_version: '4.2.4',
+  created: new Date().toISOString(),
+  thumbnail: '',
+  site: '',
+  'site-settings': ['global-colors', 'global-typography'],
+  templates: manifestTemplates
 };
+
 fs.writeFileSync(path.join(exportDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8');
 
+// ---------------------------------------------------------------------------
+// Assemble the kit ZIP using the official layout only.
+// ---------------------------------------------------------------------------
+
+const zipName = path.join(rootDir, 'teamrion-elementor-template-kit.zip');
+if (fs.existsSync(zipName)) {
+  fs.rmSync(zipName);
+}
+
+const zipFiles = ['manifest.json', 'site-settings.json', 'teamrion-custom-code.css', ...kitZipPaths];
+
 console.log('Building ZIP package: teamrion-elementor-template-kit.zip ...');
-execSync(`cd "${exportDir}" && zip -r ../teamrion-elementor-template-kit.zip *`, { stdio: 'inherit' });
-console.log('Zip package ready in workspace root: /home/user/ReadMeHub/teamrion-elementor-template-kit.zip');
+execSync(`cd "${exportDir}" && zip -r "${zipName}" ${zipFiles.map((f) => `"${f}"`).join(' ')}`, { stdio: 'inherit' });
+
+console.log('Zip package ready:', zipName);

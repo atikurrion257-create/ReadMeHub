@@ -1,0 +1,67 @@
+{
+  "settings": {
+    "system_colors": [
+      {
+        "_id": "primary",
+        "title": "Chassis Background",
+        "value": "#e0e5ec"
+      },
+      {
+        "_id": "secondary",
+        "title": "Panel Foreground",
+        "value": "#f0f2f5"
+      },
+      {
+        "_id": "text",
+        "title": "Text Primary",
+        "value": "#2d3436"
+      },
+      {
+        "_id": "accent",
+        "title": "Safety Orange",
+        "value": "#ff4757"
+      },
+      {
+        "_id": "muted",
+        "title": "Recessed Surface",
+        "value": "#d1d9e6"
+      },
+      {
+        "_id": "text_muted",
+        "title": "Text Muted",
+        "value": "#4a5568"
+      },
+      {
+        "_id": "status_green",
+        "title": "LED Status Online",
+        "value": "#22c55e"
+      },
+      {
+        "_id": "status_cyan",
+        "title": "Status Cyan AI",
+        "value": "#06b6d4"
+      }
+    ],
+    "system_typography": [
+      {
+        "_id": "primary",
+        "title": "Primary Inter",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "500"
+      },
+      {
+        "_id": "secondary",
+        "title": "Headings Inter Bold",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700"
+      },
+      {
+        "_id": "accent",
+        "title": "Technical JetBrains Mono",
+        "typography_font_family": "JetBrains Mono",
+        "typography_font_weight": "700",
+        "typography_text_transform": "uppercase"
+      }
+    ]
+  }
+}
