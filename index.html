@@ -1,18 +1,17 @@
-```html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReadMeHub — Unbiased B2B SaaS, AI & Cloud Hosting Reviews</title>
-  <meta name="description" content="Independent, data-driven software and cloud infrastructure benchmarks for Tier-1 engineering, product, and growth teams.">
+  <title>TeamRion — Full-Funnel Digital Growth Partner | SEO, GEO, Paid Media & CRO</title>
+  <meta name="description" content="Replace disconnected freelancers with one accountable digital growth partner. Unified SEO, GEO AI-Search, Paid Media, Automation, CRO, and High-Performance Web Development.">
 
-  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS via CDN -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -20,1834 +19,435 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              navy: '#0F2A4A',
-              navyDark: '#0A1C33',
-              navyLight: '#1E3A8A',
-              orange: '#FF7A00',
-              orangeHover: '#E66E00',
-              orangeLight: '#FFF4EB',
-              pastelBlue: '#F0F5FA',
-              pastelMint: '#EFFBFA',
-              pastelPurple: '#F5F3FF',
-              grayBg: '#F8FAFC',
-              slateText: '#334155',
-              muted: '#64748B'
-            }
+            chassis: '#e0e5ec',
+            panel: '#f0f2f5',
+            recessed: '#d1d9e6',
+            accentOrange: '#ff4757',
+            accentGlow: 'rgba(255, 71, 87, 0.6)'
           },
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
-          },
-          boxShadow: {
-            'soft': '0 4px 20px -2px rgba(15, 42, 74, 0.06)',
-            'card': '0 10px 30px -4px rgba(15, 42, 74, 0.08)',
-            'hover': '0 20px 35px -5px rgba(15, 42, 74, 0.12)',
-            'glow-orange': '0 8px 24px -4px rgba(255, 122, 0, 0.35)'
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
           }
         }
       }
     }
   </script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Structured Data: Product & Review Schema (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://readmehub.com/#organization",
-        "name": "ReadMeHub",
-        "url": "https://readmehub.com",
-        "logo": "https://readmehub.com/logo.svg",
-        "sameAs": ["https://twitter.com/readmehub", "https://linkedin.com/company/readmehub"]
-      },
-      {
-        "@type": "Product",
-        "@id": "https://readmehub.com/reviews/notion-ai/#product",
-        "name": "Notion AI Enterprise Workspace",
-        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-        "description": "Connected workspace for notes, docs, and AI knowledge retrieval.",
-        "brand": { "@type": "Brand", "name": "Notion Labs" },
-        "offers": {
-          "@type": "Offer",
-          "price": "10.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://notion.so"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "1840",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Dr. Marcus Vance", "jobTitle": "Lead Software Architect" },
-          "datePublished": "2025-02-15",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.9",
-            "bestRating": "5"
-          },
-          "reviewBody": "Notion AI sets the gold standard for integrated workspace intelligence, slashing project documentation sprint cycles by 40%."
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://readmehub.com/reviews/notion-ai/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Is Notion AI compliant with SOC2 and GDPR?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, Notion AI adheres to enterprise SOC2 Type II protocols, and user workspace prompts are never used to train base foundation models."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can Notion AI replace dedicated LLM tools like Claude or ChatGPT?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For internal corporate wiki search, project tracking, and draft summaries, yes. For deep code compiler tasks, pairing with dedicated IDE tools is recommended."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
-
-  <style>
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: #F1F5F9; }
-    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
-
-    /* Sticky column table shadow */
-    .sticky-col-shadow {
-      box-shadow: 4px 0 12px -2px rgba(15, 42, 74, 0.07);
-    }
-    
-    /* Mega menu transition */
-    .mega-menu-content {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(8px);
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .group:hover .mega-menu-content {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    /* Tab switcher pill */
-    .view-tab.active {
-      background-color: #0F2A4A;
-      color: #FFFFFF;
-      box-shadow: 0 4px 14px rgba(15, 42, 74, 0.2);
-    }
-  </style>
+  <!-- Industrial Skeuomorphic Theme Tokens & Custom CSS -->
+  <link rel="stylesheet" href="src/styles/theme.css">
 </head>
-<body class="bg-brand-grayBg text-brand-slateText font-sans antialiased min-h-screen selection:bg-brand-orange/20 selection:text-brand-navy">
+<body class="bg-[#e0e5ec] text-[#2d3436] min-h-screen flex flex-col font-sans selection:bg-[#ff4757] selection:text-white">
 
-  <!-- ========================================================================= -->
-  <!-- DEMO CONTROL BAR (Switcher to preview Elementor/CMS templates seamlessly) -->
-  <!-- ========================================================================= -->
-  <div class="bg-brand-navyDark text-white text-xs border-b border-brand-navy/60 sticky top-0 z-50 py-2 px-4 shadow-md">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center space-x-2">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
-          WCAG 2.2 AA Verified
-        </span>
-        <span class="text-slate-400 hidden sm:inline">• ReadMeHub B2B High-Converting Architecture</span>
-      </div>
-
-      <!-- View Switcher -->
-      <div class="flex items-center bg-slate-800/90 p-1 rounded-lg border border-slate-700/80">
-        <button onclick="switchView('homepage')" id="tab-homepage" class="view-tab active px-3 py-1 rounded-md text-xs font-medium transition-all">
-          1. Full Homepage
-        </button>
-        <button onclick="switchView('review')" id="tab-review" class="view-tab px-3 py-1 rounded-md text-xs font-medium text-slate-300 hover:text-white transition-all">
-          2. Single Review Template
-        </button>
-        <button onclick="switchView('comparison')" id="tab-comparison" class="view-tab px-3 py-1 rounded-md text-xs font-medium text-slate-300 hover:text-white transition-all">
-          3. Comparison Engine
-        </button>
-        <button onclick="switchView('design-system')" id="tab-design-system" class="view-tab px-3 py-1 rounded-md text-xs font-medium text-slate-300 hover:text-white transition-all">
-          4. Design System Tokens
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- 1. GLOBAL STICKY HEADER & MEGA MENU -->
-  <!-- ========================================================================= -->
-  <header class="bg-white/95 backdrop-blur-md sticky top-[41px] z-40 border-b border-slate-200/80 transition-all">
+  <!-- ======================================================================
+       HEADER: MASTER INDUSTRIAL HEADER (Theme Builder Header)
+       ====================================================================== -->
+  <header class="sticky top-0 z-50 bg-[#e0e5ec]/90 backdrop-blur-md border-b border-[#a3b1c6]/30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo -->
-        <div class="flex items-center space-x-3">
-          <a href="#homepage" onclick="switchView('homepage')" class="flex items-center space-x-2.5 group">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-navy to-brand-navyLight flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-              <i data-lucide="shield-check" class="w-6 h-6 text-brand-orange"></i>
+        <!-- Brand Logo / Identity -->
+        <a href="#/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-lg shadow-card flex items-center justify-center bg-[#f0f2f5] border border-white/60 group-hover:-translate-y-0.5 transition">
+            <span class="w-4 h-4 rounded-sm bg-[#ff4757] shadow-sm transform rotate-45 group-hover:rotate-90 transition duration-300"></span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-xl tracking-tight text-[#2d3436] font-mono">TEAM<span class="text-[#ff4757]">RION</span></span>
+              <span class="led-indicator led-glow-green"></span>
             </div>
-            <div>
-              <span class="font-display text-2xl font-extrabold tracking-tight text-brand-navy">
-                ReadMe<span class="text-brand-orange">Hub</span>
-              </span>
-              <span class="hidden lg:block text-[10px] font-semibold tracking-wider text-brand-muted uppercase -mt-1">
-                Tier-1 B2B Tech Intelligence
-              </span>
-            </div>
-          </a>
-        </div>
+            <span class="text-[10px] font-mono font-bold text-[#718096] tracking-widest uppercase">GROWTH ENGINE // v4.2</span>
+          </div>
+        </a>
 
-        <!-- Desktop Navigation with Mega Menus -->
-        <nav class="hidden lg:flex items-center space-x-1">
+        <!-- Desktop Navigation Bar -->
+        <nav class="hidden xl:flex items-center gap-6 font-mono text-xs font-semibold uppercase text-[#4a5568]">
           
-          <!-- Mega Menu 1: AI Tools -->
-          <div class="group relative">
-            <button class="flex items-center space-x-1 px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-slateText hover:text-brand-navy hover:bg-slate-50 transition-colors">
-              <span>AI Tools</span>
-              <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:rotate-180 transition-transform"></i>
-            </button>
-            <div class="mega-menu-content absolute top-full -left-20 w-[600px] bg-white rounded-2xl shadow-card border border-slate-100 p-6 z-50">
-              <div class="grid grid-cols-2 gap-4">
-                <div class="space-y-3">
-                  <div class="text-xs font-bold tracking-wider text-brand-orange uppercase">Generative & Workflows</div>
-                  <a href="#review" onclick="switchView('review')" class="flex items-start space-x-3 p-2.5 rounded-xl hover:bg-brand-pastelBlue transition group/item">
-                    <div class="p-2 bg-white shadow-sm rounded-lg text-brand-navy border border-slate-100 group-hover/item:text-brand-orange">
-                      <i data-lucide="sparkles" class="w-4 h-4"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-semibold text-brand-navy">Enterprise LLMs & Assistants</div>
-                      <div class="text-xs text-brand-muted">Claude 3.5, OpenAI Team, Notion AI</div>
-                    </div>
-                  </a>
-                  <a href="#comparison" onclick="switchView('comparison')" class="flex items-start space-x-3 p-2.5 rounded-xl hover:bg-brand-pastelBlue transition group/item">
-                    <div class="p-2 bg-white shadow-sm rounded-lg text-brand-navy border border-slate-100 group-hover/item:text-brand-orange">
-                      <i data-lucide="code" class="w-4 h-4"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-semibold text-brand-navy">AI Code Copilots</div>
-                      <div class="text-xs text-brand-muted">Cursor, GitHub Copilot, Replit</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="space-y-3 border-l border-slate-100 pl-4">
-                  <div class="text-xs font-bold tracking-wider text-brand-navy uppercase">Productivity & Voice</div>
-                  <a href="#review" onclick="switchView('review')" class="flex items-start space-x-3 p-2.5 rounded-xl hover:bg-brand-pastelBlue transition group/item">
-                    <div class="p-2 bg-white shadow-sm rounded-lg text-brand-navy border border-slate-100 group-hover/item:text-brand-orange">
-                      <i data-lucide="mic" class="w-4 h-4"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-semibold text-brand-navy">Meeting & Speech AI</div>
-                      <div class="text-xs text-brand-muted">Otter.ai, Fireflies, Descript</div>
-                    </div>
-                  </a>
-                  <div class="p-3 bg-brand-orangeLight rounded-xl">
-                    <div class="text-xs font-bold text-brand-orange">🔥 Q1 2025 AI Benchmark</div>
-                    <p class="text-xs text-slate-600 mt-1">Read how 40 Enterprise LLMs ranked in API uptime & hallucination tests.</p>
-                  </div>
-                </div>
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <a href="#/services" class="hover:text-[#ff4757] transition flex items-center gap-1 py-2" data-route-link="services">
+              <span>Services</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute top-full left-0 hidden group-hover:block pt-2 w-72 z-50">
+              <div class="bolted-card p-4 rounded-xl bg-[#f0f2f5] border border-[#d1d9e6] shadow-floating space-y-2">
+                <a href="#/services/seo" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>01. SEO Architecture</strong>
+                  <span class="block text-[9px] text-[#718096]">Technical & Revenue Search</span>
+                </a>
+                <a href="#/services/geo-ai-search" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#06b6d4]">
+                  <strong>02. GEO / AI Search</strong>
+                  <span class="block text-[9px] text-[#0891b2]">ChatGPT & Perplexity Share</span>
+                </a>
+                <a href="#/services/paid-media-google" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>03. Google Ads Intent</strong>
+                  <span class="block text-[9px] text-[#718096]">Search & Offline Sync</span>
+                </a>
+                <a href="#/services/paid-media-meta" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>04. Meta Ads & CAPI</strong>
+                  <span class="block text-[9px] text-[#718096]">Creative Velocity Testing</span>
+                </a>
+                <a href="#/services/paid-media-linkedin" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>05. LinkedIn ABM Ads</strong>
+                  <span class="block text-[9px] text-[#718096]">Buying Committee Reach</span>
+                </a>
+                <a href="#/services/marketing-automation" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>06. Marketing Automation</strong>
+                  <span class="block text-[9px] text-[#718096]">HubSpot Lifecycle Flows</span>
+                </a>
+                <a href="#/services/cro" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>07. Conversion Rate (CRO)</strong>
+                  <span class="block text-[9px] text-[#718096]">Heuristic A/B Testing</span>
+                </a>
+                <a href="#/services/analytics-attribution" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>08. Analytics & Attribution</strong>
+                  <span class="block text-[9px] text-[#718096]">Server-Side GTM & GA4</span>
+                </a>
+                <a href="#/services/web-design-dev" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>09. Web Design & Dev</strong>
+                  <span class="block text-[9px] text-[#718096]">WordPress + Elementor Pro</span>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Mega Menu 2: B2B SaaS -->
-          <div class="group relative">
-            <button class="flex items-center space-x-1 px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-slateText hover:text-brand-navy hover:bg-slate-50 transition-colors">
-              <span>B2B SaaS</span>
-              <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:rotate-180 transition-transform"></i>
-            </button>
-            <div class="mega-menu-content absolute top-full -left-12 w-[540px] bg-white rounded-2xl shadow-card border border-slate-100 p-6 z-50">
-              <div class="grid grid-cols-2 gap-4">
-                <div>
-                  <div class="text-xs font-bold tracking-wider text-brand-navy uppercase mb-3">Core Operations</div>
-                  <ul class="space-y-2 text-sm">
-                    <li><a href="#comparison" onclick="switchView('comparison')" class="text-slate-600 hover:text-brand-orange flex items-center justify-between">CRM & Sales Automation <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-60"></i></a></li>
-                    <li><a href="#comparison" onclick="switchView('comparison')" class="text-slate-600 hover:text-brand-orange flex items-center justify-between">Project & Task Management <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-60"></i></a></li>
-                    <li><a href="#comparison" onclick="switchView('comparison')" class="text-slate-600 hover:text-brand-orange flex items-center justify-between">HR, Payroll & EOR <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-60"></i></a></li>
-                  </ul>
-                </div>
-                <div>
-                  <div class="text-xs font-bold tracking-wider text-brand-navy uppercase mb-3">Finance & Security</div>
-                  <ul class="space-y-2 text-sm">
-                    <li><a href="#comparison" onclick="switchView('comparison')" class="text-slate-600 hover:text-brand-orange flex items-center justify-between">SOC2 & Compliance Ops <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-60"></i></a></li>
-                    <li><a href="#comparison" onclick="switchView('comparison')" class="text-slate-600 hover:text-brand-orange flex items-center justify-between">Billing & RevOps <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-60"></i></a></li>
-                    <li><a href="#comparison" onclick="switchView('comparison')" class="text-slate-600 hover:text-brand-orange flex items-center justify-between">Customer Support Desks <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-60"></i></a></li>
-                  </ul>
-                </div>
+          <!-- Industries Dropdown -->
+          <div class="relative group">
+            <a href="#/industries/b2b-saas" class="hover:text-[#ff4757] transition flex items-center gap-1 py-2" data-route-link="industries/b2b-saas">
+              <span>Industries</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute top-full left-0 hidden group-hover:block pt-2 w-64 z-50">
+              <div class="bolted-card p-4 rounded-xl bg-[#f0f2f5] border border-[#d1d9e6] shadow-floating space-y-2">
+                <a href="#/industries/b2b-saas" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>B2B SaaS (Primary)</strong>
+                  <span class="block text-[9px] text-[#718096]">ARR & CAC Compression</span>
+                </a>
+                <a href="#/industries/professional-services" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Professional Services</strong>
+                  <span class="block text-[9px] text-[#718096]">Legal & Advisory Leads</span>
+                </a>
+                <a href="#/industries/ecommerce" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>E-commerce & DTC</strong>
+                  <span class="block text-[9px] text-[#718096]">Blended ROAS Scaling</span>
+                </a>
+                <a href="#/industries/healthcare-fitness" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Healthcare & Fitness</strong>
+                  <span class="block text-[9px] text-[#718096]">HIPAA Compliant Funnels</span>
+                </a>
+                <a href="#/industries/fintech" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>FinTech</strong>
+                  <span class="block text-[9px] text-[#718096]">Trust & Compliance</span>
+                </a>
+                <a href="#/industries/real-estate" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Real Estate & PropTech</strong>
+                  <span class="block text-[9px] text-[#718096]">Investor Lead Engines</span>
+                </a>
+                <a href="#/industries/hospitality" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Hospitality & Luxury</strong>
+                  <span class="block text-[9px] text-[#718096]">Direct Booking Growth</span>
+                </a>
+                <a href="#/industries/manufacturing" class="block p-2 rounded hover:bg-white text-[11px] text-[#2d3436] hover:text-[#ff4757]">
+                  <strong>Manufacturing & B2B</strong>
+                  <span class="block text-[9px] text-[#718096]">Industrial RFQ Pipelines</span>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Direct Links -->
-          <a href="#hosting-pillars" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-slateText hover:text-brand-navy hover:bg-slate-50 transition-colors">
-            Cloud Hosting
-          </a>
-          <a href="#domain-pillars" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-slateText hover:text-brand-navy hover:bg-slate-50 transition-colors">
-            Domains & DNS
-          </a>
-          <a href="#comparison" onclick="switchView('comparison')" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-brand-slateText hover:text-brand-navy hover:bg-slate-50 transition-colors">
-            Comparisons
-          </a>
+          <a href="#/case-studies" class="hover:text-[#ff4757] transition py-2" data-route-link="case-studies">Case Studies</a>
+          <a href="#/pricing" class="hover:text-[#ff4757] transition py-2" data-route-link="pricing">Pricing</a>
+          <a href="#/about" class="hover:text-[#ff4757] transition py-2" data-route-link="about">About</a>
+          <a href="#/faq" class="hover:text-[#ff4757] transition py-2" data-route-link="faq">FAQ</a>
+          <a href="#/compare/vs-traditional-agencies" class="hover:text-[#ff4757] transition py-2" data-route-link="compare/vs-traditional-agencies">Comparison</a>
+          <a href="#/blog" class="hover:text-[#ff4757] transition py-2" data-route-link="blog">Intelligence</a>
         </nav>
 
-        <!-- Header Actions -->
-        <div class="flex items-center space-x-3">
-          <!-- Search Trigger -->
-          <button onclick="toggleSearchModal()" aria-label="Open Search" class="p-2.5 text-slate-500 hover:text-brand-navy hover:bg-slate-100 rounded-xl transition">
-            <i data-lucide="search" class="w-5 h-5"></i>
+        <!-- Right Quick Action Terminal Keys -->
+        <div class="hidden sm:flex items-center gap-3">
+          
+          <!-- Elementor Design Tokens Drawer Trigger -->
+          <button onclick="window.openElementorKitModal()" title="Export / Import into Elementor" class="btn-physical-recessed text-xs flex items-center gap-1.5 py-2 px-3">
+            <svg class="w-3.5 h-3.5 text-[#ff4757]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span class="font-bold">EXPORT ELEMENTOR KIT</span>
           </button>
 
-          <!-- "Best Deals" CTA Button -->
-          <a href="#deals" class="hidden sm:inline-flex items-center space-x-2 bg-brand-orange hover:bg-brand-orangeHover text-white font-semibold text-sm px-4 py-2.5 rounded-xl shadow-glow-orange hover:shadow-hover transition-all duration-200 transform hover:-translate-y-0.5">
-            <i data-lucide="zap" class="w-4 h-4 fill-current"></i>
-            <span>Verified Deals</span>
-            <span class="bg-white/20 text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Save 60%</span>
+          <!-- Primary Growth CTA -->
+          <a href="#/growth-diagnostic" class="btn-physical-primary !py-2.5 !px-5 text-xs">
+            <span>START DIAGNOSTIC</span>
           </a>
-
-          <!-- Mobile Hamburger -->
-          <button onclick="toggleMobileMenu()" aria-label="Toggle Navigation" class="lg:hidden p-2 rounded-xl text-slate-600 hover:bg-slate-100">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-          </button>
         </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button onclick="window.toggleMobileMenu()" aria-label="Toggle Navigation Drawer" class="xl:hidden p-2 rounded-lg shadow-card text-[#2d3436]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
       </div>
     </div>
 
-    <!-- Mobile Nav Drawer -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
-      <div class="grid grid-cols-2 gap-2 pb-3 border-b border-slate-100">
-        <button onclick="switchView('homepage'); toggleMobileMenu()" class="p-2.5 rounded-lg text-left text-sm font-semibold bg-slate-50 hover:bg-brand-pastelBlue text-brand-navy">🏠 Homepage</button>
-        <button onclick="switchView('review'); toggleMobileMenu()" class="p-2.5 rounded-lg text-left text-sm font-semibold bg-slate-50 hover:bg-brand-pastelBlue text-brand-navy">📄 Review Page</button>
-        <button onclick="switchView('comparison'); toggleMobileMenu()" class="p-2.5 rounded-lg text-left text-sm font-semibold bg-slate-50 hover:bg-brand-pastelBlue text-brand-navy">📊 Compare Table</button>
-        <button onclick="switchView('design-system'); toggleMobileMenu()" class="p-2.5 rounded-lg text-left text-sm font-semibold bg-slate-50 hover:bg-brand-pastelBlue text-brand-navy">🎨 Design Tokens</button>
+    <!-- Mobile Neumorphic Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden xl:hidden bg-[#e0e5ec] border-b border-[#a3b1c6] px-4 pt-3 pb-6 space-y-3 font-mono text-xs">
+      <div class="grid grid-cols-2 gap-2 pb-3 border-b border-[#d1d9e6]">
+        <a href="#/services" class="p-2 rounded bg-white shadow-card text-[#2d3436] font-bold">Services Hub</a>
+        <a href="#/pricing" class="p-2 rounded bg-white shadow-card text-[#ff4757] font-bold">Banded Pricing</a>
+        <a href="#/case-studies" class="p-2 rounded bg-white shadow-card text-[#2d3436]">Case Studies</a>
+        <a href="#/industries/b2b-saas" class="p-2 rounded bg-white shadow-card text-[#2d3436]">B2B SaaS</a>
+        <a href="#/growth-diagnostic" class="p-2 rounded bg-white shadow-card text-[#ff4757] font-bold">Diagnostic Quiz</a>
+        <a href="#/ai-search-audit" class="p-2 rounded bg-white shadow-card text-[#06b6d4]">AI Search Audit</a>
+        <a href="#/compare/vs-traditional-agencies" class="p-2 rounded bg-white shadow-card text-[#2d3436]">Vs Agencies</a>
+        <a href="#/contact" class="p-2 rounded bg-white shadow-card text-[#2d3436]">Book a Briefing</a>
       </div>
-      <div class="flex flex-col space-y-2">
-        <a href="#ai-tools" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">AI Tools Matrix</a>
-        <a href="#saas" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">B2B SaaS Hub</a>
-        <a href="#hosting" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">Managed Cloud Hosting</a>
-        <a href="#domains" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">Enterprise Registrar & DNS</a>
+
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="#/growth-diagnostic" class="btn-physical-primary w-full text-center text-xs"><span>START GROWTH DIAGNOSTIC</span></a>
+        <button onclick="window.openElementorKitModal()" class="btn-physical-secondary w-full text-center text-xs"><span>EXPORT ELEMENTOR TEMPLATES</span></button>
       </div>
     </div>
   </header>
 
-  <!-- ========================================================================= -->
-  <!-- MAIN CONTAINER WITH MULTI-PAGE VIEW ROUTING -->
-  <!-- ========================================================================= -->
-  <main id="main-content">
-
-    <!-- ##################################################################### -->
-    <!-- VIEW 1: COMPLETE HOMEPAGE -->
-    <!-- ##################################################################### -->
-    <section id="view-homepage" class="block">
-
-      <!-- HERO SECTION -->
-      <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-brand-pastelBlue/50 via-white to-brand-grayBg border-b border-slate-200/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          
-          <div class="max-w-3xl mx-auto text-center space-y-5">
-            <!-- Region Badge -->
-            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white shadow-sm border border-slate-200 text-xs font-semibold text-brand-navy">
-              <span class="flex h-2 w-2 relative">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-orange"></span>
-              </span>
-              <span>Benchmarked for USA, UK, Canada & Australia Tech Stacks</span>
-            </div>
-
-            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy tracking-tight leading-[1.15]">
-              Make SaaS & AI Decisions <br class="hidden sm:inline">
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-navy via-brand-navyLight to-brand-orange">
-                With 100% Data Rigor.
-              </span>
-            </h1>
-
-            <p class="text-lg sm:text-xl text-brand-muted leading-relaxed max-w-2xl mx-auto">
-              We test, benchmark, and stress-test enterprise tools across speed, security compliance, API reliability, and real total cost of ownership.
-            </p>
-
-            <!-- Search Bar in Hero -->
-            <div class="pt-2 max-w-xl mx-auto">
-              <div class="relative flex items-center shadow-card rounded-2xl bg-white border border-slate-200/80 p-1.5">
-                <i data-lucide="search" class="w-5 h-5 text-slate-400 ml-3"></i>
-                <input type="text" placeholder="Search 450+ audited SaaS, AI engines, Hostings..." class="w-full px-3 py-2.5 text-sm text-brand-slateText bg-transparent focus:outline-none" />
-                <button class="bg-brand-navy hover:bg-brand-navyDark text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition">
-                  Search
-                </button>
-              </div>
-            </div>
-
-            <!-- 4 Category Quick-Link Pills -->
-            <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
-              <a href="#ai-category" class="flex items-center justify-center space-x-2 p-3 bg-white hover:bg-brand-pastelMint rounded-xl border border-slate-200/80 shadow-soft hover:shadow-hover transition group">
-                <i data-lucide="cpu" class="w-4 h-4 text-emerald-600 group-hover:scale-110 transition"></i>
-                <span class="text-xs font-bold text-brand-navy">AI & LLMs</span>
-              </a>
-              <a href="#saas-category" class="flex items-center justify-center space-x-2 p-3 bg-white hover:bg-brand-pastelBlue rounded-xl border border-slate-200/80 shadow-soft hover:shadow-hover transition group">
-                <i data-lucide="layout-grid" class="w-4 h-4 text-blue-600 group-hover:scale-110 transition"></i>
-                <span class="text-xs font-bold text-brand-navy">B2B SaaS</span>
-              </a>
-              <a href="#hosting-category" class="flex items-center justify-center space-x-2 p-3 bg-white hover:bg-brand-orangeLight rounded-xl border border-slate-200/80 shadow-soft hover:shadow-hover transition group">
-                <i data-lucide="server" class="w-4 h-4 text-brand-orange group-hover:scale-110 transition"></i>
-                <span class="text-xs font-bold text-brand-navy">Cloud Hosting</span>
-              </a>
-              <a href="#domain-category" class="flex items-center justify-center space-x-2 p-3 bg-white hover:bg-brand-pastelPurple rounded-xl border border-slate-200/80 shadow-soft hover:shadow-hover transition group">
-                <i data-lucide="globe" class="w-4 h-4 text-purple-600 group-hover:scale-110 transition"></i>
-                <span class="text-xs font-bold text-brand-navy">DNS & Domains</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- TRUST BAR (Editorially Independent + Metrics) -->
-      <section class="border-y border-slate-200/70 bg-white py-4 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-wrap items-center justify-between gap-4">
-            
-            <div class="flex items-center space-x-3">
-              <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
-                <i data-lucide="badge-check" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <span class="text-sm font-bold text-brand-navy">420+ B2B Tools Tested</span>
-                <span class="text-xs text-brand-muted block sm:inline sm:ml-2">Over 3,800+ live synthetic benchmarks</span>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-3">
-              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-700">
-                <i data-lucide="award" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <span class="text-sm font-bold text-brand-navy">100% Editorially Independent</span>
-                <span class="text-xs text-brand-muted block sm:inline sm:ml-2">Vendors cannot buy rating scores</span>
-              </div>
-            </div>
-
-            <div class="text-xs text-brand-muted flex items-center">
-              <i data-lucide="info" class="w-3.5 h-3.5 mr-1 text-slate-400"></i>
-              <a href="#disclosure" class="underline hover:text-brand-orange">Affiliate Disclosure Policy</a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- CATEGORY GRID (4 Pillar Cards) -->
-      <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
-            <div>
-              <span class="text-xs font-extrabold uppercase tracking-widest text-brand-orange">Explore Ecosystems</span>
-              <h2 class="font-display text-3xl font-extrabold text-brand-navy mt-1">Core Tech Pillars Tested by Experts</h2>
-            </div>
-            <p class="text-sm text-brand-muted max-w-md mt-2 md:mt-0">Deep dive into dedicated categorical hubs containing performance telemetry, pricing matrices, and migration guides.</p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Pillar 1: AI Tools -->
-            <div id="ai-category" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
-                  <i data-lucide="bot" class="w-6 h-6"></i>
-                </div>
-                <h3 class="font-display text-xl font-bold text-brand-navy mb-2">AI & Generative Tools</h3>
-                <p class="text-sm text-brand-muted mb-4">LLM benchmarks, prompt pipelines, voice agents, and autonomous developer copilots.</p>
-              </div>
-              <div class="border-t border-slate-100 pt-3 space-y-2 text-xs font-semibold">
-                <a href="#review" onclick="switchView('review')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Notion AI & Copilots</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Claude 3.5 Sonnet vs GPT-4o</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#review" onclick="switchView('review')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Enterprise Voice Synthesizers</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pillar 2: B2B SaaS -->
-            <div id="saas-category" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
-                  <i data-lucide="briefcase" class="w-6 h-6"></i>
-                </div>
-                <h3 class="font-display text-xl font-bold text-brand-navy mb-2">B2B SaaS Engines</h3>
-                <p class="text-sm text-brand-muted mb-4">Mission-critical CRM, global payroll, SOC2 compliance automation, and ERP suites.</p>
-              </div>
-              <div class="border-t border-slate-100 pt-3 space-y-2 text-xs font-semibold">
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>HubSpot vs Salesforce CRM</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Deel vs Rippling EOR</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Vanta vs Drata Compliance</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pillar 3: Hosting -->
-            <div id="hosting-category" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center mb-4">
-                  <i data-lucide="server" class="w-6 h-6"></i>
-                </div>
-                <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Cloud Hosting & VPS</h3>
-                <p class="text-sm text-brand-muted mb-4">TTFB latency tests across US-East, Frankfurt, London, and Sydney edge data centers.</p>
-              </div>
-              <div class="border-t border-slate-100 pt-3 space-y-2 text-xs font-semibold">
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Hostinger Cloud Enterprise</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Cloudways vs Kinsta Managed</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Dedicated Bare-Metal Servers</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pillar 4: Domains & Security -->
-            <div id="domain-category" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4">
-                  <i data-lucide="shield-check" class="w-6 h-6"></i>
-                </div>
-                <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Domains & Anycast DNS</h3>
-                <p class="text-sm text-brand-muted mb-4">Registrar security, WHOIS privacy protection, and DDoS-shielded authoritative DNS.</p>
-              </div>
-              <div class="border-t border-slate-100 pt-3 space-y-2 text-xs font-semibold">
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Cloudflare Registrar Suite</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>Namecheap vs Porkbun Pricing</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-                <a href="#comparison" onclick="switchView('comparison')" class="flex items-center justify-between text-slate-700 hover:text-brand-orange">
-                  <span>DNSSEC & Anycast Latency</span> <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- EDITOR'S CHOICE ROW (3-4 High-Converting Product Cards) -->
-      <section class="py-12 bg-slate-50 border-y border-slate-200/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div class="flex items-center justify-between mb-8">
-            <div>
-              <div class="flex items-center space-x-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-brand-orange"></span>
-                <span class="text-xs font-bold uppercase tracking-wider text-brand-orange">Top Performers</span>
-              </div>
-              <h2 class="font-display text-3xl font-extrabold text-brand-navy mt-1">Editor's Choice Awards 2025</h2>
-            </div>
-            <a href="#comparison" onclick="switchView('comparison')" class="text-sm font-bold text-brand-navy hover:text-brand-orange flex items-center space-x-1">
-              <span>View Full Leaderboard</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            <!-- Card 1: Notion AI -->
-            <div class="bg-white rounded-2xl border-2 border-brand-orange/30 p-6 shadow-card hover:shadow-hover relative flex flex-col justify-between transition-all">
-              <div class="absolute -top-3.5 left-6 bg-brand-orange text-white text-[11px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider shadow-sm flex items-center space-x-1">
-                <i data-lucide="star" class="w-3 h-3 fill-current"></i>
-                <span>#1 Best Overall AI Workspace</span>
-              </div>
-
-              <div>
-                <div class="flex items-center justify-between mt-2 mb-4">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center font-display font-extrabold text-xl">
-                      N
-                    </div>
-                    <div>
-                      <h3 class="font-display text-lg font-bold text-brand-navy">Notion AI Enterprise</h3>
-                      <span class="text-xs text-brand-muted">Connected Docs & Agentic Q&A</span>
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <div class="text-sm font-extrabold text-brand-navy flex items-center justify-end">
-                      <span class="text-amber-500 mr-1">★</span> 4.9<span class="text-slate-400 text-xs">/5</span>
-                    </div>
-                    <span class="text-[11px] text-emerald-600 font-semibold">1,840+ votes</span>
-                  </div>
-                </div>
-
-                <p class="text-sm text-brand-slateText mb-4 line-clamp-3">
-                  Unifies knowledge silos, auto-generates client deliverables, and provides instant SOC2-compliant AI answers across all company databases.
-                </p>
-
-                <div class="bg-slate-50 p-3 rounded-xl mb-6 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-500">Starting Price:</span>
-                    <span class="font-bold text-brand-navy">$10 /user/month</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-500">Key Strength:</span>
-                    <span class="font-semibold text-emerald-600">Knowledge Retrieval (RAG)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
-                <button onclick="switchView('review')" class="w-full text-center py-2.5 px-3 rounded-xl border border-slate-200 text-xs font-bold text-brand-navy hover:bg-slate-100 transition">
-                  Read Review
-                </button>
-                <a href="https://notion.so" target="_blank" rel="nofollow sponsored noopener" class="w-full text-center py-2.5 px-3 rounded-xl bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold shadow-sm transition flex items-center justify-center space-x-1">
-                  <span>Visit Site</span>
-                  <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 2: Hostinger Cloud -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft hover:shadow-hover relative flex flex-col justify-between transition-all">
-              <div class="absolute -top-3.5 left-6 bg-brand-navy text-white text-[11px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider shadow-sm">
-                Best Value Cloud Host
-              </div>
-
-              <div>
-                <div class="flex items-center justify-between mt-2 mb-4">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-xl bg-purple-700 text-white flex items-center justify-center font-display font-extrabold text-xl">
-                      H
-                    </div>
-                    <div>
-                      <h3 class="font-display text-lg font-bold text-brand-navy">Hostinger Cloud</h3>
-                      <span class="text-xs text-brand-muted">Managed NVMe Infrastructure</span>
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <div class="text-sm font-extrabold text-brand-navy flex items-center justify-end">
-                      <span class="text-amber-500 mr-1">★</span> 4.8<span class="text-slate-400 text-xs">/5</span>
-                    </div>
-                    <span class="text-[11px] text-emerald-600 font-semibold">99.99% Uptime</span>
-                  </div>
-                </div>
-
-                <p class="text-sm text-brand-slateText mb-4 line-clamp-3">
-                  Dedicated IP, isolated virtual CPU resources, free automated CDN, and ultra-fast sub-180ms global TTFB response times.
-                </p>
-
-                <div class="bg-slate-50 p-3 rounded-xl mb-6 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-500">Starting Price:</span>
-                    <span class="font-bold text-brand-navy">$7.99 /month</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-500">Included:</span>
-                    <span class="font-semibold text-emerald-600">Free Domain + SSL + Backups</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
-                <button onclick="switchView('review')" class="w-full text-center py-2.5 px-3 rounded-xl border border-slate-200 text-xs font-bold text-brand-navy hover:bg-slate-100 transition">
-                  Read Review
-                </button>
-                <a href="https://hostinger.com" target="_blank" rel="nofollow sponsored noopener" class="w-full text-center py-2.5 px-3 rounded-xl bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold shadow-sm transition flex items-center justify-center space-x-1">
-                  <span>Claim 75% Off</span>
-                  <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 3: Deel Global Payroll -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft hover:shadow-hover relative flex flex-col justify-between transition-all">
-              <div class="absolute -top-3.5 left-6 bg-blue-600 text-white text-[11px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider shadow-sm">
-                #1 Global EOR & HR
-              </div>
-
-              <div>
-                <div class="flex items-center justify-between mt-2 mb-4">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-xl bg-amber-400 text-brand-navy flex items-center justify-center font-display font-extrabold text-xl">
-                      D
-                    </div>
-                    <div>
-                      <h3 class="font-display text-lg font-bold text-brand-navy">Deel Enterprise</h3>
-                      <span class="text-xs text-brand-muted">Global Hiring & Payroll</span>
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <div class="text-sm font-extrabold text-brand-navy flex items-center justify-end">
-                      <span class="text-amber-500 mr-1">★</span> 4.9<span class="text-slate-400 text-xs">/5</span>
-                    </div>
-                    <span class="text-[11px] text-emerald-600 font-semibold">150+ Countries</span>
-                  </div>
-                </div>
-
-                <p class="text-sm text-brand-slateText mb-4 line-clamp-3">
-                  Automate international compliance, contractor invoicing, localized benefits, and tax filings in USA, UK, Canada, and EU.
-                </p>
-
-                <div class="bg-slate-50 p-3 rounded-xl mb-6 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-500">Starting Price:</span>
-                    <span class="font-bold text-brand-navy">$49 /contractor</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-500">Compliance:</span>
-                    <span class="font-semibold text-emerald-600">100% Guaranteed Shield</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
-                <button onclick="switchView('review')" class="w-full text-center py-2.5 px-3 rounded-xl border border-slate-200 text-xs font-bold text-brand-navy hover:bg-slate-100 transition">
-                  Read Review
-                </button>
-                <a href="https://deel.com" target="_blank" rel="nofollow sponsored noopener" class="w-full text-center py-2.5 px-3 rounded-xl bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold shadow-sm transition flex items-center justify-center space-x-1">
-                  <span>Visit Site</span>
-                  <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- EMBEDDED COMPARISON SPOTLIGHT (Interactive preview on home) -->
-      <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-orange">Direct Face-Off</span>
-            <h2 class="font-display text-3xl font-extrabold text-brand-navy mt-1">2025 AI Productivity Showdown</h2>
-            <p class="text-sm text-brand-muted mt-2">Side-by-side feature matrix benchmarked by our engineering staff.</p>
-          </div>
-
-          <!-- Quick Preview Matrix -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-soft overflow-hidden">
-            <div class="overflow-x-auto">
-              <table class="w-full text-left text-sm">
-                <thead>
-                  <tr class="bg-slate-50/80 border-b border-slate-200 text-brand-navy">
-                    <th class="p-4 font-bold">Tool & Architecture</th>
-                    <th class="p-4 font-bold">Speed / TTFT</th>
-                    <th class="p-4 font-bold">Context Window</th>
-                    <th class="p-4 font-bold">Enterprise SOC2</th>
-                    <th class="p-4 font-bold">Base Cost</th>
-                    <th class="p-4 font-bold text-right">Verdict</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-100">
-                  <tr class="hover:bg-brand-pastelBlue/40 transition">
-                    <td class="p-4 flex items-center space-x-3">
-                      <div class="w-8 h-8 rounded-lg bg-black text-white font-bold flex items-center justify-center text-xs">N</div>
-                      <div>
-                        <div class="font-bold text-brand-navy">Notion AI Enterprise</div>
-                        <div class="text-xs text-brand-muted">Built-in RAG + Docs</div>
-                      </div>
-                    </td>
-                    <td class="p-4 text-emerald-600 font-semibold">120ms (Instant)</td>
-                    <td class="p-4">128k Tokens</td>
-                    <td class="p-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-xs font-bold">Verified Type II</span></td>
-                    <td class="p-4 font-bold text-brand-navy">$10 /mo</td>
-                    <td class="p-4 text-right">
-                      <button onclick="switchView('review')" class="bg-brand-orange hover:bg-brand-orangeHover text-white px-3 py-1.5 rounded-lg text-xs font-bold transition">Full Specs</button>
-                    </td>
-                  </tr>
-                  <tr class="hover:bg-brand-pastelBlue/40 transition">
-                    <td class="p-4 flex items-center space-x-3">
-                      <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-bold flex items-center justify-center text-xs">C</div>
-                      <div>
-                        <div class="font-bold text-brand-navy">Claude 3.5 Sonnet</div>
-                        <div class="text-xs text-brand-muted">Anthropic Artifacts</div>
-                      </div>
-                    </td>
-                    <td class="p-4 text-emerald-600 font-semibold">145ms</td>
-                    <td class="p-4">200k Tokens</td>
-                    <td class="p-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-xs font-bold">Verified Type II</span></td>
-                    <td class="p-4 font-bold text-brand-navy">$20 /mo</td>
-                    <td class="p-4 text-right">
-                      <button onclick="switchView('review')" class="bg-slate-100 hover:bg-slate-200 text-brand-navy px-3 py-1.5 rounded-lg text-xs font-bold transition">Full Specs</button>
-                    </td>
-                  </tr>
-                  <tr class="hover:bg-brand-pastelBlue/40 transition">
-                    <td class="p-4 flex items-center space-x-3">
-                      <div class="w-8 h-8 rounded-lg bg-teal-600 text-white font-bold flex items-center justify-center text-xs">O</div>
-                      <div>
-                        <div class="font-bold text-brand-navy">OpenAI ChatGPT Team</div>
-                        <div class="text-xs text-brand-muted">GPT-4o & Canvas</div>
-                      </div>
-                    </td>
-                    <td class="p-4 text-emerald-600 font-semibold">160ms</td>
-                    <td class="p-4">128k Tokens</td>
-                    <td class="p-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-xs font-bold">Verified Type II</span></td>
-                    <td class="p-4 font-bold text-brand-navy">$25 /mo</td>
-                    <td class="p-4 text-right">
-                      <button onclick="switchView('review')" class="bg-slate-100 hover:bg-slate-200 text-brand-navy px-3 py-1.5 rounded-lg text-xs font-bold transition">Full Specs</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="p-4 bg-slate-50 text-center border-t border-slate-100">
-              <button onclick="switchView('comparison')" class="text-xs font-bold text-brand-navy hover:text-brand-orange uppercase tracking-wider">
-                Open Deep 12-Column Technical Comparison Engine →
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LATEST REVIEWS FEED (3-Column Paginated) -->
-      <section class="py-16 bg-brand-grayBg border-t border-slate-200/70">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between mb-8">
-            <div>
-              <span class="text-xs font-extrabold uppercase tracking-widest text-brand-orange">Fresh From The Lab</span>
-              <h2 class="font-display text-3xl font-extrabold text-brand-navy mt-1">Latest In-Depth Audits</h2>
-            </div>
-            <span class="text-xs text-brand-muted">Updated daily by senior engineers</span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            <!-- Article 1 -->
-            <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-soft hover:shadow-hover transition flex flex-col justify-between">
-              <div>
-                <div class="relative h-48 bg-slate-100 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Cloud VPS Server Setup" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-                  <span class="absolute top-3 left-3 bg-brand-navy text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-md">Cloud Hosting</span>
-                </div>
-                <div class="p-6">
-                  <div class="flex items-center space-x-2 text-xs text-brand-muted mb-2">
-                    <span>Feb 14, 2025</span>
-                    <span>•</span>
-                    <span>11 min read</span>
-                    <span>•</span>
-                    <span class="text-amber-500 font-bold">★ 4.8</span>
-                  </div>
-                  <h3 class="font-display text-lg font-bold text-brand-navy hover:text-brand-orange transition cursor-pointer" onclick="switchView('review')">
-                    Cloudways Autonomous Review: Zero-Ops Managed Cloud for Scale
-                  </h3>
-                  <p class="text-xs text-brand-slateText mt-2 line-clamp-2">
-                    We stress-tested autonomous autoscaling with 100,000 concurrent bot hits. Here is what happened to CPU throttle.
-                  </p>
-                </div>
-              </div>
-              <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                  <div class="w-6 h-6 rounded-full bg-slate-300 text-[10px] flex items-center justify-center font-bold">MV</div>
-                  <span class="text-xs text-slate-600">Dr. M. Vance</span>
-                </div>
-                <button onclick="switchView('review')" class="text-xs font-bold text-brand-orange hover:underline">Read Audit →</button>
-              </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-soft hover:shadow-hover transition flex flex-col justify-between">
-              <div>
-                <div class="relative h-48 bg-slate-100 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Security SOC2 compliance" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-                  <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-md">SaaS & Security</span>
-                </div>
-                <div class="p-6">
-                  <div class="flex items-center space-x-2 text-xs text-brand-muted mb-2">
-                    <span>Feb 11, 2025</span>
-                    <span>•</span>
-                    <span>14 min read</span>
-                    <span>•</span>
-                    <span class="text-amber-500 font-bold">★ 4.9</span>
-                  </div>
-                  <h3 class="font-display text-lg font-bold text-brand-navy hover:text-brand-orange transition cursor-pointer" onclick="switchView('review')">
-                    Vanta vs Drata: The 2025 SOC2 & ISO 27001 Compliance Breakdown
-                  </h3>
-                  <p class="text-xs text-brand-slateText mt-2 line-clamp-2">
-                    Automating 85% of audit evidence collection across AWS, GCP, and GitHub without slowing down engineering sprints.
-                  </p>
-                </div>
-              </div>
-              <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                  <div class="w-6 h-6 rounded-full bg-slate-300 text-[10px] flex items-center justify-center font-bold">EK</div>
-                  <span class="text-xs text-slate-600">Elena Rostova</span>
-                </div>
-                <button onclick="switchView('review')" class="text-xs font-bold text-brand-orange hover:underline">Read Audit →</button>
-              </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-soft hover:shadow-hover transition flex flex-col justify-between">
-              <div>
-                <div class="relative h-48 bg-slate-100 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="AI Agent Interface" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-                  <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-md">AI Copilots</span>
-                </div>
-                <div class="p-6">
-                  <div class="flex items-center space-x-2 text-xs text-brand-muted mb-2">
-                    <span>Feb 08, 2025</span>
-                    <span>•</span>
-                    <span>9 min read</span>
-                    <span>•</span>
-                    <span class="text-amber-500 font-bold">★ 4.95</span>
-                  </div>
-                  <h3 class="font-display text-lg font-bold text-brand-navy hover:text-brand-orange transition cursor-pointer" onclick="switchView('review')">
-                    Cursor AI IDE: Why 1,000+ Software Teams Migrated From VS Code
-                  </h3>
-                  <p class="text-xs text-brand-slateText mt-2 line-clamp-2">
-                    Multi-file codebase indexing and predictive shadow-workspace editing tested on a 400k-line Rust project.
-                  </p>
-                </div>
-              </div>
-              <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                  <div class="w-6 h-6 rounded-full bg-slate-300 text-[10px] flex items-center justify-center font-bold">SL</div>
-                  <span class="text-xs text-slate-600">Samson Lewis</span>
-                </div>
-                <button onclick="switchView('review')" class="text-xs font-bold text-brand-orange hover:underline">Read Audit →</button>
-              </div>
-            </article>
-
-          </div>
-
-          <!-- Pagination Preview -->
-          <div class="flex justify-center items-center space-x-2 mt-10">
-            <button class="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100">Previous</button>
-            <button class="px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-navy text-white">1</button>
-            <button class="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100">2</button>
-            <button class="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100">3</button>
-            <span class="text-xs text-slate-400">...</span>
-            <button class="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold bg-white text-slate-600 hover:bg-slate-100">Next</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHY TRUST READMEHUB (3-Column Trust Section) -->
-      <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-orange">Editorial Standard</span>
-            <h2 class="font-display text-3xl font-extrabold text-brand-navy mt-1">Why Tier-1 CTOs & Founders Trust Us</h2>
-            <p class="text-sm text-brand-muted mt-2">Zero sponsored fluff. We buy accounts with our own corporate credit cards to replicate realistic enterprise conditions.</p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div class="p-6 rounded-2xl bg-brand-pastelBlue/60 border border-slate-200/80">
-              <div class="w-12 h-12 rounded-xl bg-brand-navy text-brand-orange flex items-center justify-center mb-4">
-                <i data-lucide="gauge" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Live Infrastructure Benchmarking</h3>
-              <p class="text-sm text-brand-slateText leading-relaxed">
-                We continuously ping server clusters from 12 edge locations (US, UK, DE, AU, SG) recording real TTFB, packet jitter, and uptime SLAs.
-              </p>
-            </div>
-
-            <div class="p-6 rounded-2xl bg-brand-pastelMint/60 border border-slate-200/80">
-              <div class="w-12 h-12 rounded-xl bg-brand-navy text-emerald-400 flex items-center justify-center mb-4">
-                <i data-lucide="shield-alert" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Total Independence Guarantee</h3>
-              <p class="text-sm text-brand-slateText leading-relaxed">
-                No vendor can pay to edit ratings, remove negative pros/cons, or skip our 14-day mandatory trial testing workflow.
-              </p>
-            </div>
-
-            <div class="p-6 rounded-2xl bg-brand-pastelPurple/60 border border-slate-200/80">
-              <div class="w-12 h-12 rounded-xl bg-brand-navy text-purple-400 flex items-center justify-center mb-4">
-                <i data-lucide="receipt" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Real Total Cost of Ownership (TCO)</h3>
-              <p class="text-sm text-brand-slateText leading-relaxed">
-                We unmask hidden renewal hikes, seat tier locks, and API overage charges that software salespeople leave out of sales demos.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- NEWSLETTER SIGNUP BLOCK -->
-      <section class="py-16 bg-gradient-to-r from-brand-navy via-brand-navyDark to-brand-navy text-white relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <span class="inline-block px-3 py-1 bg-brand-orange/20 text-brand-orange rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-            ReadMeHub Intelligence Dispatch
-          </span>
-          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Get The Bi-Weekly B2B Tech Stack Audit
-          </h2>
-          <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-xl mx-auto">
-            Join 34,000+ CTOs, VPs of Eng, and SaaS founders. No sponsor spam, just raw uptime telemetry and exclusive pricing deals.
-          </p>
-
-          <form onsubmit="event.preventDefault(); alert('Subscribed successfully to ReadMeHub Tech Dispatch!');" class="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-2">
-            <input type="email" required placeholder="name@company.com" class="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange w-full">
-            <button type="submit" class="bg-brand-orange hover:bg-brand-orangeHover text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-glow-orange shrink-0">
-              Subscribe Free
-            </button>
-          </form>
-          <span class="text-[11px] text-slate-400 block mt-3">Zero spam. Unsubscribe anytime in 1 click.</span>
-        </div>
-      </section>
-
-    </section>
-
-    <!-- ##################################################################### -->
-    <!-- VIEW 2: SINGLE REVIEW PAGE TEMPLATE (Notion AI Deep Review) -->
-    <!-- ##################################################################### -->
-    <section id="view-review" class="hidden py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Breadcrumbs -->
-        <nav class="flex items-center space-x-2 text-xs text-brand-muted mb-6">
-          <a href="#homepage" onclick="switchView('homepage')" class="hover:text-brand-navy">Home</a>
-          <i data-lucide="chevron-right" class="w-3 h-3"></i>
-          <a href="#ai-category" class="hover:text-brand-navy">AI Tools & Copilots</a>
-          <i data-lucide="chevron-right" class="w-3 h-3"></i>
-          <span class="text-brand-navy font-semibold">Notion AI Enterprise Review</span>
-        </nav>
-
-        <!-- 1. ABOVE-FOLD PRODUCT HERO & VERDICT -->
-        <div class="bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-8 shadow-card mb-10">
-          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-100">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-black text-white flex items-center justify-center font-display font-extrabold text-3xl shadow-md shrink-0">
-                N
-              </div>
-              <div>
-                <div class="flex items-center space-x-2">
-                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-extrabold uppercase tracking-wide">
-                    Editor's Choice 2025
-                  </span>
-                  <span class="text-xs text-slate-400">Version 3.2 Tested</span>
-                </div>
-                <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-brand-navy mt-1">
-                  Notion AI Review (2025): Is It The Ultimate Enterprise Knowledge Hub?
-                </h1>
-                
-                <!-- Affiliate Disclosure Under Title -->
-                <p class="italic text-xs text-brand-muted mt-2">
-                  <i data-lucide="info" class="w-3.5 h-3.5 inline mr-1 text-slate-400"></i>
-                  Affiliate Disclosure: ReadMeHub maintains independent editorial testing standards. We may earn a commission if you purchase via our verified partner links at no extra cost to you.
-                </p>
-              </div>
-            </div>
-
-            <!-- Header Star Rating & Score Box -->
-            <div class="bg-brand-pastelBlue rounded-2xl p-4 border border-blue-100 text-center shrink-0 min-w-[200px]">
-              <div class="text-3xl font-extrabold text-brand-navy">4.9 <span class="text-sm font-normal text-slate-500">/ 5.0</span></div>
-              <div class="flex justify-center text-amber-500 my-1 text-lg">★★★★★</div>
-              <div class="text-[11px] font-bold text-emerald-700 uppercase tracking-wider">Exceptional Rating</div>
-              <div class="text-[10px] text-slate-500 mt-0.5">Based on 1,840+ enterprise audits</div>
-            </div>
-          </div>
-
-          <!-- QUICK VERDICT BOX + CTA -->
-          <div class="mt-6 bg-gradient-to-br from-slate-50 to-brand-pastelMint/30 p-6 rounded-2xl border border-emerald-100 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="space-y-2">
-              <div class="flex items-center space-x-2">
-                <i data-lucide="zap" class="w-4 h-4 text-brand-orange"></i>
-                <span class="text-xs font-bold text-brand-navy uppercase tracking-wider">Quick ReadMeHub Verdict</span>
-              </div>
-              <p class="text-sm text-slate-700 leading-relaxed font-medium">
-                Notion AI sets the highest standard for workplace AI retrieval (RAG). It seamlessly indexes corporate docs, tickets, and roadmap specs without requiring complex vector database setup. For teams already on Notion, it delivers immediate 35-40% sprint velocity gains.
-              </p>
-            </div>
-            <div class="shrink-0 w-full md:w-auto text-center space-y-2">
-              <a href="https://notion.so" target="_blank" rel="nofollow sponsored noopener" class="w-full md:w-auto inline-flex items-center justify-center space-x-2 bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-base px-8 py-3.5 rounded-xl shadow-glow-orange hover:shadow-hover transition duration-200">
-                <span>Visit Notion AI</span>
-                <i data-lucide="external-link" class="w-4 h-4"></i>
-              </a>
-              <span class="text-[11px] text-emerald-700 font-semibold block">⚡ Includes 30-Day Free Trial</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- TWO COLUMN LAYOUT: CONTENT BODY + STICKY SIDEBAR -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          
-          <!-- LEFT MAIN CONTENT (8 Cols) -->
-          <div class="lg:col-span-8 space-y-10">
-
-            <!-- 2. PROS AND CONS COMPONENT -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft">
-              <h2 class="font-display text-xl font-bold text-brand-navy mb-4 flex items-center space-x-2">
-                <i data-lucide="scale" class="w-5 h-5 text-brand-navy"></i>
-                <span>Pros & Cons Snapshot</span>
-              </h2>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Pros -->
-                <div class="p-5 bg-emerald-50/60 rounded-xl border border-emerald-200/80">
-                  <div class="text-sm font-bold text-emerald-900 flex items-center mb-3">
-                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-emerald-600"></i>
-                    What We Liked (Pros)
-                  </div>
-                  <ul class="space-y-2.5 text-xs text-slate-700">
-                    <li class="flex items-start"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600 shrink-0 mt-0.5"></i> Native Q&A across private Notion pages & Slack integrations.</li>
-                    <li class="flex items-start"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600 shrink-0 mt-0.5"></i> Zero-retention enterprise privacy guarantee (Data never trains public models).</li>
-                    <li class="flex items-start"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600 shrink-0 mt-0.5"></i> Auto-fills project tables, summaries, and action items effortlessly.</li>
-                    <li class="flex items-start"><i data-lucide="check" class="w-3.5 h-3.5 mr-2 text-emerald-600 shrink-0 mt-0.5"></i> Highly affordable flat $10 add-on pricing per member.</li>
-                  </ul>
-                </div>
-
-                <!-- Cons -->
-                <div class="p-5 bg-rose-50/60 rounded-xl border border-rose-200/80">
-                  <div class="text-sm font-bold text-rose-900 flex items-center mb-3">
-                    <i data-lucide="x-circle" class="w-4 h-4 mr-2 text-rose-600"></i>
-                    Areas for Improvement (Cons)
-                  </div>
-                  <ul class="space-y-2.5 text-xs text-slate-700">
-                    <li class="flex items-start"><i data-lucide="x" class="w-3.5 h-3.5 mr-2 text-rose-500 shrink-0 mt-0.5"></i> Cannot execute live external terminal commands or automated Python scripts.</li>
-                    <li class="flex items-start"><i data-lucide="x" class="w-3.5 h-3.5 mr-2 text-rose-500 shrink-0 mt-0.5"></i> Limited utility for teams who do not manage documentation inside Notion.</li>
-                    <li class="flex items-start"><i data-lucide="x" class="w-3.5 h-3.5 mr-2 text-rose-500 shrink-0 mt-0.5"></i> PDF visual chart parsing occasionally misses deep graph legends.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- 3. PRICING SNAPSHOT TABLE -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft">
-              <h2 class="font-display text-xl font-bold text-brand-navy mb-4 flex items-center space-x-2">
-                <i data-lucide="tag" class="w-5 h-5 text-brand-navy"></i>
-                <span>Transparent Pricing Snapshot (2025)</span>
-              </h2>
-
-              <div class="overflow-x-auto">
-                <table class="w-full text-left text-xs sm:text-sm">
-                  <thead>
-                    <tr class="bg-slate-50 border-b border-slate-200 text-brand-navy font-bold">
-                      <th class="p-3">Plan Tier</th>
-                      <th class="p-3">Pricing (Annual)</th>
-                      <th class="p-3">AI Allowance</th>
-                      <th class="p-3">Best For</th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-slate-100">
-                    <tr>
-                      <td class="p-3 font-bold text-brand-navy">Free Starter</td>
-                      <td class="p-3">$0 / user</td>
-                      <td class="p-3 text-slate-600">20 trial AI prompts</td>
-                      <td class="p-3 text-slate-600">Individual exploratory tests</td>
-                    </tr>
-                    <tr class="bg-brand-orangeLight/40">
-                      <td class="p-3 font-bold text-brand-navy flex items-center">
-                        <span class="w-2 h-2 rounded-full bg-brand-orange mr-2"></span> Plus + AI Addon
-                      </td>
-                      <td class="p-3 font-extrabold text-brand-navy">$10 + $10 / mo</td>
-                      <td class="p-3 text-emerald-700 font-semibold">Unlimited Queries</td>
-                      <td class="p-3 font-semibold text-brand-navy">Small Growth Teams (5-50)</td>
-                    </tr>
-                    <tr>
-                      <td class="p-3 font-bold text-brand-navy">Business Enterprise</td>
-                      <td class="p-3">$18 + $10 / mo</td>
-                      <td class="p-3 text-emerald-700 font-semibold">Unlimited + SAML SSO</td>
-                      <td class="p-3 text-slate-600">Strict Compliance Orgs</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- 4. REVIEW BODY (Semantic H2 Headings) -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-soft space-y-6 text-brand-slateText leading-relaxed">
-              
-              <section>
-                <h2 class="font-display text-2xl font-bold text-brand-navy mb-3">1. Executive Overview & Value Proposition</h2>
-                <p class="text-sm">
-                  Knowledge fragmentation is the silent killer of engineering velocity. Engineers waste an average of 4.2 hours per week looking for specs across Jira, Notion, Slack, and Google Drive. Notion AI directly resolves this by embedding native Anthropic Claude and OpenAI models on top of your live workspace tree.
-                </p>
-              </section>
-
-              <section>
-                <h2 class="font-display text-2xl font-bold text-brand-navy mb-3">2. Key Features We Benchmarked</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
-                  <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <h4 class="font-bold text-brand-navy text-sm mb-1">Global Workspace Q&A (RAG)</h4>
-                    <p class="text-xs text-brand-muted">Ask questions in plain English like: "What was decided regarding OAuth scope in the Q3 retro?" and get linked document references in &lt;1.2 seconds.</p>
-                  </div>
-                  <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <h4 class="font-bold text-brand-navy text-sm mb-1">Autofill Table Formulas</h4>
-                    <p class="text-xs text-brand-muted">Populate massive product backlogs with automated translation, customer sentiment scores, and executive one-sentence digests.</p>
-                  </div>
-                </div>
-              </section>
-
-              <!-- SCREENSHOT GALLERY WITH CAPTIONS -->
-              <section>
-                <h2 class="font-display text-2xl font-bold text-brand-navy mb-3">3. Screenshot & UI Benchmark Gallery</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <figure class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
-                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Notion AI Interface Test" class="w-full h-44 object-cover">
-                    <figcaption class="p-2.5 text-[11px] text-slate-500 bg-white">Figure 1.1: Live query test searching 400+ technical PRDs in under 800ms.</figcaption>
-                  </figure>
-                  <figure class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Database autofill telemetry" class="w-full h-44 object-cover">
-                    <figcaption class="p-2.5 text-[11px] text-slate-500 bg-white">Figure 1.2: Automated competitive benchmarking matrix generation in Notion databases.</figcaption>
-                  </figure>
-                </div>
-              </section>
-
-              <section>
-                <h2 class="font-display text-2xl font-bold text-brand-navy mb-3">4. Who Is Notion AI Best For?</h2>
-                <div class="space-y-2 text-sm">
-                  <p><strong>✅ Ideal For:</strong> Product managers, asynchronous remote startups, compliance-minded SaaS organizations, and marketing departments managing high-volume editorial content.</p>
-                  <p><strong>❌ Not Ideal For:</strong> Solo developers needing raw terminal sandbox execution or dedicated mathematical modeling compilers.</p>
-                </div>
-              </section>
-
-              <!-- MINI COMPARISON BLOCK VS COMPETITOR -->
-              <section class="bg-brand-pastelBlue/50 p-6 rounded-2xl border border-blue-200">
-                <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Notion AI vs ChatGPT Plus: Which Should You Buy?</h3>
-                <p class="text-xs text-brand-slateText mb-4">
-                  While ChatGPT Plus ($20/mo) excels at raw conversational brainstorms, it has zero continuous visibility into your company's proprietary sprint history. Notion AI ($10/mo) acts as an omniscient junior employee who has read every doc your company has ever created.
-                </p>
-                <div class="text-xs font-bold text-brand-navy">ReadMeHub Pick: Notion AI for teams, ChatGPT Plus for solo researchers.</div>
-              </section>
-
-              <!-- 5. ACCESSIBLE FAQ ACCORDION WITH SCHEMA -->
-              <section>
-                <h2 class="font-display text-2xl font-bold text-brand-navy mb-4">Frequently Asked Questions</h2>
-                <div class="space-y-3" id="faq-accordion">
-                  
-                  <div class="border border-slate-200 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq('faq-1')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-bold text-sm text-brand-navy transition">
-                      <span>Is Notion AI compliant with SOC2 and GDPR?</span>
-                      <i data-lucide="chevron-down" id="faq-1-icon" class="w-4 h-4 text-slate-500 transition-transform"></i>
-                    </button>
-                    <div id="faq-1" class="p-4 bg-white text-xs sm:text-sm text-brand-slateText border-t border-slate-100">
-                      Yes. Notion holds SOC2 Type II certifications. User workspace prompts and private documents are strictly shielded and are never utilized to train foundation models (OpenAI or Anthropic).
-                    </div>
-                  </div>
-
-                  <div class="border border-slate-200 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq('faq-2')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-bold text-sm text-brand-navy transition">
-                      <span>Can I purchase Notion AI without a Notion paid subscription?</span>
-                      <i data-lucide="chevron-down" id="faq-2-icon" class="w-4 h-4 text-slate-500 transition-transform"></i>
-                    </button>
-                    <div id="faq-2" class="p-4 bg-white text-xs sm:text-sm text-brand-slateText border-t border-slate-100 hidden">
-                      Yes! Notion AI can be added to the Free Notion plan for $10/member/month billed monthly, or $8/month billed annually.
-                    </div>
-                  </div>
-
-                </div>
-              </section>
-
-              <!-- 6. AUTHOR BIO & VERIFICATION BOX -->
-              <section class="border-t border-slate-200 pt-6 mt-8">
-                <div class="flex items-center space-x-4 bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                  <div class="w-14 h-14 rounded-full bg-brand-navy text-white flex items-center justify-center font-display font-bold text-lg shrink-0">
-                    MV
-                  </div>
-                  <div>
-                    <div class="flex items-center space-x-2">
-                      <span class="font-display font-bold text-brand-navy text-sm">Dr. Marcus Vance, PhD</span>
-                      <span class="text-[10px] px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 font-bold">Verified Auditor</span>
-                    </div>
-                    <p class="text-xs text-brand-muted mt-0.5">
-                      Former Lead Infrastructure Architect at CloudScale Labs. Has audited 320+ enterprise SaaS platforms.
-                    </p>
-                    <div class="text-[11px] text-slate-500 mt-1 flex items-center space-x-3">
-                      <span>Last Updated: <strong>February 15, 2025</strong></span>
-                      <span>•</span>
-                      <span>Next Re-audit: <strong>May 2025</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-            </div>
-          </div>
-
-          <!-- RIGHT COLUMN: DESKTOP STICKY SIDEBAR CTA CARD (4 Cols) -->
-          <aside class="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
-            
-            <!-- Floating Deal Card -->
-            <div class="bg-white rounded-3xl border-2 border-brand-navy p-6 shadow-card space-y-5 relative overflow-hidden">
-              <div class="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-extrabold uppercase px-3 py-1 rounded-bl-xl tracking-wider">
-                Special Promotion
-              </div>
-
-              <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center font-display font-bold text-xl">
-                  N
-                </div>
-                <div>
-                  <div class="font-display font-bold text-brand-navy">Notion AI Enterprise</div>
-                  <div class="text-xs text-emerald-600 font-semibold flex items-center">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 mr-1"></span> Verified Deal Live
-                  </div>
-                </div>
-              </div>
-
-              <div class="space-y-2 border-y border-slate-100 py-3 text-xs">
-                <div class="flex justify-between">
-                  <span class="text-slate-500">ReadMeHub Score:</span>
-                  <span class="font-bold text-brand-navy">4.9 / 5.0 (Editor's Choice)</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-slate-500">Starting Price:</span>
-                  <span class="font-bold text-brand-navy">$10 /user/mo</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-slate-500">Guarantee:</span>
-                  <span class="font-semibold text-emerald-600">30-Day Money Back</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-slate-500">Target Region:</span>
-                  <span class="font-semibold text-brand-navy">US, UK, CA, AU, EU</span>
-                </div>
-              </div>
-
-              <a href="https://notion.so" target="_blank" rel="nofollow sponsored noopener" class="w-full inline-flex items-center justify-center space-x-2 bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-base py-3.5 px-4 rounded-xl shadow-glow-orange hover:shadow-hover transition duration-200">
-                <span>Visit Notion AI</span>
-                <i data-lucide="external-link" class="w-4 h-4"></i>
-              </a>
-
-              <p class="text-[10px] text-center text-slate-400">Direct affiliate gateway • SSL Encrypted Security</p>
-            </div>
-
-            <!-- Alternative Competitors Quick Card -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-soft space-y-3">
-              <h4 class="font-display font-bold text-xs uppercase tracking-wider text-brand-navy">Top Rated Alternatives</h4>
-              <div class="space-y-2">
-                <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 hover:bg-brand-pastelBlue transition cursor-pointer" onclick="switchView('comparison')">
-                  <div class="flex items-center space-x-2">
-                    <div class="w-6 h-6 rounded bg-indigo-600 text-white font-bold text-[10px] flex items-center justify-center">C</div>
-                    <span class="text-xs font-bold text-brand-navy">Claude 3.5 Sonnet</span>
-                  </div>
-                  <span class="text-xs font-bold text-amber-500">★ 4.9</span>
-                </div>
-                <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 hover:bg-brand-pastelBlue transition cursor-pointer" onclick="switchView('comparison')">
-                  <div class="flex items-center space-x-2">
-                    <div class="w-6 h-6 rounded bg-teal-600 text-white font-bold text-[10px] flex items-center justify-center">G</div>
-                    <span class="text-xs font-bold text-brand-navy">OpenAI Team</span>
-                  </div>
-                  <span class="text-xs font-bold text-amber-500">★ 4.8</span>
-                </div>
-              </div>
-            </div>
-
-          </aside>
-
-        </div>
+  <!-- ======================================================================
+       MAIN VIEWPORT: DYNAMIC CLIENT-SIDE ROUTER CONTAINER
+       ====================================================================== -->
+  <main id="app-viewport" class="flex-grow">
+    <!-- Initial Loading State / Content Rendered by app.js -->
+    <div class="min-h-[50vh] flex items-center justify-center">
+      <div class="p-8 rounded-2xl shadow-recessed text-center font-mono">
+        <span class="led-indicator led-glow-orange mb-3"></span>
+        <div class="text-xs font-bold text-[#2d3436]">INITIALIZING GROWTH ENGINE...</div>
       </div>
-    </section>
-
-    <!-- ##################################################################### -->
-    <!-- VIEW 3: COMPARISON TABLE COMPONENT (Reusable 4-Tool Matrix) -->
-    <!-- ##################################################################### -->
-    <section id="view-comparison" class="hidden py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-10">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-orange">Interactive Engine</span>
-          <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-navy mt-1">2025 Tier-1 Cloud & AI Matrix</h1>
-          <p class="text-sm sm:text-base text-brand-muted mt-2">
-            Side-by-side comparison with sticky desktop navigation and swipeable mobile cards. Built for instant executive decision-making.
-          </p>
-        </div>
-
-        <!-- Desktop Full Width Table (Sticky 1st Col) -->
-        <div class="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-card overflow-hidden">
-          <div class="overflow-x-auto">
-            <table class="w-full text-left border-collapse" role="grid" aria-label="Tool Comparison Matrix">
-              <thead>
-                <tr class="bg-slate-50 border-b border-slate-200">
-                  <th scope="col" class="p-6 font-display font-extrabold text-brand-navy w-1/5 sticky left-0 bg-slate-50 z-20 sticky-col-shadow">
-                    Tool & Score
-                  </th>
-                  <th scope="col" class="p-6 font-display font-extrabold text-brand-navy w-1/5 bg-brand-orangeLight/40 border-x-2 border-brand-orange/40 relative">
-                    <div class="absolute -top-0.5 left-0 right-0 bg-brand-orange text-white text-[10px] uppercase font-extrabold text-center py-1 tracking-wider">
-                      ★ Editor's Choice 2025
-                    </div>
-                    <div class="mt-2">Notion AI Enterprise</div>
-                  </th>
-                  <th scope="col" class="p-6 font-display font-extrabold text-brand-navy w-1/5">
-                    Claude 3.5 Sonnet
-                  </th>
-                  <th scope="col" class="p-6 font-display font-extrabold text-brand-navy w-1/5">
-                    OpenAI Team
-                  </th>
-                  <th scope="col" class="p-6 font-display font-extrabold text-brand-navy w-1/5">
-                    Hostinger Cloud
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-100 text-sm">
-                
-                <!-- Row: Rating -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">ReadMeHub Score</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40 font-extrabold text-brand-navy">
-                    <div class="flex items-center space-x-1 text-amber-500">★★★★★ <span class="text-brand-navy ml-1 font-bold">4.9 / 5</span></div>
-                  </td>
-                  <td class="p-5 text-brand-slateText font-bold">
-                    <div class="flex items-center space-x-1 text-amber-500">★★★★★ <span class="text-brand-navy ml-1 font-bold">4.9 / 5</span></div>
-                  </td>
-                  <td class="p-5 text-brand-slateText font-bold">
-                    <div class="flex items-center space-x-1 text-amber-500">★★★★☆ <span class="text-brand-navy ml-1 font-bold">4.8 / 5</span></div>
-                  </td>
-                  <td class="p-5 text-brand-slateText font-bold">
-                    <div class="flex items-center space-x-1 text-amber-500">★★★★☆ <span class="text-brand-navy ml-1 font-bold">4.8 / 5</span></div>
-                  </td>
-                </tr>
-
-                <!-- Row: Starting Price -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">Starting Price</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40 font-extrabold text-brand-orange text-base">$10 /user/mo</td>
-                  <td class="p-5 font-bold text-brand-navy">$20 /user/mo</td>
-                  <td class="p-5 font-bold text-brand-navy">$25 /user/mo</td>
-                  <td class="p-5 font-bold text-brand-navy">$7.99 /mo</td>
-                </tr>
-
-                <!-- Row: Best For Tag -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">Best For</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40">
-                    <span class="inline-block px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">Workspace Intelligence</span>
-                  </td>
-                  <td class="p-5">
-                    <span class="inline-block px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold">Code Generation & Logic</span>
-                  </td>
-                  <td class="p-5">
-                    <span class="inline-block px-2.5 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-bold">Broad Multi-Modal Q&A</span>
-                  </td>
-                  <td class="p-5">
-                    <span class="inline-block px-2.5 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold">Fast Managed Web Scale</span>
-                  </td>
-                </tr>
-
-                <!-- Feature 1 -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">SOC2 Type II Certified</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Yes (Audited)</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Yes</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Yes</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> ISO + Tier III</td>
-                </tr>
-
-                <!-- Feature 2 -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">Data Training Protection</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> 100% Zero Retention</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Enterprise Opt-out</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Team Shield Active</td>
-                  <td class="p-5 text-slate-400">N/A (Hosting)</td>
-                </tr>
-
-                <!-- Feature 3 -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">24/7 Dedicated Support</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Priority SLA</td>
-                  <td class="p-5 text-slate-500">Standard Email</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> Priority Desk</td>
-                  <td class="p-5 text-emerald-600 font-bold"><i data-lucide="check" class="w-5 h-5 inline mr-1"></i> &lt;2 min Live Chat</td>
-                </tr>
-
-                <!-- CTA Row -->
-                <tr>
-                  <th scope="row" class="p-5 font-bold text-brand-navy bg-white sticky left-0 z-10 sticky-col-shadow">Final Recommendation</th>
-                  <td class="p-5 bg-brand-orangeLight/20 border-x-2 border-brand-orange/40">
-                    <a href="https://notion.so" target="_blank" rel="nofollow sponsored noopener" class="w-full inline-flex items-center justify-center space-x-1.5 bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-xs py-3 px-4 rounded-xl shadow-glow-orange transition">
-                      <span>Visit Notion AI</span>
-                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                  </td>
-                  <td class="p-5">
-                    <a href="https://anthropic.com" target="_blank" rel="nofollow sponsored noopener" class="w-full inline-flex items-center justify-center space-x-1.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-xs py-3 px-4 rounded-xl transition">
-                      <span>Visit Claude</span>
-                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                  </td>
-                  <td class="p-5">
-                    <a href="https://openai.com" target="_blank" rel="nofollow sponsored noopener" class="w-full inline-flex items-center justify-center space-x-1.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-xs py-3 px-4 rounded-xl transition">
-                      <span>Visit ChatGPT</span>
-                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                  </td>
-                  <td class="p-5">
-                    <a href="https://hostinger.com" target="_blank" rel="nofollow sponsored noopener" class="w-full inline-flex items-center justify-center space-x-1.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-xs py-3 px-4 rounded-xl transition">
-                      <span>Visit Hostinger</span>
-                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                  </td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Mobile Horizontal Swipeable Cards -->
-        <div class="lg:hidden flex space-x-4 overflow-x-auto pb-6 pt-2 px-1 snap-x snap-mandatory">
-          
-          <!-- Card 1 (Editor's Choice) -->
-          <div class="snap-center shrink-0 w-[280px] bg-white rounded-2xl border-2 border-brand-orange p-5 shadow-card relative">
-            <span class="bg-brand-orange text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full absolute -top-3 left-4 uppercase">★ Editor's Choice</span>
-            <div class="text-base font-extrabold text-brand-navy mt-1">Notion AI Enterprise</div>
-            <div class="text-amber-500 font-bold text-xs my-1">★★★★★ 4.9/5</div>
-            <div class="text-brand-orange font-extrabold text-sm mb-3">$10 /user/mo</div>
-            <ul class="text-xs space-y-2 border-t border-slate-100 pt-3 mb-4">
-              <li class="text-emerald-700">✓ SOC2 Type II Certified</li>
-              <li class="text-emerald-700">✓ Zero Data Retention</li>
-              <li class="text-slate-600">• Best for Knowledge RAG</li>
-            </ul>
-            <a href="https://notion.so" target="_blank" rel="nofollow sponsored noopener" class="block w-full text-center bg-brand-orange text-white font-bold text-xs py-2.5 rounded-xl shadow-glow-orange">Visit Site</a>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="snap-center shrink-0 w-[280px] bg-white rounded-2xl border border-slate-200 p-5 shadow-soft">
-            <div class="text-base font-extrabold text-brand-navy">Claude 3.5 Sonnet</div>
-            <div class="text-amber-500 font-bold text-xs my-1">★★★★★ 4.9/5</div>
-            <div class="text-brand-navy font-bold text-sm mb-3">$20 /user/mo</div>
-            <ul class="text-xs space-y-2 border-t border-slate-100 pt-3 mb-4">
-              <li class="text-emerald-700">✓ SOC2 Type II Certified</li>
-              <li class="text-emerald-700">✓ 200k Context Window</li>
-              <li class="text-slate-600">• Best for Coding Logic</li>
-            </ul>
-            <a href="https://anthropic.com" target="_blank" rel="nofollow sponsored noopener" class="block w-full text-center bg-brand-navy text-white font-bold text-xs py-2.5 rounded-xl">Visit Site</a>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="snap-center shrink-0 w-[280px] bg-white rounded-2xl border border-slate-200 p-5 shadow-soft">
-            <div class="text-base font-extrabold text-brand-navy">Hostinger Cloud</div>
-            <div class="text-amber-500 font-bold text-xs my-1">★★★★☆ 4.8/5</div>
-            <div class="text-brand-navy font-bold text-sm mb-3">$7.99 /mo</div>
-            <ul class="text-xs space-y-2 border-t border-slate-100 pt-3 mb-4">
-              <li class="text-emerald-700">✓ NVMe Edge SSDs</li>
-              <li class="text-emerald-700">✓ Free SSL + Backups</li>
-              <li class="text-slate-600">• Best Value Infrastructure</li>
-            </ul>
-            <a href="https://hostinger.com" target="_blank" rel="nofollow sponsored noopener" class="block w-full text-center bg-brand-navy text-white font-bold text-xs py-2.5 rounded-xl">Visit Site</a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ##################################################################### -->
-    <!-- VIEW 4: GLOBAL DESIGN SYSTEM & ELEMENTOR TOKENS -->
-    <!-- ##################################################################### -->
-    <section id="view-design-system" class="hidden py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        
-        <div class="text-center max-w-3xl mx-auto">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-orange">Developer & Elementor Hand-Off</span>
-          <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-navy mt-1">ReadMeHub Design System Tokens</h1>
-          <p class="text-sm text-brand-muted mt-2">WCAG 2.2 AA certified palette, component specifications, and typography hierarchy.</p>
-        </div>
-
-        <!-- Color Tokens -->
-        <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-soft space-y-4">
-          <h2 class="font-display text-xl font-bold text-brand-navy">1. Color Palette Tokens</h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            
-            <div class="p-3 rounded-2xl bg-white border border-slate-200 text-center">
-              <div class="h-16 rounded-xl bg-[#0F2A4A] shadow-inner mb-2"></div>
-              <div class="text-xs font-bold text-brand-navy">Primary Navy</div>
-              <code class="text-[10px] text-slate-500">#0F2A4A</code>
-            </div>
-
-            <div class="p-3 rounded-2xl bg-white border border-slate-200 text-center">
-              <div class="h-16 rounded-xl bg-[#FF7A00] shadow-inner mb-2"></div>
-              <div class="text-xs font-bold text-brand-navy">Accent Orange</div>
-              <code class="text-[10px] text-slate-500">#FF7A00</code>
-            </div>
-
-            <div class="p-3 rounded-2xl bg-white border border-slate-200 text-center">
-              <div class="h-16 rounded-xl bg-[#F0F5FA] shadow-inner mb-2 border border-blue-100"></div>
-              <div class="text-xs font-bold text-brand-navy">Pastel Blue</div>
-              <code class="text-[10px] text-slate-500">#F0F5FA</code>
-            </div>
-
-            <div class="p-3 rounded-2xl bg-white border border-slate-200 text-center">
-              <div class="h-16 rounded-xl bg-[#EFFBFA] shadow-inner mb-2 border border-teal-100"></div>
-              <div class="text-xs font-bold text-brand-navy">Pastel Mint</div>
-              <code class="text-[10px] text-slate-500">#EFFBFA</code>
-            </div>
-
-            <div class="p-3 rounded-2xl bg-white border border-slate-200 text-center">
-              <div class="h-16 rounded-xl bg-[#FFF4EB] shadow-inner mb-2 border border-orange-100"></div>
-              <div class="text-xs font-bold text-brand-navy">Pastel Peach</div>
-              <code class="text-[10px] text-slate-500">#FFF4EB</code>
-            </div>
-
-            <div class="p-3 rounded-2xl bg-white border border-slate-200 text-center">
-              <div class="h-16 rounded-xl bg-[#334155] shadow-inner mb-2"></div>
-              <div class="text-xs font-bold text-brand-navy">Slate Body</div>
-              <code class="text-[10px] text-slate-500">#334155</code>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Button & Interactive Components -->
-        <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-soft space-y-6">
-          <h2 class="font-display text-xl font-bold text-brand-navy">2. High-Converting Button Components</h2>
-          <div class="flex flex-wrap gap-4 items-center">
-            
-            <!-- Primary CTA -->
-            <button class="bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-sm px-6 py-3 rounded-xl shadow-glow-orange transition duration-200 flex items-center space-x-2">
-              <span>Primary CTA: Visit Site</span>
-              <i data-lucide="external-link" class="w-4 h-4"></i>
-            </button>
-
-            <!-- Secondary CTA -->
-            <button class="bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-sm px-6 py-3 rounded-xl transition duration-200 flex items-center space-x-2">
-              <span>Secondary: Read In-Depth Audit</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </button>
-
-            <!-- Outline Button -->
-            <button class="border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-sm px-5 py-2.5 rounded-xl transition duration-200">
-              Tertiary Outline
-            </button>
-
-            <!-- Rating Chip -->
-            <div class="flex items-center space-x-1 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-lg text-amber-800 text-xs font-bold">
-              <span>★ 4.9 / 5.0</span>
-              <span class="text-slate-400 font-normal">(1,840 reviews)</span>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
+    </div>
   </main>
 
-  <!-- ========================================================================= -->
-  <!-- LIVE SEARCH MODAL (Accessible Overlay) -->
-  <!-- ========================================================================= -->
-  <div id="search-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm p-4 sm:p-6 lg:p-8 flex items-start justify-center pt-20">
-    <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 max-w-2xl w-full p-6 relative animate-in fade-in zoom-in-95 duration-150">
-      <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-        <div class="flex items-center space-x-2 text-brand-navy">
-          <i data-lucide="search" class="w-5 h-5 text-brand-orange"></i>
-          <span class="font-display font-bold text-lg">Instant ReadMeHub Search</span>
+  <!-- ======================================================================
+       FOOTER: MASTER INDUSTRIAL FOOTER (Light Neumorphic Layout)
+       ====================================================================== -->
+  <footer class="bg-[#f0f2f5] text-[#4a5568] border-t border-[#d1d9e6] mt-auto relative overflow-hidden bg-blueprint-light">
+    
+    <!-- Top Operational Heartbeat Strip -->
+    <div class="border-b border-[#d1d9e6] py-4 bg-[#e0e5ec]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
+        <div class="flex items-center gap-3">
+          <span class="led-indicator led-glow-green"></span>
+          <span class="text-[#2d3436] font-bold">ENGINE CLUSTER: 100% OPERATIONAL</span>
+          <span class="text-[#718096] hidden sm:inline">| NODE ID: TR-US-WEST-01</span>
         </div>
-        <button onclick="toggleSearchModal()" class="p-1 rounded-lg text-slate-400 hover:text-brand-navy hover:bg-slate-100">
-          <i data-lucide="x" class="w-5 h-5"></i>
+        <div class="flex items-center gap-4 text-[11px] text-[#718096]">
+          <span>SLA RESPONSE: &lt; 2 HOURS</span>
+          <span>ATTRIBUTION STACK: ACTIVE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Multi-Column Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+        
+        <!-- Column 1: Brand & Positioning (2 cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-xl tracking-tight text-[#2d3436] font-mono">TEAM<span class="text-[#ff4757]">RION</span></span>
+            <span class="led-indicator led-glow-green"></span>
+          </div>
+          <p class="text-xs text-[#4a5568] leading-relaxed max-w-sm">
+            The full-funnel digital growth partner. We eliminate the communication gap between disconnected freelancers by unifying SEO, GEO AI search, Paid Media, Automation, and CRO into one accountable pipeline framework.
+          </p>
+          <div class="pt-2 flex items-center gap-3 text-xs font-mono">
+            <a href="#/growth-diagnostic" class="text-[#ff4757] font-bold hover:underline">Start Diagnostic &rarr;</a>
+            <span class="text-[#a3b1c6]">·</span>
+            <a href="#/pricing" class="text-[#2d3436] font-bold hover:underline">View Rates &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Column 2: 9 Services -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Services</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/services/seo" class="hover:text-[#ff4757]">SEO Architecture</a></li>
+            <li><a href="#/services/geo-ai-search" class="hover:text-[#06b6d4] text-[#0891b2] font-semibold">GEO / AI Search</a></li>
+            <li><a href="#/services/paid-media-google" class="hover:text-[#ff4757]">Google Ads</a></li>
+            <li><a href="#/services/paid-media-meta" class="hover:text-[#ff4757]">Meta Ads & CAPI</a></li>
+            <li><a href="#/services/paid-media-linkedin" class="hover:text-[#ff4757]">LinkedIn ABM</a></li>
+            <li><a href="#/services/marketing-automation" class="hover:text-[#ff4757]">Automation</a></li>
+            <li><a href="#/services/cro" class="hover:text-[#ff4757]">CRO Optimization</a></li>
+            <li><a href="#/services/analytics-attribution" class="hover:text-[#ff4757]">Analytics/Attribution</a></li>
+            <li><a href="#/services/web-design-dev" class="hover:text-[#ff4757]">Web Design & Dev</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: 8 Industries -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Industries</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/industries/b2b-saas" class="hover:text-[#ff4757]">B2B SaaS (Deep)</a></li>
+            <li><a href="#/industries/professional-services" class="hover:text-[#ff4757]">Prof. Services</a></li>
+            <li><a href="#/industries/ecommerce" class="hover:text-[#ff4757]">E-Commerce</a></li>
+            <li><a href="#/industries/healthcare-fitness" class="hover:text-[#ff4757]">Healthcare/Fitness</a></li>
+            <li><a href="#/industries/fintech" class="hover:text-[#ff4757]">FinTech</a></li>
+            <li><a href="#/industries/real-estate" class="hover:text-[#ff4757]">Real Estate</a></li>
+            <li><a href="#/industries/hospitality" class="hover:text-[#ff4757]">Hospitality</a></li>
+            <li><a href="#/industries/manufacturing" class="hover:text-[#ff4757]">Manufacturing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Lead-Gen & Proof -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Proof & Tools</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/growth-diagnostic" class="hover:text-[#ff4757] text-[#ff4757] font-semibold">Growth Diagnostic</a></li>
+            <li><a href="#/ai-search-audit" class="hover:text-[#06b6d4] text-[#0891b2]">AI Citation Checker</a></li>
+            <li><a href="#/case-studies" class="hover:text-[#ff4757]">Case Studies Index</a></li>
+            <li><a href="#/case-studies/saas-growth-pipeline" class="hover:text-[#ff4757]">SaaS Case Study</a></li>
+            <li><a href="#/pricing" class="hover:text-[#ff4757]">Banded Pricing Ladder</a></li>
+            <li><a href="#/faq" class="hover:text-[#ff4757]">Schema-Marked FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Comparison & Legal -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[#2d3436] font-bold uppercase tracking-wider text-[11px] border-b border-[#d1d9e6] pb-1">Comparison & Legal</div>
+          <ul class="space-y-1.5 text-[11px] text-[#4a5568]">
+            <li><a href="#/compare/vs-traditional-agencies" class="hover:text-[#ff4757]">Vs Traditional Agencies</a></li>
+            <li><a href="#/blog" class="hover:text-[#ff4757]">Intelligence Articles</a></li>
+            <li><a href="#/privacy" class="hover:text-[#ff4757]">Privacy Policy</a></li>
+            <li><a href="#/terms" class="hover:text-[#ff4757]">Terms of Service</a></li>
+            <li><button onclick="window.openElementorKitModal()" class="text-[#ff4757] font-semibold hover:underline text-left">Export Elementor Kit (.zip)</button></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-12 mt-12 border-t border-[#d1d9e6] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#718096]">
+        <div>
+          © 2026 TeamRion Growth Systems. Built on WordPress + Elementor Pro architecture.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="placeholder-data-badge">§4 PROOF PROTOCOL ACTIVE</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL: ELEMENTOR PRO EXPORT / IMPORT PACKAGER (Light Neumorphic)
+       ====================================================================== -->
+  <div id="elementor-kit-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bolted-card max-w-3xl w-full bg-[#f0f2f5] text-[#2d3436] p-6 md:p-8 rounded-3xl border border-white shadow-floating relative max-h-[90vh] overflow-y-auto">
+      <div class="screw-head screw-tl"></div>
+      <div class="screw-head screw-tr"></div>
+      <div class="screw-head screw-bl"></div>
+      <div class="screw-head screw-br"></div>
+
+      <div class="flex items-center justify-between pb-4 border-b border-[#d1d9e6] mb-6">
+        <div class="flex items-center gap-2">
+          <span class="led-indicator led-glow-green"></span>
+          <h3 class="font-bold text-lg text-[#2d3436] font-mono uppercase">WordPress + Elementor Export / Import Kit</h3>
+        </div>
+        <button onclick="window.closeElementorKitModal()" class="text-[#718096] hover:text-[#2d3436] font-mono text-lg font-bold">✕</button>
+      </div>
+
+      <!-- Quick Download Full Zip Bar -->
+      <div class="p-4 rounded-xl bg-white shadow-card border-2 border-[#ff4757] flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+        <div>
+          <div class="font-bold font-mono text-xs text-[#ff4757] uppercase flex items-center gap-2">
+            <span>● 1-CLICK COMPLETE ELEMENTOR KIT (.ZIP)</span>
+          </div>
+          <p class="text-[11px] text-[#4a5568] mt-0.5">Contains all 9 page templates, Theme Builder header/footer, site settings & custom CSS.</p>
+        </div>
+        <a href="/teamrion-elementor-template-kit.zip" download="teamrion-elementor-template-kit.zip" class="btn-physical-primary !py-2.5 !px-5 text-xs whitespace-nowrap">
+          <span>DOWNLOAD KIT (.ZIP)</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+
+      <div class="space-y-6 text-xs font-mono">
+        
+        <!-- How to Import Guide -->
+        <div class="p-4 rounded-xl bg-[#e0e5ec] shadow-recessed space-y-2">
+          <div class="font-bold text-[#2d3436] uppercase text-[11px]">📖 HOW TO IMPORT INTO WORDPRESS:</div>
+          <ol class="list-decimal pl-4 space-y-1 text-[#4a5568] text-[11px]">
+            <li>Download the <strong>.zip kit</strong> or individual <strong>.json</strong> templates below.</li>
+            <li>In your WordPress Admin, go to <strong>Templates → Saved Templates</strong>.</li>
+            <li>Click <strong>Import Templates</strong> (top button) and select your downloaded <code>.json</code> file.</li>
+            <li>Create a new Page, click <strong>Edit with Elementor</strong>, click the <strong>Folder Icon</strong> (My Templates), and click <strong>Insert</strong>!</li>
+          </ol>
+        </div>
+
+        <!-- Individual Template Downloads -->
+        <div>
+          <div class="font-bold text-[#2d3436] uppercase mb-2">INDIVIDUAL ELEMENTOR TEMPLATES (.JSON)</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+            <a href="/elementor-export/teamrion-homepage.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>🏠 Homepage Template</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-header-template.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>🔝 Theme Builder Header</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-footer-template.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>🔻 Theme Builder Footer</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-pricing-page.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>💳 Banded Pricing Page</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-growth-diagnostic-page.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>⚡ Growth Diagnostic Quiz</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+            <a href="/elementor-export/teamrion-single-service-template.json" download class="p-2.5 rounded bg-white shadow-card flex items-center justify-between hover:text-[#ff4757]">
+              <span>⚙️ Single Service Template</span>
+              <span class="text-[#ff4757] font-bold">.JSON &darr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Custom CSS Classes Snippet -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-bold text-[#22c55e] uppercase">SITE-WIDE CUSTOM CSS (ADD TO APPEARANCE &rarr; CUSTOMIZE &rarr; ADDITIONAL CSS)</span>
+            <button onclick="window.copyElementorCSS()" class="text-[#ff4757] hover:underline font-bold">Copy All CSS</button>
+          </div>
+          <pre id="elementor-css-snippet" class="p-4 bg-[#d1d9e6] rounded-xl shadow-recessed text-[#2d3436] font-mono text-[11px] overflow-x-auto max-h-36 border border-white/60">
+.shadow-card { box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff; }
+.shadow-floating { box-shadow: 12px 12px 24px #babecc, -12px -12px 24px #ffffff, inset 1px 1px 0 rgba(255,255,255,0.8); }
+.shadow-pressed { box-shadow: inset 6px 6px 12px #babecc, inset -6px -6px 12px #ffffff; }
+.shadow-recessed { box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff; }
+.led-glow-orange { box-shadow: 0 0 10px 2px rgba(255,71,87,0.6); }
+.led-glow-green { box-shadow: 0 0 10px 2px rgba(34,197,94,0.8); }
+.btn-physical { font-family: 'JetBrains Mono', monospace; font-weight: 700; text-transform: uppercase; }
+          </pre>
+        </div>
+
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-[#d1d9e6] flex items-center justify-between">
+        <a href="/teamrion-elementor-template-kit.zip" download class="btn-physical-primary !py-2 !px-4 text-xs">
+          <span>DOWNLOAD .ZIP KIT</span>
+        </a>
+        <button onclick="window.closeElementorKitModal()" class="btn-physical-secondary !py-2 !px-4 text-xs">
+          <span>CLOSE</span>
         </button>
-      </div>
-
-      <div class="mt-4">
-        <input type="text" id="modal-search-input" placeholder="Type tool name (e.g., Notion, Hostinger, Claude, Deel)..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-orange" onkeyup="filterTools(this.value)">
-      </div>
-
-      <!-- Quick results -->
-      <div class="mt-4 space-y-2 max-h-60 overflow-y-auto" id="search-results">
-        <div class="p-3 rounded-xl hover:bg-brand-pastelBlue flex items-center justify-between cursor-pointer" onclick="switchView('review'); toggleSearchModal()">
-          <div class="flex items-center space-x-3">
-            <div class="w-8 h-8 rounded-lg bg-black text-white font-bold flex items-center justify-center text-xs">N</div>
-            <div>
-              <div class="text-xs font-bold text-brand-navy">Notion AI Enterprise</div>
-              <div class="text-[11px] text-brand-muted">AI Tools & Copilots • ★ 4.9</div>
-            </div>
-          </div>
-          <span class="text-xs text-brand-orange font-bold">Read Audit →</span>
-        </div>
-
-        <div class="p-3 rounded-xl hover:bg-brand-pastelBlue flex items-center justify-between cursor-pointer" onclick="switchView('comparison'); toggleSearchModal()">
-          <div class="flex items-center space-x-3">
-            <div class="w-8 h-8 rounded-lg bg-purple-700 text-white font-bold flex items-center justify-center text-xs">H</div>
-            <div>
-              <div class="text-xs font-bold text-brand-navy">Hostinger Cloud VPS</div>
-              <div class="text-[11px] text-brand-muted">Cloud Hosting • ★ 4.8</div>
-            </div>
-          </div>
-          <span class="text-xs text-brand-orange font-bold">Read Audit →</span>
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- ========================================================================= -->
-  <!-- FULL SITEMAP & LEGAL FOOTER -->
-  <!-- ========================================================================= -->
-  <footer class="bg-brand-navy text-white pt-16 pb-12 border-t border-brand-navyLight/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-700/80">
-        
-        <!-- Brand & Mission (2 Cols) -->
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center space-x-2.5">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-orange to-amber-500 flex items-center justify-center text-white shadow-md">
-              <i data-lucide="shield-check" class="w-5 h-5"></i>
-            </div>
-            <span class="font-display text-2xl font-extrabold tracking-tight text-white">
-              ReadMe<span class="text-brand-orange">Hub</span>
-            </span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
-            ReadMeHub is the premier independent review authority for enterprise SaaS, AI systems, and cloud infrastructure. We purchase licenses, test uptime, run API latency stress-tests, and expose real pricing models for Tier-1 technology buyers.
-          </p>
-          <div class="flex space-x-3 text-slate-400 pt-2">
-            <a href="#" class="p-2 rounded-lg bg-slate-800 hover:text-white hover:bg-slate-700 transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
-            <a href="#" class="p-2 rounded-lg bg-slate-800 hover:text-white hover:bg-slate-700 transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-            <a href="#" class="p-2 rounded-lg bg-slate-800 hover:text-white hover:bg-slate-700 transition"><i data-lucide="github" class="w-4 h-4"></i></a>
-          </div>
-        </div>
-
-        <!-- Col 1: AI & Copilots -->
-        <div>
-          <h4 class="font-display text-xs font-bold uppercase tracking-wider text-brand-orange mb-4">AI & Copilots</h4>
-          <ul class="space-y-2.5 text-xs text-slate-300">
-            <li><a href="#review" onclick="switchView('review')" class="hover:text-white transition">Notion AI Enterprise</a></li>
-            <li><a href="#comparison" onclick="switchView('comparison')" class="hover:text-white transition">Claude 3.5 Sonnet</a></li>
-            <li><a href="#comparison" onclick="switchView('comparison')" class="hover:text-white transition">Cursor Code Editor</a></li>
-            <li><a href="#comparison" onclick="switchView('comparison')" class="hover:text-white transition">Enterprise Voice Agents</a></li>
-            <li><a href="#comparison" onclick="switchView('comparison')" class="hover:text-white transition">OpenAI Team vs Pro</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 2: Cloud & Domains -->
-        <div>
-          <h4 class="font-display text-xs font-bold uppercase tracking-wider text-brand-orange mb-4">Cloud & Domains</h4>
-          <ul class="space-y-2.5 text-xs text-slate-300">
-            <li><a href="#hosting-category" class="hover:text-white transition">Hostinger Cloud VPS</a></li>
-            <li><a href="#hosting-category" class="hover:text-white transition">Cloudways Autonomous</a></li>
-            <li><a href="#hosting-category" class="hover:text-white transition">Kinsta Enterprise WP</a></li>
-            <li><a href="#domain-category" class="hover:text-white transition">Cloudflare Registrar</a></li>
-            <li><a href="#domain-category" class="hover:text-white transition">Anycast DNS Benchmarks</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Compliance & Legal -->
-        <div>
-          <h4 class="font-display text-xs font-bold uppercase tracking-wider text-brand-orange mb-4">Trust & Standards</h4>
-          <ul class="space-y-2.5 text-xs text-slate-300">
-            <li><a href="#disclosure" class="hover:text-white transition">Affiliate Disclosure</a></li>
-            <li><a href="#testing" class="hover:text-white transition">Testing Methodology</a></li>
-            <li><a href="#editorial" class="hover:text-white transition">Editorial Independence</a></li>
-            <li><a href="#privacy" class="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="#terms" class="hover:text-white transition">Terms of Service</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Bottom Disclaimer Bar -->
-      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
-        <div>
-          © 2025 ReadMeHub.com — All Rights Reserved. Benchmarked for USA, UK, Canada & Australia.
-        </div>
-        <div class="max-w-xl text-right text-slate-400 leading-tight">
-          Disclaimer: ReadMeHub is supported by readers. When you buy through links on our site, we may earn an affiliate commission. All ratings reflect genuine testing metrics.
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- ========================================================================= -->
-  <!-- JAVASCRIPT CONTROLLER (Views Switcher, Modal, Accordion, Icons) -->
-  <!-- ========================================================================= -->
-  <script>
-    // Initialize Lucide Icons
-    document.addEventListener('DOMContentLoaded', () => {
-      lucide.createIcons();
-    });
-
-    // Multi-View Page Switcher (Simulates elementor templates / distinct page views)
-    function switchView(viewName) {
-      const views = ['homepage', 'review', 'comparison', 'design-system'];
-      
-      views.forEach(v => {
-        const el = document.getElementById(`view-${v}`);
-        const tab = document.getElementById(`tab-${v}`);
-        if (el) {
-          if (v === viewName) {
-            el.classList.remove('hidden');
-            el.classList.add('block');
-          } else {
-            el.classList.add('hidden');
-            el.classList.remove('block');
-          }
-        }
-        if (tab) {
-          if (v === viewName) {
-            tab.classList.add('active');
-            tab.classList.remove('text-slate-300');
-          } else {
-            tab.classList.remove('active');
-            tab.classList.add('text-slate-300');
-          }
-        }
-      });
-
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      setTimeout(() => lucide.createIcons(), 50);
-    }
-
-    // Toggle Mobile Drawer Menu
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-
-    // Toggle Search Modal
-    function toggleSearchModal() {
-      const modal = document.getElementById('search-modal');
-      modal.classList.toggle('hidden');
-      if (!modal.classList.contains('hidden')) {
-        setTimeout(() => document.getElementById('modal-search-input').focus(), 50);
-      }
-    }
-
-    // FAQ Accordion Handler
-    function toggleFaq(id) {
-      const content = document.getElementById(id);
-      const icon = document.getElementById(`${id}-icon`);
-      if (content) {
-        content.classList.toggle('hidden');
-        if (icon) {
-          icon.classList.toggle('rotate-180');
-        }
-      }
-    }
-
-    // Live search filter in modal
-    function filterTools(query) {
-      const q = query.toLowerCase();
-      const items = document.querySelectorAll('#search-results > div');
-      items.forEach(item => {
-        const text = item.innerText.toLowerCase();
-        if (text.includes(q)) {
-          item.style.display = 'flex';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-  </script>
-
+  <!-- ======================================================================
+       SCRIPTS: MODULAR ARCHITECTURE & PAGE REGISTRATION
+       ====================================================================== -->
+  <script src="src/scripts/elementor-kit.js"></script>
+  <script src="src/scripts/pages/core.js"></script>
+  <script src="src/scripts/pages/services.js"></script>
+  <script src="src/scripts/pages/leadgen.js"></script>
+  <script src="src/scripts/pages/industries.js"></script>
+  <script src="src/scripts/pages/proof.js"></script>
+  <script src="src/scripts/pages/content.js"></script>
+  <script src="src/scripts/pages/compare.js"></script>
+  <script src="src/scripts/pages/legal.js"></script>
+  <script src="src/scripts/routes.js"></script>
+  <script src="src/scripts/app.js"></script>
 </body>
 </html>
-```
