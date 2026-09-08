@@ -1,0 +1,16 @@
+/*
+Theme Name:   Hello Elementor Child — ReadMeHub
+Theme URI:    https://readmehub.com
+Description:  ReadMeHub decision platform. Child theme of Hello Elementor. Adds the ReadMeHub design system, ACF field groups (code-registered), structured-data schema, RMH content types, verified-deal logic, performance hardening, and Elementor-compatible shortcodes. Requires: Hello Elementor, Elementor, Advanced Custom Fields.
+Author:       ReadMeHub
+Template:     hello-elementor
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+Text Domain:  hello-elementor-child
+*/
+/*
+IMPORTANT: This file intentionally contains only the theme header.
+All styling lives in assets/css/readmehub.css (the ReadMeHub design system),
+enqueued by functions.php with filemtime() versioning — one stylesheet,
+no Elementor-kit duplication, no addon packs.
+*/

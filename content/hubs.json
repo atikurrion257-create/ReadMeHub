@@ -1,0 +1,255 @@
+{
+ "category_index": {
+  "slug": "categories",
+  "title": "All Categories",
+  "meta_description": "Every ReadMeHub category — each one a decision center with researched shortlists, verified pricing, comparisons, and honest deals.",
+  "intro": "Categories are decision centers, not tag dumps. A category launches only when its prices are verified and its research is complete — everything else is marked honestly as in research.",
+  "categories": [
+   {
+    "name": "Password Managers",
+    "status": "live",
+    "href": "categories/password-managers/",
+    "desc": "5 tools researched · verified prices · 1 comparison · 4 reviews · family use case",
+    "entities": [
+     "1Password",
+     "Bitwarden",
+     "NordPass",
+     "Proton Pass",
+     "KeePassXC"
+    ]
+   },
+   {
+    "name": "Web Hosting",
+    "status": "research",
+    "desc": "Keyword and SERP research complete; affiliate verification in progress — launching after the same price-verification workflow as our first category."
+   },
+   {
+    "name": "VPN",
+    "status": "research"
+   },
+   {
+    "name": "AI Tools",
+    "status": "research"
+   },
+   {
+    "name": "Productivity",
+    "status": "research"
+   },
+   {
+    "name": "Website Builders",
+    "status": "research"
+   }
+  ]
+ },
+ "password_managers_hub": {
+  "slug": "categories/password-managers",
+  "title": "Password Managers — the decision hub",
+  "meta_description": "The password manager decision center: the 2026 shortlist with verified prices, four research-based reviews, the 1Password vs Bitwarden verdict, alternatives, family guidance, and honestly-badged deals.",
+  "intro": "Everything you need to choose a password manager, organized by decision — not by vendor marketing. Start with the shortlist if you're new; jump to the comparison if you're down to two; check deals last (they're the smallest part of this decision, whatever coupon sites claim).",
+  "best_picks": [
+   {
+    "label": "Best overall value",
+    "value": "Bitwarden",
+    "note": "Free unlimited; Premium $19.80/yr",
+    "href": "reviews/bitwarden/"
+   },
+   {
+    "label": "Best experience",
+    "value": "1Password",
+    "note": "$3.99/mo; $2.99 first year",
+    "href": "reviews/1password/"
+   },
+   {
+    "label": "Best free tier after Bitwarden",
+    "value": "Proton Pass",
+    "note": "Unlimited logins/devices + 10 aliases",
+    "href": "reviews/proton-pass/"
+   },
+   {
+    "label": "Best budget premium",
+    "value": "NordPass",
+    "note": "Term-based ≈$1.3–2/mo",
+    "href": "reviews/nordpass/"
+   }
+  ],
+  "reviews": [
+   {
+    "name": "1Password review",
+    "href": "reviews/1password/",
+    "verdict": "Polish benchmark, paid-only"
+   },
+   {
+    "name": "Bitwarden review",
+    "href": "reviews/bitwarden/",
+    "verdict": "Value & transparency benchmark"
+   },
+   {
+    "name": "NordPass review",
+    "href": "reviews/nordpass/",
+    "verdict": "Cheapest polished tier — read the term"
+   },
+   {
+    "name": "Proton Pass review",
+    "href": "reviews/proton-pass/",
+    "verdict": "Privacy pedigree, young product"
+   }
+  ],
+  "comparisons": [
+   {
+    "name": "1Password vs Bitwarden",
+    "href": "compare/1password-vs-bitwarden/",
+    "verdict": "Polish vs value — both safe choices"
+   }
+  ],
+  "guides": [
+   {
+    "name": "Best Password Managers (pillar)",
+    "href": "best/password-managers/"
+   },
+   {
+    "name": "Free vs paid password managers",
+    "href": "guides/free-vs-paid-password-managers/"
+   },
+   {
+    "name": "Password manager vs browser autofill",
+    "href": "guides/password-manager-vs-browser-autofill/"
+   }
+  ],
+  "usecases": [
+   {
+    "name": "Best for families",
+    "href": "use-cases/password-manager-for-families/"
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Bitwarden alternatives",
+    "href": "alternatives/",
+    "desc": "Organized by why people switch"
+   }
+  ],
+  "deals_teaser": {
+   "label": "Verified password manager deals",
+   "href": "deals/",
+   "desc": "1Password first-year promo verified 2026-09-06; Bitwarden: none found — free tier is the value play."
+  },
+  "faq": [
+   {
+    "q": "Which password manager should I start with?",
+    "a": "Bitwarden Free — unlimited passwords and devices, open source, verified. If the experience feels too utilitarian after a couple of weeks, 1Password is the polish upgrade."
+   },
+   {
+    "q": "How much should a family spend?",
+    "a": "$0.67–1.00 per person per month covers the credible options (Bitwarden Families to 1Password Families, verified). Migration effort, not price, is the real cost."
+   }
+  ],
+  "brands": [
+   {
+    "name": "1Password",
+    "href": "brands/1password/",
+    "verdict": "Premium consumer + enterprise platform (AgileBits → 1Password Inc.)"
+   },
+   {
+    "name": "Bitwarden",
+    "href": "brands/bitwarden/",
+    "verdict": "Open-source value benchmark; US/EU hosting"
+   },
+   {
+    "name": "NordPass",
+    "href": "brands/nordpass/",
+    "verdict": "Nord Security's budget-polish manager (EU)"
+   },
+   {
+    "name": "Proton",
+    "href": "brands/proton/",
+    "verdict": "Swiss privacy suite; Pass included"
+   }
+  ]
+ },
+ "listing_indexes": {
+  "reviews": {
+   "slug": "reviews",
+   "title": "All Reviews",
+   "meta_description": "Every ReadMeHub review: research-based, verdict-first, with prices verified at official sources and dates on every page.",
+   "note": "We publish research-based reviews and label them as such — no fabricated hands-on testing, no numeric scores until a real scoring methodology exists."
+  },
+  "compare": {
+   "slug": "compare",
+   "title": "All Comparisons",
+   "meta_description": "Head-to-head software comparisons that open with the verdict: choose X if, choose Y if — with prices verified at official sources.",
+   "note": "Every comparison leads with the answer because you came for a decision, not a spec dump."
+  },
+  "alternatives": {
+   "slug": "alternatives",
+   "title": "All Alternatives",
+   "meta_description": "Alternatives pages organized by the real reasons people switch products — not by generic competitor lists.",
+   "note": "A product deserves alternatives coverage only when we can articulate why people leave it."
+  },
+  "guides": {
+   "slug": "guides",
+   "title": "All Guides",
+   "meta_description": "Decision frameworks, explainers, and migration guides — the learning hub behind every ReadMeHub recommendation.",
+   "note": "Guides exist to improve decisions; where a guide helps you choose, it links the commercial research."
+  }
+ },
+ "deals_hub": {
+  "slug": "deals",
+  "title": "Verified Software Deals & Offers (2026)",
+  "meta_description": "Password manager deals with honest verification statuses: offers we verified at official sources — with check dates — and an explicit 'not verified' where we found nothing. No invented codes.",
+  "policy": "This page lists only offers we could verify at an official source, with the date we checked. Statuses: VERIFIED (checked at the official source), OFFICIAL (a standing policy documented by the vendor), UNVERIFIED (reported but not confirmed by us), NONE (we could not verify an active offer — we say so). We do not invent coupon codes, and we do not fake countdowns. Re-check cycle: 30 days or the badge degrades automatically.",
+  "last_sweep": "2026-09-06",
+  "deals": [
+   {
+    "brand": "1Password",
+    "type": "First-year promotion",
+    "offer": "Individual $2.99/mo and Families $4.49/mo for the first year with annual billing (regular: $3.99 / $5.99).",
+    "qualifier": "New customers only, per the vendor's pricing page.",
+    "status": "verified",
+    "checked": "2026-09-06",
+    "source_url": "https://1password.com/personal-family-security",
+    "destination": "https://1password.com/personal-family-security",
+    "affiliate": false,
+    "terms": "Promotional pricing applies to the first year only; standard pricing applies at renewal. Per 1Password's published promotion note.",
+    "regions": "US-listed pricing; regional pricing may vary at checkout"
+   },
+   {
+    "brand": "Bitwarden",
+    "type": "Status report",
+    "offer": "No active promotion verified as of our last sweep. The best Bitwarden 'deal' is structural: the free tier is unlimited in passwords and devices, and Premium is $19.80/yr — still the cheapest complete premium we verified.",
+    "status": "none",
+    "checked": "2026-09-06",
+    "source_url": "https://bitwarden.com/pricing/",
+    "destination": "https://bitwarden.com/pricing/",
+    "affiliate": false,
+    "terms": "—",
+    "regions": "Global"
+   },
+   {
+    "brand": "Proton Pass",
+    "type": "Standing policy",
+    "offer": "30-day money-back guarantee on paid plans — effectively a full-length, full-featured trial.",
+    "status": "official",
+    "checked": "2026-09-06",
+    "source_url": "https://proton.me/pass/pricing",
+    "destination": "https://proton.me/pass/pricing",
+    "affiliate": false,
+    "terms": "Per Proton's published guarantee policy on the Pass pricing page.",
+    "regions": "Global"
+   },
+   {
+    "brand": "NordPass",
+    "type": "Promotional pricing",
+    "offer": "Promotions reported frequently (third-party coverage has shown discounts up to ~60%+ on multi-year terms), but we have not verified a specific live figure at the official checkout — so we're not printing one. The official checkout shows the current regional offer.",
+    "status": "unverified",
+    "checked": "2026-09-06",
+    "source_url": "https://nordpass.com",
+    "destination": "https://nordpass.com",
+    "affiliate": false,
+    "terms": "Best reported pricing typically requires 1–2 year commitments.",
+    "regions": "Regional variations common"
+   }
+  ],
+  "no_codes_statement": "Why no coupon codes here? Because every 'exclusive code' we could check for these brands was either an affiliate link dressed as a code or a fabrication. When a brand publishes a real code at an official source, we'll list it with a check date. Until then: the honest offers above beat fake urgency.",
+  "seasonal_note": "Seasonal sales (Black Friday, New Year) genuinely move pricing for these vendors — expect verified updates here during those windows, not before they exist."
+ }
+}

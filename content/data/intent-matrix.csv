@@ -1,0 +1,25 @@
+keyword,primary_intent,secondary_intent,funnel_stage,commercial_value,serp_type,target_page,parent_topic,internal_links,affiliate_opportunity,deal_opportunity,notes
+best password manager,commercial investigation,comparison,decision,high,listicle+reviews,/best/password-managers/,password managers (category),reviews;comparison;guides;deals,high,medium,pillar
+best free password manager,commercial,problem-solving,decision,medium,listicle,guides/free-vs-paid-password-managers/,pillar,reviews,medium,low,
+best password manager for families,commercial,use-case,decision,high,thin listicles,use-cases/password-manager-for-families/,pillar,reviews;comparison,high,low,
+1password review,commercial investigation,navigational,decision,high,review posts,reviews/1password/,brand 1password,comparison;brand;deals,high,medium,
+bitwarden review,commercial investigation,navigational,decision,low (no affiliate program),review posts,reviews/bitwarden/,brand bitwarden,comparison;alternatives,none (honest),low,
+nordpass review,commercial investigation,deal-aware,decision,high,affiliate reviews,reviews/nordpass/,brand nordpass,pillar;deals,high (Impact ~30% reported),high,
+proton pass review,commercial investigation,privacy research,decision,medium,sparse,reviews/proton-pass/,brand proton,guides;pillar,unverified,low,
+1password vs bitwarden,comparison,commercial investigation,decision,high,comparison posts,compare/1password-vs-bitwarden/,pillar,reviews;use-case,high,low,flagship comparison
+bitwarden vs nordpass,comparison,commercial investigation,decision,medium,comparison posts,TIER-4 roadmap,pillar,reviews,medium,medium,ship after launch sprint
+1password alternatives,alternatives,churn,decision,medium,listicles,TIER-4 roadmap,brand 1password,reviews;comparison,medium,low,
+bitwarden alternatives,alternatives,churn,decision,high,listicles,alternatives/bitwarden-alternatives/,brand bitwarden,reviews;brands,high,low,launched
+1password pricing,pricing,navigational,decision,high,vendor+snippets,section of reviews/1password/,brand 1password,deals,high,medium,no standalone thin page (policy)
+1password cost,pricing,navigational,decision,high,vendor+snippets,section of reviews/1password/,brand 1password,deals,high,medium,cannibalization guard: same URL as pricing
+1password coupon,deal,transactional,transactional,high,coupon sites,deals/ (hub),deals,reviews,high,high,verified statuses only
+nordpass deal,deal,transactional,transactional,high,coupon sites,deals/ (hub),deals,reviews/nordpass,high,high,promotions move; ranges + checkout link
+free vs paid password manager,informational,problem-solving,research,low-medium,blog posts,guides/free-vs-paid-password-managers/,pillar,best-x;reviews,medium,low,launched
+password manager vs browser autofill,informational,problem-aware,research,low,sparse/shallow,guides/password-manager-vs-browser-autofill/,category,best-x,low,low,launched
+are password managers safe,informational,trust,research,low,E-E-A-T heavy,FAQ in pillar + reviews,category,guides,low,low,question keyword
+what is a password manager,informational,definitional,research,low,definitions,pillar intro (glossary TIER-5),category,best-x,low,low,
+password manager,category head,discovery,research,medium,mixed,categories/password-managers/,home,pillar;reviews;comparisons;deals,medium,medium,hub
+password manager for small business,commercial,use-case,decision,high,vendor-heavy,TIER-4 roadmap,pillar,reviews,high,medium,verify business pricing first
+keeper vs 1password,comparison,commercial investigation,decision,high,comparison posts,TIER-4 roadmap,pillar,reviews,high,low,
+dashlane vs 1password,comparison,commercial investigation,decision,medium,comparison posts,TIER-4/5 roadmap,pillar,reviews,high,low,
+lastpass alternatives,alternatives,churn,decision,high,listicles,TIER-5 roadmap (trust-sensitive),category,reviews,high,low,breach history must be sourced

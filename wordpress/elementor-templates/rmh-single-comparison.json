@@ -1,0 +1,127 @@
+{
+ "version": "0.4",
+ "title": "ReadMeHub — Single Comparison",
+ "type": "single",
+ "content": [
+  {
+   "id": "rmh00000471",
+   "elType": "section",
+   "settings": {
+    "gap": "extended",
+    "structure": "10",
+    "css_classes": "rm-single-comparison"
+   },
+   "elements": [
+    {
+     "id": "rmh00000470",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "rmh00000465",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_breadcrumbs]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000466",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"rm-article__meta\">[rmh_verification_stamp]</div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000467",
+       "elType": "widget",
+       "widgetType": "post-title",
+       "settings": {
+        "header_size": "h1"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000468",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_disclosure]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh00000469",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_verdict_box]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000046a",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_choose_if]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000046b",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_matrix_table]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000046c",
+       "elType": "widget",
+       "widgetType": "post-content",
+       "settings": {},
+       "elements": []
+      },
+      {
+       "id": "rmh0000046d",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_tiebreaker]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000046e",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_faq]"
+       },
+       "elements": []
+      },
+      {
+       "id": "rmh0000046f",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[rmh_related type=\"auto\" limit=\"3\"]"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

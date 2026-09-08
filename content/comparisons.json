@@ -1,0 +1,170 @@
+{
+ "content_type": "rmh_comparison",
+ "comparisons": [
+  {
+   "slug": "1password-vs-bitwarden",
+   "title": "1Password vs Bitwarden (2026): The Verdict, Verified Prices, and Who Should Buy Which",
+   "meta_description": "1Password vs Bitwarden, decided: verified 2026 pricing on both sides, the honest trade-off (polish vs value), choose-if lists for each, and the tiebreaker when both fit.",
+   "a": {
+    "name": "1Password",
+    "href": "reviews/1password/",
+    "brand": "1Password (AgileBits)"
+   },
+   "b": {
+    "name": "Bitwarden",
+    "href": "reviews/bitwarden/",
+    "brand": "Bitwarden Inc."
+   },
+   "updated": "2026-09-06",
+   "verified": "2026-09-06",
+   "testing_status": "research_only",
+   "quick_verdict": "Buy 1Password if a refined, effortless experience for you or your family justifies paying roughly $28–47 more per year than Bitwarden Premium. Buy Bitwarden if you lead with value, want a genuinely unlimited free tier, or require open source and self-hosting. Both use zero-knowledge encryption and are safe, reputable choices — this is a values decision, not a safety decision.",
+   "best_for_a": "Households and professionals who want the most polished apps, best family sharing UX, and features like Travel Mode — and consider experience worth $3.99/mo (verified regular price; $2.99 first-year promo).",
+   "best_for_b": "Budget-conscious users (including 'free'), open-source advocates, self-hosters, and families who want 6 premium accounts for $3.99/mo total ($0.67/person at capacity).",
+   "choose_a_if": [
+    "You'll pay for polish: 1Password's apps, autofill, and organization are the category benchmark",
+    "Family sharing is central — unlimited shared vaults with the smoothest admin and recovery UX",
+    "You want Watchtower's proactive security guidance and Travel Mode",
+    "You're a new customer — the verified first-year promo ($2.99 Individual / $4.49 Families) softens year one",
+    "You prefer not to think about billing terms: one annual plan, transparent regular pricing"
+   ],
+   "choose_b_if": [
+    "Price is the constraint: free forever, or $19.80/yr for Premium (both verified)",
+    "You want open-source code, self-hosting, or a US/EU-hosted, audit-friendly stack",
+    "Your household is up to 6 people — Families covers 6 premium accounts at $3.99/mo total",
+    "You want an integrated TOTP authenticator without paying 1Password prices",
+    "You're advising a mixed group: Bitwarden's free tier means nobody is priced out of basic security"
+   ],
+   "key_difference": "You are choosing between experience and leverage. 1Password sells the best-finished product in the category at $47.88/yr (Individual, regular). Bitwarden gives the security fundamentals away free and sells convenience for $19.80/yr. Neither has a meaningful security-quality advantage for typical users; the difference is app polish, family UX, business tooling — and price.",
+   "pricing_context": {
+    "intro": "All figures verified on official pricing pages on 2026-09-06. This is the pricing story neither vendor's marketing leads with:",
+    "rows": [
+     {
+      "dimension": "Free tier",
+      "a": "None (14-day trial)",
+      "b": "Unlimited passwords & devices",
+      "winner": "b",
+      "meaning": "Bitwarden is the only one of the two you can adopt permanently for $0"
+     },
+     {
+      "dimension": "Individual (annual)",
+      "a": "$3.99/mo (≈$47.88/yr); $2.99 first year",
+      "b": "Free, or Premium $1.65/mo ($19.80/yr)",
+      "winner": "b",
+      "meaning": "Bitwarden Premium costs less than half of 1Password regular"
+     },
+     {
+      "dimension": "Family plan",
+      "a": "$5.99/mo for up to 5 members ($4.49 first year)",
+      "b": "$3.99/mo for 6 premium accounts",
+      "winner": "b",
+      "meaning": "Per-person at capacity: ≈$1.00 (1Password) vs ≈$0.67 (Bitwarden)"
+     },
+     {
+      "dimension": "Business",
+      "a": "Quote-led; third-party 2026 reports ≈$7.99–8.99/user/mo (unverified by us)",
+      "b": "Teams $4 / Enterprise $6 per user/mo (verified)",
+      "winner": "b",
+      "meaning": "Bitwarden publishes transparent per-user pricing"
+     },
+     {
+      "dimension": "Price stability",
+      "a": "Promos are first-year-only; regular price documented",
+      "b": "Premium rose from $10 to $19.80/yr in Jan 2026 (reported)",
+      "winner": "tie",
+      "meaning": "Both have pricing momentum to watch at renewal"
+     }
+    ]
+   },
+   "matrix": [
+    {
+     "dimension": "Security architecture",
+     "a": "AES-256 + Secret Key (two independent secrets)",
+     "b": "AES-256, zero-knowledge, open source",
+     "winner": "tie",
+     "interpretation": "Both are safe. 1Password's Secret Key adds a second secret; Bitwarden's open code adds verifiability. Different answers to the same question."
+    },
+    {
+     "dimension": "App experience",
+     "a": "Best-in-class polish (evidence-based)",
+     "b": "Capable but utilitarian",
+     "winner": "a",
+     "interpretation": "This is 1Password's product — if daily friction annoys you, it's worth testing both trials."
+    },
+    {
+     "dimension": "Family sharing",
+     "a": "Unlimited shared vaults, smooth recovery, 5 members",
+     "b": "6 premium accounts, collections model, steeper concepts",
+     "winner": "a",
+     "interpretation": "1Password for experience; Bitwarden for value. Full math in our families use case."
+    },
+    {
+     "dimension": "Breach/health monitoring",
+     "a": "Watchtower — most actionable dashboard",
+     "b": "Vault health reports (Premium)",
+     "winner": "a",
+     "interpretation": "Both inform; Watchtower guides better."
+    },
+    {
+     "dimension": "TOTP authenticator",
+     "a": "Not integrated",
+     "b": "Integrated on Premium",
+     "winner": "b",
+     "interpretation": "Bitwarden replaces a separate 2FA app for $19.80/yr."
+    },
+    {
+     "dimension": "Transparency",
+     "a": "Closed source; published audits",
+     "b": "Open source; published audits; self-hostable",
+     "winner": "b",
+     "interpretation": "If 'trust but verify' is your doctrine, Bitwarden."
+    },
+    {
+     "dimension": "Developer tooling",
+     "a": "SSH agent, CLI, Secrets Automation",
+     "b": "CLI available; community ecosystem",
+     "winner": "a",
+     "interpretation": "1Password's developer story is genuinely differentiated."
+    },
+    {
+     "dimension": "Free tier",
+     "a": "None",
+     "b": "Unlimited",
+     "winner": "b",
+     "interpretation": "Decides the question for many readers by itself."
+    }
+   ],
+   "tiebreaker": "If both fit your budget and needs, let two questions decide. (1) Who is this for? Families who want zero friction → 1Password; mixed groups or budget-shared households → Bitwarden. (2) What annoys you more: paying ~$28/yr more for a better product, or occasionally clunkier software? Your honest answer is the verdict. You can also run both trials — 1Password's 14-day trial and Bitwarden's free tier make this the rare decision you can test before making.",
+   "use_cases_note": "Families: our dedicated use-case page runs the per-person math and recovery comparison. Free-first shoppers: the free-vs-paid guide. Enterprise buyers: verify current business quotes directly with both vendors; we did not verify business pricing on 1Password's side.",
+   "faqs": [
+    {
+     "q": "Is 1Password safer than Bitwarden?",
+     "a": "Not meaningfully for typical users. Both use zero-knowledge AES-256 encryption. 1Password adds a Secret Key (a second secret), Bitwarden offers open-source verifiability and self-hosting. Choose on experience and price, not safety."
+    },
+    {
+     "q": "Can I switch from one to the other easily?",
+     "a": "Yes — both support standard CSV export/import, and Bitwarden documents direct imports from 1Password. Budget an hour, change your master password everywhere after moving, and keep the old export encrypted while you verify."
+    },
+    {
+     "q": "Which is better for families?",
+     "a": "For experience: 1Password (unlimited shared vaults, smooth recovery). For value: Bitwarden (6 premium accounts for $3.99/mo total). The full per-person math is in our families use-case page."
+    },
+    {
+     "q": "Which has the better free version?",
+     "a": "Bitwarden — 1Password has no free tier. Bitwarden Free is unlimited in passwords and devices, verified on the official pricing page in September 2026."
+    }
+   ],
+   "sources": [
+    {
+     "label": "1Password — personal & family pricing (official)",
+     "url": "https://1password.com/personal-family-security"
+    },
+    {
+     "label": "Bitwarden — pricing & plans (official)",
+     "url": "https://bitwarden.com/pricing/"
+    }
+   ],
+   "title_tag": "1Password vs Bitwarden (2026): Verdict & Verified Prices"
+  }
+ ]
+}
